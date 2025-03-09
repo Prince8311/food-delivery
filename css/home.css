@@ -3,6 +3,7 @@
     width: 100%;
     height: 610px;
     padding: 0 100px;
+    margin-bottom: 15px;
 }
 .banner .sec_content {
     position: relative;
@@ -213,4 +214,326 @@
 .exclusive_deals_sec {
     position: relative;
     width: 100%;
+    padding: 25px 100px;
+}
+.exclusive_deals_sec .sec_content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.exclusive_deals_sec .sec_content .sec_head {
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.exclusive_deals_sec .sec_content .sec_head h3 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+.exclusive_deals_sec .sec_content .head_tabs {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.exclusive_deals_sec .sec_content .head_tabs li {
+    position: relative;
+    list-style: none;
+}
+.exclusive_deals_sec .sec_content .head_tabs li a {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 12px 30px;
+    font-size: 16px;
+    color: var(--dark-color);
+    transition: all 0.5s;
+    border-radius: 120px;
+}
+.exclusive_deals_sec .sec_content .head_tabs li:last-child a {
+    padding-right: 0;
+}
+.exclusive_deals_sec .sec_content .head_tabs li a:hover {
+    color: var(--theme-color);
+    transition: all 0.5s;
+}
+.exclusive_deals_sec .sec_content .head_tabs li a.active {
+    padding: 12px 30px;
+    font-weight: 600;
+    color: var(--theme-color);
+    border: 1px solid var(--theme-color);
+    transition: all 0.5s;
+}
+
+.exclusive_deals_sec .sec_content .sec_items {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.exclusive_deals_sec .sec_content .sec_items .item_box {
+    position: relative;
+    width: 32%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.exclusive_deals_sec .sec_content .sec_items .item_box .box_image {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.exclusive_deals_sec .sec_content .sec_items .item_box .box_image img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.exclusive_deals_sec .sec_content .sec_items .item_box .box_contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(3, 8, 31, 0.89) 10%, rgba(3, 8, 31, 0.19) 60%, rgba(255, 255, 255, 0) 100%);
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.exclusive_deals_sec .sec_content .sec_items .item_box .box_contents p {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--theme-color);
+}
+.exclusive_deals_sec .sec_content .sec_items .item_box .box_contents h4 {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--light-color);
+}
+.exclusive_deals_sec .sec_content .sec_items .item_box .box_contents span {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 90px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-color);
+    color: var(--light-color);
+    line-height: 1;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 0 0 12px 12px;
+}
+
+
+
+
+/* ========== popular categories section ========== */
+
+.popular_categories_sec {
+    position: relative;
+    width: 100%;
+    padding: 25px 90px;
+}
+.popular_categories_sec .sec_content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.popular_categories_sec .sec_content .sec_head {
+    position: relative;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular_categories_sec .sec_content .sec_head h3 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.popular_categories_sec .sec_content .sec_items {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular_categories_sec .sec_content .sec_items .swiper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide {
+    position: relative;
+    width: 16.66%;
+    padding: 0 10px;
+}
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box {
+    position: relative;
+    width: 100%;
+    border: 1px solid var(--light-border);
+    background: var(--grey-background-2);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_img {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_brief {
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_brief h4 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-color-1);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_brief p {
+    position: relative;
+    font-size: 13px;
+    color: var(--theme-color);
+}
+
+
+
+
+/* ========== popular restaurants section ========== */
+
+.popular_restaurants_sec {
+    position: relative;
+    width: 100%;
+    padding: 25px 90px;
+}
+.popular_restaurants_sec .sec_content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.popular_restaurants_sec .sec_content .sec_head {
+    position: relative;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular_restaurants_sec .sec_content .sec_head h3 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.popular_restaurants_sec .sec_content .sec_items {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular_restaurants_sec .sec_content .sec_items .swiper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide {
+    position: relative;
+    width: 16.66%;
+    padding: 0 10px;
+}
+.popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide .slide_box {
+    position: relative;
+    width: 100%;
+    background: var(--theme-color);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_img {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_brief {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+}
+.popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_brief h4 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--light-color);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+
+/* ========== app download section ========== */
+
+.app_download_sec {
+    position: relative;
+    margin-top: 35px;
+    width: 100%;
+    padding: 25px 100px;
+}
+.app_download_sec .sec_content {
+    position: relative;
+    width: 100%;
+    height: 610px;
+    background: linear-gradient(to right, rgba(238, 238, 238, 1), rgba(224, 225, 220, 1));
+    border-radius: 12px;
+    display: flex;
+}
+.app_download_sec .sec_content .sec_item {
+    position: relative;
+    width: 50%;
+    padding: 50px;
 }
