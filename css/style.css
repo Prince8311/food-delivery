@@ -9,6 +9,7 @@
 
 :root {
     --dark-color: rgb(0, 0, 0, 1);
+    --dark-color-1: rgba(3, 8, 31, 1);
     --light-color: rgb(255, 255, 255, 1);
     --theme-color: rgba(252, 138, 6, 1);
     --theme-light-color: rgba(252, 137, 6, 0.562);
@@ -26,7 +27,6 @@
     position: relative;
     width: 100%;
     background: var(--light-background);
-    padding: 0 100px;
     display: flex;
     flex-direction: column;
 }

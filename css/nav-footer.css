@@ -4,6 +4,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 0 100px;
 }
 .navbar .nav_top {
     position: relative;
