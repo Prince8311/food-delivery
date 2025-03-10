@@ -504,6 +504,8 @@
     height: 600px;
     background: var( --grey-background-4);
     padding: 100px 90px;
+    display: flex;
+    flex-direction: column;
 }
 
 .review_sec .sec_content {
@@ -661,6 +663,22 @@
     font-size: 17px;
     color: var(--dark-color);
     font-weight: 400;
+}
+
+.review_sec .follower_sec {
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    width: 150px;
+    height: 175px;
+    border: 1px solid #000;
+    z-index: 1;
+    background: var(--light-background);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
