@@ -1,4 +1,5 @@
-/* Nav bar  */
+/* ========== Nav bar ========== */
+
 .navbar {
     position: relative;
     width: 100%;
@@ -216,4 +217,243 @@
     font-size: 18px;
     font-weight: 500;
     color: var(--light-color);
+}
+
+
+
+
+
+
+/* ========== Footer ========== */
+
+.footer {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer_top {
+    position: relative;
+    width: 100%;
+    padding: 80px 100px;
+    padding-bottom: 50px;
+    background: var(--grey-background-3);
+}
+
+.footer .footer_top .top_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.footer .footer_top .top_inner .left_part {
+    position: relative;
+    width: 450px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer_top .top_inner .left_part .footer_logo {
+    position: relative;
+    display: flex;
+}
+.footer .footer_top .top_inner .left_part .footer_logo img {
+    position: relative;
+    height: 65px;
+    width: max-content;
+}
+.footer .footer_top .top_inner .left_part .btn_sec {
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+}
+.footer .footer_top .top_inner .left_part .btn_sec a {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+.footer .footer_top .top_inner .left_part .btn_sec a:last-child {
+    position: relative;
+    margin-left: 5px;
+}
+.footer .footer_top .top_inner .left_part .btn_sec a img {
+    position: relative;
+    height: 50px;
+}
+.footer .footer_top .top_inner .left_part p {
+    position: relative;
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--dark-color);
+}
+
+.footer .footer_top .top_inner .right_part {
+    position: relative;
+    width: calc(100% - 450px);
+    padding-left: 50px;
+    display: flex;
+}
+.footer .footer_top .top_inner .right_part .subscribe_sec {
+    position: relative;
+    width: 50%;
+    padding-right: 25px;
+}
+.footer .footer_top .top_inner .right_part .subscribe_sec h4 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-color-1);
+}
+.footer .footer_top .top_inner .right_part .subscribe_sec .input_sec {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    height: 60px;
+}
+.footer .footer_top .top_inner .right_part .subscribe_sec .input_sec input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    padding-right: 210px;
+    border-radius: 120px;
+    background: var(--grey-background-5);
+    font-size: 15px;
+    color: var(--dark-color-1);
+}
+.footer .footer_top .top_inner .right_part .subscribe_sec .input_sec button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 190px;
+    height: 100%;
+    border-radius: 120px;
+    border: none;
+    background: var(--theme-color);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--light-color);
+}
+.footer .footer_top .top_inner .right_part .subscribe_sec p {
+    position: relative;
+    padding-left: 25px;
+    margin-top: 15px;
+    font-size: 13px;
+    color: var(--dark-color-1);
+}
+.footer .footer_top .top_inner .right_part .subscribe_sec p a {
+    color: var(--dark-color-1);
+}
+.footer .footer_top .top_inner .right_part .subscribe_sec .social_media {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.footer .footer_top .top_inner .right_part .subscribe_sec .social_media a {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.footer .footer_top .top_inner .right_part .subscribe_sec .social_media a img {
+    position: relative;
+    width: 45px;
+}
+.footer .footer_top .top_inner .right_part .links_sec {
+    position: relative;
+    width: 50%;
+    display: flex;
+}
+.footer .footer_top .top_inner .right_part .links_sec .link_box {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+.footer .footer_top .top_inner .right_part .links_sec .link_box h5 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-color-1);
+}
+.footer .footer_top .top_inner .right_part .links_sec .link_box ul {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.footer .footer_top .top_inner .right_part .links_sec .link_box ul a {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--dark-color);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.footer .footer_top .top_inner .right_part .links_sec .link_box ul a:hover {
+    color: var(--theme-color);
+    transition: all 0.5s;
+}
+.footer .footer_top .top_inner .right_part .links_sec .link_box ul a i {
+    position: relative;
+    font-size: 15px;
+    margin-right: 5px;
+    transition: all 0.5s;
+}
+.footer .footer_top .top_inner .right_part .links_sec .link_box ul a:hover i {
+    margin-right: 15px;
+    transition: all 0.5s;
+}
+
+.footer .footer_bottom {
+    position: relative;
+    width: 100%;
+    padding: 25px 100px;
+    background: var(--dark-color-1);
+}
+.footer .footer_bottom .bottom_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .footer_bottom .bottom_inner p {
+    position: relative;
+    font-size: 15px;
+    color: var(--light-color);
+}
+.footer .footer_bottom .bottom_inner ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.footer .footer_bottom .bottom_inner ul a {
+    position: relative;
+    text-decoration: none;
+    color: var(--light-color);
+    margin-right: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.footer .footer_bottom .bottom_inner ul a:hover {
+    color: var(--theme-color);
+}
+.footer .footer_bottom .bottom_inner ul span {
+    position: relative;
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 15px;
 }
