@@ -1,3 +1,5 @@
+/* =============== offer section ============ */
+
 .offer_tabs_sec {
     position: relative;
     width: 100%;
@@ -102,7 +104,11 @@
     transition: all 0.5s;
 }
 
-/* discount section */
+
+
+
+
+/* ============== discount section ============= */
 
 .discount_section {
     position: relative;
@@ -199,7 +205,10 @@
     height: auto;
 }
 
-/* product categories  */
+
+
+
+/* ========== product categories ===============  */
 
 .product_categories_sec {
     position: relative;
@@ -220,6 +229,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+}
+
+.product_categories_sec .categories .sec_content:last-child {
+    margin-bottom: 0;
 }
 
 .product_categories_sec .categories .sec_content .sec_head {
@@ -310,4 +323,282 @@
     width: 50px;
     height: auto;
 }
+
+
+
+
+/* ======== about section ================ */
+
+.about_sec {
+    position: relative;
+    margin-top: 35px;
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.about_sec .sec_content {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, rgba(238, 238, 238, 1), rgba(224, 225, 220, 1));
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow:  5px 8px 12px rgba(0,0,0,0.2);
+}
+
+.about_sec .sec_content .content_box {
+    position: relative;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px;
+    border-radius: 12px;
+}
+
+.about_sec .sec_content .content_box:last-child {
+    background: var(--dark-color-1);
+}
+
+
+.about_sec .sec_content .content_box .box_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+    
+}
+
+.about_sec .sec_content .content_box .box_head img {
+    position: relative;
+    width: 45px;
+    height: auto;
+}
+
+.about_sec .sec_content .content_box .box_head h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 20px;
+    color: var(--dark-color);
+}
+
+.about_sec .sec_content .content_box:last-child .box_head h3 {
+    color: var(--light-color);
+}
+
+.about_sec .sec_content .content_box .box_item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.about_sec .sec_content .content_box .box_item p {
+    position: relative;
+    font-size: 20px;
+    color: var(--dark-color);
+    font-weight: 700;
+    line-height: 2.3;
+}
+
+.about_sec .sec_content .content_box:last-child .box_item p {
+    color: var(--light-color);
+}
+
+.about_sec .sec_content .content_box .box_item p span {
+    position: relative;
+    font-size: 18px;
+    color: #555;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.about_sec .sec_content .content_box:last-child .box_item p span {
+    color: var(--light-color);
+}
+
+
+
+/* ================= online location section ================ */
+.location_sec {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    padding: 50px 100px;
+}
+
+.location_sec .sec_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.location_sec .sec_inner iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 12px;
+}
+
+.location_sec .sec_inner .location_details {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 360px;
+    height: 440px;
+    padding: 70px 30px;
+    background: var(--dark-color-1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.location_sec .sec_inner .location_details h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--light-color);
+}
+
+.location_sec .sec_inner .location_details h6 {
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--theme-color);
+}
+
+.location_sec .sec_inner .location_details p {
+    position: relative;
+    font-size: 16px;
+    color: var(--grey-background-1);
+    margin-top: 12px;
+}
+
+.location_sec .sec_inner .location_details span {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--light-color);
+    margin-top: 10px;
+}
+
+.location_sec .sec_inner .location_details a {
+    position: relative;
+    font-size: 17px;
+    color: var(--theme-color);
+}
+
+
+
+
+/* =========== review section ============= */
+
+.review_sec {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: var( --grey-background-4);
+    padding: 50px 100px;
+}
+
+
+
+
+
+
+/* ========== similar restaurants section ========== */
+
+.similar_restaurants_sec {
+    position: relative;
+    width: 100%;
+    padding: 50px 100px;
+}
+.similar_restaurants_sec .sec_content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.similar_restaurants_sec .sec_content .sec_head {
+    position: relative;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.similar_restaurants_sec .sec_content .sec_head h3 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.similar_restaurants_sec .sec_content .sec_items {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.similar_restaurants_sec .sec_content .sec_items .swiper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.similar_restaurants_sec .sec_content .sec_items .swiper .swiper-slide {
+    position: relative;
+    width: 16.66%;
+    padding: 0 10px;
+}
+
+.similar_restaurants_sec .sec_content .sec_items .swiper .swiper-slide .slide_box {
+    position: relative;
+    width: 100%;
+    background: var(--theme-color);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.similar_restaurants_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_img {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.similar_restaurants_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.similar_restaurants_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_brief {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.similar_restaurants_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_brief h4 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--light-color);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+} 
 
