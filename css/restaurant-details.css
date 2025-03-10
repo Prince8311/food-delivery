@@ -421,14 +421,14 @@
 
 
 /* ================= online location section ================ */
-.location_sec {
+.online_location_sec {
     position: relative;
     width: 100%;
     height: 650px;
     padding: 50px 100px;
 }
 
-.location_sec .sec_inner {
+.online_location_sec .sec_inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -437,7 +437,7 @@
     border-radius: 12px;
 }
 
-.location_sec .sec_inner iframe {
+.online_location_sec .sec_inner iframe {
     position: relative;
     width: 100%;
     height: 100%;
@@ -445,7 +445,7 @@
     border-radius: 12px;
 }
 
-.location_sec .sec_inner .location_details {
+.online_location_sec .sec_inner .location_details {
     position: absolute;
     top: 50px;
     left: 100px;
@@ -458,28 +458,28 @@
     flex-direction: column;
 }
 
-.location_sec .sec_inner .location_details h3 {
+.online_location_sec .sec_inner .location_details h3 {
     position: relative;
     font-size: 32px;
     font-weight: 600;
     color: var(--light-color);
 }
 
-.location_sec .sec_inner .location_details h6 {
+.online_location_sec .sec_inner .location_details h6 {
     position: relative;
     font-size: 17px;
     font-weight: 600;
     color: var(--theme-color);
 }
 
-.location_sec .sec_inner .location_details p {
+.online_location_sec .sec_inner .location_details p {
     position: relative;
     font-size: 16px;
     color: var(--grey-background-1);
     margin-top: 12px;
 }
 
-.location_sec .sec_inner .location_details span {
+.online_location_sec .sec_inner .location_details span {
     position: relative;
     font-size: 15px;
     font-weight: 700;
@@ -487,7 +487,7 @@
     margin-top: 10px;
 }
 
-.location_sec .sec_inner .location_details a {
+.online_location_sec .sec_inner .location_details a {
     position: relative;
     font-size: 17px;
     color: var(--theme-color);
