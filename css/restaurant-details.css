@@ -553,7 +553,7 @@
 .review_sec .sec_content .sec_items .swiper .swiper-slide .review_box {
     position: relative;
     width: 100%;
-    background: var(--grey-background-1);
+    background: var(--light-background);
     border-radius: 12px;
     overflow: hidden;
     display: flex;
@@ -653,7 +653,7 @@
     position: relative;
     width: 100%;
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 0 15px;
 }
 
@@ -662,8 +662,6 @@
     color: var(--dark-color);
     font-weight: 400;
 }
-
-
 
 
 
