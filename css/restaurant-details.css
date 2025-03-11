@@ -205,7 +205,68 @@
     height: auto;
 }
 
+/* ============== responsive start ============= */
 
+@media (max-width: 1399px) {
+    .discount_section {
+        padding: 50px 70px;
+    }
+}
+
+@media (max-width: 1299px) {
+   
+    .discount_section .discount_inner {
+        flex-wrap: wrap;
+    }
+
+    .discount_section .discount_inner .discount_box {
+        width: 49%;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .discount_section {
+        padding: 25px 50px;
+    }
+}
+
+@media (max-width: 860px) {
+    .discount_section .discount_inner .discount_box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .discount_section {
+        padding: 0 25px;
+    }
+    
+    .discount_section .discount_inner .discount_box .box_content a {
+        width: 75px;
+        height: 67px;
+    }
+
+    .discount_section .discount_inner .discount_box .box_content a img {
+        width: 35px;
+    }
+
+    .discount_section .discount_inner .discount_box .box_content p {
+        font-size: 15px;
+    }
+    
+    .discount_section .discount_inner .discount_box .box_content h3 {
+        font-size: 20px;
+    }
+    
+    .discount_section .discount_inner .discount_box .box_content span {
+        width: 70px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+/* ============== responsive end ============= */
 
 
 /* ========== product categories ===============  */
@@ -318,13 +379,88 @@
     background: rgba(255, 255, 255, 0.864);
 }
 
-.product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .add_btn a {
+.product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .add_btn a img {
     position: relative;
     width: 50px;
     height: auto;
 }
 
 
+
+@media (max-width: 1399px) {
+    .product_categories_sec {
+        padding: 50px 70px;
+    }
+}
+
+@media (max-width: 1299px) {
+
+    .product_categories_sec .categories .sec_content .sec_items .product_box {
+        width: 49%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .product_categories_sec {
+        padding: 25px 50px;
+    }
+    
+    .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .left_box {
+        width: calc(100% - 150px);
+    }
+
+    .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .right_box {
+        width: 150px;
+    }
+}
+
+
+@media (max-width: 860px) {
+    .product_categories_sec .categories .sec_content .sec_items .product_box {
+        width: 100%;
+    }
+
+    
+    .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .add_btn {
+        width: 78px;
+        height: 67px;
+        border-top-left-radius: 35px;
+        border-bottom-right-radius: 12px;
+    }
+    
+    .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .add_btn a img {
+        width: 40px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .product_categories_sec {
+        padding: 0 25px;
+    }
+    .product_categories_sec .categories .sec_content .sec_head h3 {
+        font-size: 25px;
+    }
+    .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .left_box {
+        width: calc(100% - 120px);
+    }
+
+    .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .left_box h4 {
+        font-size: 16px;
+    }
+    
+    .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .left_box p {
+        font-size: 12px;
+    }
+
+    .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .right_box {
+        width: 120px;
+    }
+    .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .add_btn a img {
+        width: 32px;
+    }
+}
 
 
 /* ======== about section ================ */
@@ -343,6 +479,7 @@
     background: linear-gradient(to right, rgba(238, 238, 238, 1), rgba(224, 225, 220, 1));
     border-radius: 12px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     box-shadow:  5px 8px 12px rgba(0,0,0,0.2);
     overflow: hidden;
@@ -417,6 +554,7 @@
 .about_sec .sec_content .content_box:last-child .box_item p span {
     color: var(--light-color);
 }
+
 
 
 
