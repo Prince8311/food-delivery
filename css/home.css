@@ -216,7 +216,7 @@
 .exclusive_deals_sec {
     position: relative;
     width: 100%;
-    padding: 25px 100px;
+    padding: 25px 90px;
 }
 .exclusive_deals_sec .sec_content {
     position: relative;
@@ -227,7 +227,7 @@
 .exclusive_deals_sec .sec_content .sec_head {
     position: relative;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -280,22 +280,39 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.exclusive_deals_sec .sec_content .sec_items .swiper {
+    position: relative;
+    width: 100%;
+}
+
+.exclusive_deals_sec .sec_content .sec_items .swiper .swiper-slide {
+    position: relative;
+    width: 33.33%;
+    padding: 0 10px;
+}
+
 .exclusive_deals_sec .sec_content .sec_items .item_box {
     position: relative;
-    width: 32%;
-    border-radius: 12px;
-    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 .exclusive_deals_sec .sec_content .sec_items .item_box .box_image {
     position: relative;
     width: 100%;
     display: flex;
+    border-radius: 12px;
+    overflow: hidden;
 }
+
 .exclusive_deals_sec .sec_content .sec_items .item_box .box_image img {
     position: relative;
     width: 100%;
     height: auto;
 }
+
 .exclusive_deals_sec .sec_content .sec_items .item_box .box_contents {
     position: absolute;
     top: 0;
@@ -307,6 +324,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .exclusive_deals_sec .sec_content .sec_items .item_box .box_contents p {
@@ -321,7 +340,7 @@
     font-weight: 700;
     color: var(--light-color);
 }
-.exclusive_deals_sec .sec_content .sec_items .item_box .box_contents span {
+.exclusive_deals_sec .sec_content .sec_items .item_box span {
     position: absolute;
     top: 0;
     right: 20px;
@@ -337,6 +356,88 @@
     font-weight: 700;
     border-radius: 0 0 12px 12px;
 }
+
+
+
+/* =============== Responsive start ============== */
+
+@media (max-width: 1399px) {
+    .exclusive_deals_sec {
+        padding: 25px 60px;
+    }
+    .exclusive_deals_sec .sec_content .head_tabs li {
+       display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .exclusive_deals_sec .sec_content .sec_items .swiper .swiper-slide {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .exclusive_deals_sec {
+        padding: 25px 40px;
+    }
+    .exclusive_deals_sec .sec_content .sec_items .item_box .box_contents {
+        position: relative;
+        top: inherit;
+        left: inherit;
+        width: 100%;
+        height: max-content;
+        padding: 0;
+        margin-top: 15px;
+        background: transparent;
+        padding-left: 15px;
+    }
+
+    .exclusive_deals_sec .sec_content .sec_items .item_box .box_contents h4 {
+        color: var( --dark-color-1);
+    }
+}
+
+@media (max-width: 860px) {
+    .exclusive_deals_sec .sec_content .sec_head {
+        padding: 0 15px;
+    }
+    .exclusive_deals_sec .sec_content .sec_head h3 {
+        font-size: 20px;
+    }
+    .exclusive_deals_sec .sec_content .sec_items .item_box .box_contents p {
+        font-size: 17px;
+    }
+
+    .exclusive_deals_sec .sec_content .sec_items .item_box .box_contents h4 {
+        color: var( --dark-color-1);
+        font-size: 19px;
+    }
+    .exclusive_deals_sec .sec_content .sec_items .item_box span {
+        width: 70px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+    .exclusive_deals_sec {
+        padding: 25px 15px;
+    }
+
+    .exclusive_deals_sec .sec_content .sec_items .item_box .box_contents p {
+        font-size: 15px;
+    }
+
+    .exclusive_deals_sec .sec_content .sec_items .item_box .box_contents h4 {
+        color: var( --dark-color-1);
+        font-size: 16px;
+    }
+    .exclusive_deals_sec .sec_content .sec_items .item_box span {
+        font-size: 17px;
+    }
+}
+
+/* =============== Responsive end ============== */
 
 
 
@@ -373,21 +474,16 @@
     position: relative;
     margin-top: 40px;
     width: 100%;
-    display: flex;
+    display: flex; 
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
 }
-.popular_categories_sec .sec_content .sec_items .swiper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 10px;
-}
-.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide {
+.popular_categories_sec .sec_content .sec_items .category_box {
     position: relative;
     width: 16.66%;
     padding: 0 10px;
 }
-.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box {
+.popular_categories_sec .sec_content .sec_items .category_box .box_inner {
     position: relative;
     width: 100%;
     border: 1px solid var(--light-border);
@@ -397,24 +493,24 @@
     display: flex;
     flex-direction: column;
 }
-.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_img {
+.popular_categories_sec .sec_content .sec_items .category_box .box_inner .box_img {
     position: relative;
     width: 100%;
     display: flex;
 }
-.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_img img {
+.popular_categories_sec .sec_content .sec_items .category_box .box_inner .box_img img {
     position: relative;
     width: 100%;
     height: auto;
 }
-.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_brief {
+.popular_categories_sec .sec_content .sec_items .category_box .box_inner .box_brief {
     position: relative;
     width: 100%;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
 }
-.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_brief h4 {
+.popular_categories_sec .sec_content .sec_items .category_box .box_inner .box_brief h4 {
     position: relative;
     font-size: 18px;
     font-weight: 700;
@@ -424,7 +520,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .slide_box .box_brief p {
+.popular_categories_sec .sec_content .sec_items .category_box .box_inner .box_brief p {
     position: relative;
     font-size: 13px;
     color: var(--theme-color);
