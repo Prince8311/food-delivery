@@ -19,6 +19,7 @@
     --grey-background-4: rgba(224, 225, 220, 1);
     --grey-background-5: rgba(217, 217, 217, 1);
     --light-background: rgb(255, 255, 255, 1);
+    --banner-overlay: rgba(244, 244, 244, 0.9);
     --light-border: rgba(0, 0, 0, 0.1);
 }
 
