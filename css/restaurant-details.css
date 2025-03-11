@@ -1,3 +1,185 @@
+/* =============== Banner ============ */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 475px;
+    padding: 0 100px;
+    margin-bottom: 70px;
+}
+.banner .sec_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.banner .sec_content .sec_bacground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.banner .sec_content .sec_bacground img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .sec_content .banner_items {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--banner-overlay);
+    border-radius: 12px;
+}
+.banner .sec_content .banner_items .left_part {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner .sec_content .banner_items .left_part p {
+    position: relative;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--dark-color-1);
+}
+.banner .sec_content .banner_items .left_part h2 {
+    position: relative;
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.banner .sec_content .banner_items .left_part .btn_sec {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.banner .sec_content .banner_items .left_part .btn_sec button {
+    position: relative;
+    padding: 15px 35px;
+    display: flex;
+    align-items: center;
+    background: var(--dark-color-1);
+    border: none;
+    border-radius: 120px;
+    cursor: pointer;
+}
+.banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+    position: relative;
+    margin-left: 15px;
+}
+.banner .sec_content .banner_items .left_part .btn_sec button img {
+    position: relative;
+    width: 34px;
+    height: auto;
+}
+.banner .sec_content .banner_items .left_part .btn_sec button span {
+    position: relative;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--light-color);
+}
+
+.banner .sec_content .banner_items .right_part {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: max-content;
+    height: 100%;
+    padding: 55px;
+}
+.banner .sec_content .banner_items .right_part .right_inner {
+    position: relative;
+    width: max-content;
+    height: 100%;
+    display: flex;
+}
+.banner .sec_content .banner_items .right_part .right_inner img {
+    position: relative;
+    height: 100%;
+    width: auto;
+}
+.banner .sec_content .banner_items .right_part .right_inner .review_count_sec {
+    position: absolute;
+    bottom: -10px;
+    left: -60px;
+    width: 140px;
+    background: var(--light-background);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.158);
+}
+.banner .sec_content .banner_items .right_part .right_inner .review_count_sec h5 {
+    position: relative;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--dark-color-1);
+}
+.banner .sec_content .banner_items .right_part .right_inner .review_count_sec ul {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .sec_content .banner_items .right_part .right_inner .review_count_sec ul i {
+    position: relative;
+    font-size: 16px;
+    margin: 0 2px;
+    color: var(--theme-color);
+}
+.banner .sec_content .banner_items .right_part .right_inner .review_count_sec p {
+    position: relative;
+    margin-top: 8px;
+    font-size: 15px;
+    color: var(--dark-color-1);
+}
+
+.banner .sec_content .banner_items .close_timing_btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+}
+.banner .sec_content .banner_items .close_timing_btn a {
+    position: relative;
+    padding: 15px 60px;
+    background: var(--theme-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0 12px 12px 0;
+}
+.banner .sec_content .banner_items .close_timing_btn a img {
+    position: relative;
+    width: 29px;
+    height: auto;
+}
+.banner .sec_content .banner_items .close_timing_btn a span {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--light-color);
+    margin-left: 15px;
+}
+
 /* =============== offer section ============ */
 
 .offer_tabs_sec {
@@ -668,6 +850,40 @@
     font-size: 30px;
     font-weight: 700;
     color: var(--dark-color);
+}
+
+.review_sec .sec_content .sec_head .slider_btn_sec {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.review_sec .sec_content .sec_head .slider_btn_sec .swiper-button-prev,
+.review_sec .sec_content .sec_head .slider_btn_sec .swiper-button-next {
+    position: relative;
+    left: inherit;
+    right: inherit;
+    top: inherit;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: var(--theme-color);
+    border-radius: 50%;
+}
+.review_sec .sec_content .sec_head .slider_btn_sec .swiper-button-next {
+    margin-left: 15px;
+}
+.review_sec .sec_content .sec_head .slider_btn_sec .swiper-button-prev::after,
+.review_sec .sec_content .sec_head .slider_btn_sec .swiper-button-next::after {
+    display: none;
+}
+.review_sec .sec_content .sec_head .slider_btn_sec .swiper-button-prev i,
+.review_sec .sec_content .sec_head .slider_btn_sec .swiper-button-next i {
+    position: relative;
+    font-size: 30px;
+    color: var(--light-color);
 }
 
 .review_sec .sec_content .sec_items {

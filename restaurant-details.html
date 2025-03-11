@@ -64,7 +64,47 @@
 
         <!-- banner -->
         <div class="banner">
-            <div class="sec_content"></div>
+            <div class="sec_content">
+                <div class="sec_bacground"><img src="img/Restaurant-details-banner-background.svg" alt=""></div>
+                <div class="banner_items">
+                    <div class="left_part">
+                        <p>I'm lovin' it!</p>
+                        <h2>McDonald’s East London</h2>
+                        <div class="btn_sec">
+                            <button>
+                                <img src="img/restro-details-banner-btn-1.svg" alt="">
+                                <span>Minimum Order: 12 GBP</span>
+                            </button>
+                            <button>
+                                <img src="img/restro-details-banner-btn-2.svg" alt="">
+                                <span>Delivery in 20-25 Minutes</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="right_part">
+                        <div class="right_inner">
+                            <img src="img/order_details_page_banner.svg" alt="">
+                            <div class="review_count_sec">
+                                <h5>3.4</h5>
+                                <ul>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </ul>
+                                <p>1,360 reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close_timing_btn">
+                        <a href="#">
+                            <img src="img/Clock-white.svg" alt="">
+                            <span>Open until 3:00 AM</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- offersection -->
@@ -432,7 +472,6 @@
             </div>
         </div>
 
-
         <!-- about section -->
         <div class="about_sec">
             <div class="sec_content">
@@ -506,7 +545,10 @@
             <div class="sec_content">
                 <div class="sec_head">
                     <h3>Customer Reviews</h3>
-                    <div class="slider_btn_sec"></div>
+                    <div class="slider_btn_sec">
+                        <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
                 </div>
                 <div class="sec_items">
                     <div class="swiper mySwiper">
@@ -779,8 +821,12 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
     </script>
     <script>
