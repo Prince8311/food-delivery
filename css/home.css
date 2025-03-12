@@ -1014,10 +1014,10 @@
         height: 350px;
     }
     .app_download_sec .sec_content .sec_item .heading img {
-        height: 45px;
+        height: 37px;
     }
     .app_download_sec .sec_content .sec_item .heading h2 {
-        font-size: 52px;
+        font-size: 40px;
     }
     .app_download_sec .sec_content .sec_item .sub_heading h4 {
         font-size: 37px;
@@ -1039,14 +1039,18 @@
     .app_download_sec {
         padding: 25px 35px;
     }
+    .app_download_sec .sec_content .sec_image {
+        width: 450px;
+        height: 300px;
+    }
     .app_download_sec .sec_content .sec_item {
         padding: 40px 35px;
     }
     .app_download_sec .sec_content .sec_item .heading img {
-        height: 30px;
+        height: 28px;
     }
     .app_download_sec .sec_content .sec_item .heading h2 {
-        font-size: 35px;
+        font-size: 33px;
     }
     .app_download_sec .sec_content .sec_item .sub_heading h4 {
         font-size: 25px;
@@ -1432,14 +1436,16 @@
     background: var(--theme-color);
     border-radius: 12px;
     display: flex;
+    flex-wrap: wrap;
 }
 .counter_sec .sec_content .counter_box {
     position: relative;
     width: 25%;
-    padding: 0 50px;
+    padding: 0 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     border-right: 1px solid var(--grey-background-5);
 }
 .counter_sec .sec_content .counter_box:last-child {
@@ -1464,25 +1470,26 @@
 
 /* =============== Responsive start ============== */
 
-@media (max-width: 1399px) {
-    .counter_sec {
-        padding: 25px 70px;
-    }
-}
-
-
-@media (max-width: 991px) {
+@media (max-width: 1499px) {
     .counter_sec {
         padding: 25px 50px;
     }
-}
-
-
-@media (max-width: 550px) {
-    .counter_sec {
-        padding: 25px 15px;
+    .counter_sec .sec_content {
+        padding: 10px 0;
+    }
+    .counter_sec .sec_content .counter_box {
+        width: 50%;
+        padding: 15px 35px;
+    }
+    .counter_sec .sec_content .counter_box:nth-of-type(even) {
+       border-right: none;
+    }
+    .counter_sec .sec_content .counter_box:nth-child(1),
+    .counter_sec .sec_content .counter_box:nth-child(2) {
+        border-bottom: 1px solid var(--grey-background-5);
     }
 }
+
 
 
 /* =============== Responsive end ============== */
