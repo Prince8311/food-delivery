@@ -354,6 +354,9 @@
     .navbar {
         padding: 0 25px;
     }
+    .navbar .nav_bottom .bottom_inner .logo_sec .res_location_sec p {
+        max-width: 175px;
+    }
 }
 
 /* ================ responsive end ============== */
