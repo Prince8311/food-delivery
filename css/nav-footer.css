@@ -274,6 +274,9 @@
     .navbar .nav_top .top_inner .top_item_sec .location_sec {
         display: none;
     }
+    .navbar .nav_bottom .bottom_inner .logo_sec .res_location_sec {
+        display: flex;
+    }
     .navbar .nav_bottom .bottom_inner .nav_items {
         display: none;
     }
