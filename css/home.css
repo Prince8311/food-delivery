@@ -974,6 +974,7 @@
     }
     .app_download_sec .sec_content .sec_item {
         width: 100%;
+        text-align: center;
     }
     .app_download_sec .sec_content .sec_item .sub_heading {
         padding: 0;
@@ -984,6 +985,99 @@
     }
     .app_download_sec .sec_content .sec_item .sub_heading h4 {
         color: var(--dark-color-1);
+    }
+}
+
+@media (max-width: 1499px) {
+    .app_download_sec {
+        padding: 25px 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .app_download_sec .sec_content .sec_item .heading img {
+        height: 50px;
+    }
+    .app_download_sec .sec_content .sec_item .heading h2 {
+        font-size: 57px;
+    }
+    .app_download_sec .sec_content .sec_item .sub_heading h4 {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .app_download_sec .sec_content .sec_image {
+        width: 500px;
+        height: 350px;
+    }
+    .app_download_sec .sec_content .sec_item .heading img {
+        height: 45px;
+    }
+    .app_download_sec .sec_content .sec_item .heading h2 {
+        font-size: 52px;
+    }
+    .app_download_sec .sec_content .sec_item .sub_heading h4 {
+        font-size: 37px;
+    }
+    .app_download_sec .sec_content .sec_item .download_sec p {
+        font-size: 18px;
+        letter-spacing: -2%;
+    }
+    .app_download_sec .sec_content .sec_item .download_sec .btn_sec {
+        margin-top: 15px;
+    }
+    .app_download_sec .sec_content .sec_item .download_sec .btn_sec a img {
+        height: 50px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .app_download_sec {
+        padding: 25px 35px;
+    }
+    .app_download_sec .sec_content .sec_item {
+        padding: 40px 35px;
+    }
+    .app_download_sec .sec_content .sec_item .heading img {
+        height: 30px;
+    }
+    .app_download_sec .sec_content .sec_item .heading h2 {
+        font-size: 35px;
+    }
+    .app_download_sec .sec_content .sec_item .sub_heading h4 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .app_download_sec {
+        padding: 25px 25px;
+    }
+    .app_download_sec .sec_content .sec_image {
+        width: 300px;
+        height: 210px;
+    }
+    .app_download_sec .sec_content .sec_item {
+        padding: 30px 25px;
+    }
+    .app_download_sec .sec_content .sec_item .heading img {
+        height: 23px;
+    }
+    .app_download_sec .sec_content .sec_item .heading h2 {
+        font-size: 26px;
+    }
+    .app_download_sec .sec_content .sec_item .sub_heading h4 {
+        font-size: 21px;
+    }
+    .app_download_sec .sec_content .sec_item .download_sec p {
+        font-size: 14px;
+    }
+    .app_download_sec .sec_content .sec_item .download_sec .btn_sec a img {
+        height: 36px;
     }
 }
 
