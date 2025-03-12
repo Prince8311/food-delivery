@@ -693,6 +693,8 @@
     }
 }
 
+/* =============== Responsive end ============== */
+
 
 
 
@@ -949,6 +951,23 @@
     width: auto;
 }
 
+
+/* =============== Responsive start ============== */
+
+@media (max-width: 1799px) {
+    .app_download_sec .sec_content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .app_download_sec .sec_content .sec_image {
+        position: relative;
+        left: inherit;
+        bottom: inherit;
+        width: 700px;
+    }
+}
+
+/* =============== Responsive end ============== */
 
 
 
