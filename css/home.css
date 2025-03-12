@@ -1505,10 +1505,17 @@
     .counter_sec {
         padding: 25px 35px;
     }
+    .counter_sec .sec_content {
+        padding: 0 10px;
+    }
     .counter_sec .sec_content .counter_box {
         width: 100%;
         border-right: none;
         border-bottom: 1px solid var(--grey-background-5);
+        padding: 25px 35px;
+    }
+    .counter_sec .sec_content .counter_box:last-child {
+        border-bottom: none;
     }
     .counter_sec .sec_content .counter_box h3 {
         font-size: 30px;
@@ -1523,7 +1530,6 @@
         padding: 25px 25px;
     }
 }
-
 
 
 /* =============== Responsive end ============== */
