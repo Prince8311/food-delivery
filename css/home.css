@@ -314,10 +314,13 @@
 @media (max-width: 450px) {
     .banner {
         padding: 0 25px;
-        height: 425px;
+        height: 380px;
     } 
     .banner .sec_content .banner_content {
         padding: 0 25px;
+    }
+    .banner .sec_content .banner_content .search_sec .search_input_box {
+        width: 100%;
     }
 }
 
