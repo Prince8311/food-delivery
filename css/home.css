@@ -286,8 +286,17 @@
 @media (max-width: 575px) {
     .banner {
         padding: 0 35px;
-        height: 375px;
+        height: 425px;
     } 
+    .banner .sec_content .banner_content {
+        padding: 0 35px;
+    }
+    .banner .sec_content .banner_content .heading_sec p {
+        font-size: 13px;
+    }
+    .banner .sec_content .banner_content .heading_sec h1 {
+        font-size: 34px;
+    }
     .banner .sec_content .banner_content .search_sec .search_input_box {
         width: 325px;
     }
@@ -299,6 +308,16 @@
     }
     .banner .sec_content .banner_content .search_sec .search_input_box button.res_search_btn {
         display: flex;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner {
+        padding: 0 25px;
+        height: 425px;
+    } 
+    .banner .sec_content .banner_content {
+        padding: 0 25px;
     }
 }
 
