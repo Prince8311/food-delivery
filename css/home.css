@@ -194,7 +194,7 @@
     font-size: 15px;
     color: var(--dark-color-1);
 }
-.banner .sec_content .banner_content .search_sec .search_input_box button {
+.banner .sec_content .banner_content .search_sec .search_input_box button.desk_search_btn {
     position: absolute;
     top: 0;
     right: 0;
@@ -208,6 +208,103 @@
     font-weight: 700;
     color: var(--light-color);
 }
+.banner .sec_content .banner_content .search_sec .search_input_box button.res_search_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 57px;
+    height: 100%;
+    border-radius: 120px;
+    border: 1px solid var(--theme-color);
+    background: var(--theme-color);
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.banner .sec_content .banner_content .search_sec .search_input_box button.res_search_btn img {
+    position: absolute;
+    width: 35px;
+    height: auto;
+}
+
+
+
+/* =============== Responsive start ============== */
+
+@media (max-width: 1600px) {
+    .banner .sec_content .background_2 {
+        display: none;
+    }   
+}
+
+@media (max-width: 1499px) {
+    .banner {
+        padding: 0 50px;
+    }  
+}
+
+@media (max-width: 1367px) {
+    .banner .sec_content .background_1 {
+        display: none;
+    }
+    .banner .sec_content .background_2 {
+        display: flex;
+        justify-content: flex-end;
+    } 
+    .banner .sec_content .background_2 img {
+        transform: translateX(150px);
+    } 
+}
+
+@media (max-width: 1099px) {
+    .banner {
+        height: 450px;
+    } 
+    .banner .sec_content .background_2 {
+        justify-content: center;
+    } 
+    .banner .sec_content .background_2 img {
+        transform: translateX(0);
+        height: 95%;
+    } 
+    .banner .sec_content .banner_content {
+        padding: 50px;
+        align-items: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.9);
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .sec_content .banner_content .heading_sec h1 {
+        font-size: 42px;
+        line-height: 1.15;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner {
+        padding: 0 35px;
+        height: 375px;
+    } 
+    .banner .sec_content .banner_content .search_sec .search_input_box {
+        width: 325px;
+    }
+    .banner .sec_content .banner_content .search_sec .search_input_box input {
+        padding-right: 77px;
+    }
+    .banner .sec_content .banner_content .search_sec .search_input_box button.desk_search_btn {
+        display: none;
+    }
+    .banner .sec_content .banner_content .search_sec .search_input_box button.res_search_btn {
+        display: flex;
+    }
+}
+
+/* =============== Responsive end ============== */
+
+
 
 
 
