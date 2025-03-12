@@ -448,12 +448,14 @@
     position: relative;
     width: 100%;
     padding: 25px 90px;
+    background: var(--grey-background-1);
 }
 .popular_categories_sec .sec_content {
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 .popular_categories_sec .sec_content .sec_head {
     position: relative;
@@ -524,6 +526,52 @@
     position: relative;
     font-size: 13px;
     color: var(--theme-color);
+}
+
+
+
+
+/* =============== Responsive start ============== */
+
+@media (max-width: 1399px) {
+    .popular_categories_sec {
+        padding: 25px 60px;
+    }
+}
+
+@media (max-width: 991px) {
+    .popular_categories_sec {
+        padding: 25px 40px;
+    }
+    
+    .popular_categories_sec .sec_content .sec_items {
+        margin-top: 10px;
+    }
+    .popular_categories_sec .sec_content .sec_items .category_box {
+        width: 25%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    .popular_categories_sec .sec_content .sec_head h3 {
+        font-size: 24px;
+    }
+    .popular_categories_sec .sec_content .sec_items .category_box {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    .popular_categories_sec {
+        padding: 25px 15px;
+    }
+    .popular_categories_sec .sec_content .sec_head h3 {
+        font-size: 18px;
+    }
+    .popular_categories_sec .sec_content .sec_items .category_box {
+        width: 50%;
+    }
 }
 
 
@@ -610,6 +658,50 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+
+
+/* =============== Responsive start ============== */
+
+@media (max-width: 1399px) {
+    .popular_restaurants_sec {
+        padding: 25px 60px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide{
+        width: 20%;
+    }
+}
+
+@media (max-width: 991px) {
+    .popular_restaurants_sec {
+        padding: 25px 40px;
+    }
+    .popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide{
+        width: 25%;
+    }
+}
+
+@media (max-width: 650px) {
+    .popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide{
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .popular_restaurants_sec {
+        padding: 25px 15px;
+    }
+    .popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide{
+        width: 33.33%;
+    }
+}
+
+
+/* =============== Responsive end ============== */
 
 
 
@@ -820,6 +912,70 @@
     border-radius: 0 0 12px 12px;
 }
 
+
+
+/* =============== Responsive start ============== */
+
+@media (max-width: 1399px) {
+    .partner_sec {
+        padding: 25px 70px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .partner_sec .sec_content {
+        flex-direction: column;
+    }
+    .partner_sec .sec_content .partner_box {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .partner_sec {
+        padding: 25px 50px;
+    }
+}
+@media (max-width: 860px) {
+    .partner_sec .sec_content .partner_box .box_items p {
+        font-size: 15px;
+    }
+    .partner_sec .sec_content .partner_box .box_items h4 {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .partner_sec {
+        padding: 25px 15px;
+    }
+    .partner_sec .sec_content .partner_box .box_items {
+        padding: 25px 50px;
+    }
+    .partner_sec .sec_content .partner_box .box_items p {
+        font-size: 13px;
+    }
+    .partner_sec .sec_content .partner_box .box_items h4 {
+        font-size: 25px;
+    }
+    .partner_sec .sec_content .partner_box .box_items a {
+        width: 140px;
+        height: 35px;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .partner_sec .sec_content .partner_box .box_items span {
+        height: 45px;
+        padding: 0 25px;
+        font-size: 15px;
+    }
+}
+
+
+/* =============== Responsive end ============== */
 
 
 
@@ -1044,3 +1200,30 @@
     font-weight: 600;
     color: var(--light-color);
 }
+
+
+
+/* =============== Responsive start ============== */
+
+@media (max-width: 1399px) {
+    .counter_sec {
+        padding: 25px 70px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .counter_sec {
+        padding: 25px 50px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .counter_sec {
+        padding: 25px 15px;
+    }
+}
+
+
+/* =============== Responsive end ============== */

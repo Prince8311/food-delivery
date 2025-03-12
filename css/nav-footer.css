@@ -457,3 +457,58 @@
     color: var(--light-color);
     font-size: 15px;
 }
+
+
+/* ============== responsive start ================ */
+
+@media (max-width: 1499px) {
+    .footer .footer_top {
+        padding: 25px 50px;
+    }   
+    .footer .footer_top .top_inner {
+        flex-direction: column;
+    }
+    .footer .footer_top .top_inner .left_part {
+        width: 100%;
+        padding-right: 0;
+    }
+    .footer .footer_top .top_inner .right_part {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1099px) {
+    .footer .footer_top .top_inner .right_part {
+        flex-direction: column;
+    }
+    .footer .footer_top .top_inner .right_part .subscribe_sec {
+        position: relative;
+        width: 100%;
+        padding-right: 0;
+    }
+    .footer .footer_top .top_inner .right_part .links_sec {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer .footer_top {
+        padding: 25px 30px;
+    }
+    .footer .footer_top .top_inner .right_part .links_sec {
+        width: 100%;
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .footer .footer_top .top_inner .right_part .links_sec .link_box {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+
+/* ============== responsive end ================ */
