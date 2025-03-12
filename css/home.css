@@ -688,6 +688,9 @@
     .popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide{
         width: 30%;
     }
+    .popular_restaurants_sec .sec_content .sec_head h3 {
+        font-size: 24px;
+    }
 }
 
 
@@ -697,6 +700,9 @@
     }
     .popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide{
         width: 33.33%;
+    }
+    .popular_restaurants_sec .sec_content .sec_head h3 {
+        font-size: 18px;
     }
 }
 
