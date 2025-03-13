@@ -480,9 +480,9 @@
 
 /* =============== Responsive start ============== */
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .exclusive_deals_sec {
-        padding: 25px 60px;
+        padding: 25px 40px;
     }
     .exclusive_deals_sec .sec_content .head_tabs li {
        display: none;
@@ -496,9 +496,7 @@
 }
 
 @media (max-width: 991px) {
-    .exclusive_deals_sec {
-        padding: 25px 40px;
-    }
+    
     .exclusive_deals_sec .sec_content .sec_items .item_box .box_contents {
         position: relative;
         top: inherit;
@@ -540,7 +538,7 @@
 
 @media (max-width: 550px) {
     .exclusive_deals_sec {
-        padding: 25px 15px;
+        padding: 25px 25px;
     }
 
     .exclusive_deals_sec .sec_content .sec_items .item_box .box_contents p {
@@ -553,6 +551,12 @@
     }
     .exclusive_deals_sec .sec_content .sec_items .item_box span {
         font-size: 17px;
+    }
+}
+
+@media (max-width: 450px) {
+    .exclusive_deals_sec {
+        padding: 25px 15px;
     }
 }
 
@@ -652,16 +656,13 @@
 
 /* =============== Responsive start ============== */
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .popular_categories_sec {
-        padding: 25px 60px;
+        padding: 25px 40px;
     }
 }
 
 @media (max-width: 991px) {
-    .popular_categories_sec {
-        padding: 25px 40px;
-    }
     
     .popular_categories_sec .sec_content .sec_items {
         margin-top: 10px;
@@ -683,13 +684,19 @@
 
 @media (max-width: 550px) {
     .popular_categories_sec {
-        padding: 25px 15px;
+        padding: 25px 25px;
     }
     .popular_categories_sec .sec_content .sec_head h3 {
         font-size: 18px;
     }
     .popular_categories_sec .sec_content .sec_items .category_box {
         width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .popular_categories_sec {
+        padding: 25px 15px;
     }
 }
 
@@ -784,9 +791,9 @@
 
 /* =============== Responsive start ============== */
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .popular_restaurants_sec {
-        padding: 25px 60px;
+        padding: 25px 40px;
     }
 }
 
@@ -797,9 +804,6 @@
 }
 
 @media (max-width: 991px) {
-    .popular_restaurants_sec {
-        padding: 25px 40px;
-    }
     .popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide{
         width: 25%;
     }
@@ -817,13 +821,19 @@
 
 @media (max-width: 550px) {
     .popular_restaurants_sec {
-        padding: 25px 15px;
+        padding: 25px 25px;
     }
     .popular_restaurants_sec .sec_content .sec_items .swiper .swiper-slide{
         width: 33.33%;
     }
     .popular_restaurants_sec .sec_content .sec_head h3 {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .popular_restaurants_sec {
+        padding: 25px 15px;
     }
 }
 
@@ -1179,9 +1189,9 @@
 
 /* =============== Responsive start ============== */
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .partner_sec {
-        padding: 25px 70px;
+        padding: 25px 60px;
     }
 }
 
@@ -1193,12 +1203,6 @@
         position: relative;
         width: 100%;
         margin-top: 20px;
-    }
-}
-
-@media (max-width: 991px) {
-    .partner_sec {
-        padding: 25px 50px;
     }
 }
 @media (max-width: 860px) {
@@ -1213,7 +1217,7 @@
 
 @media (max-width: 550px) {
     .partner_sec {
-        padding: 25px 15px;
+        padding: 25px 35px;
     }
     .partner_sec .sec_content .partner_box .box_items {
         padding: 25px 50px;
@@ -1234,6 +1238,13 @@
         height: 45px;
         padding: 0 25px;
         font-size: 15px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .partner_sec {
+        padding: 25px 25px;
     }
 }
 
