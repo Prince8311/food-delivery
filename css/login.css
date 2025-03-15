@@ -36,7 +36,7 @@
 .auth_wrapper .right_sec .right_inner {
     position: relative;
     width: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
