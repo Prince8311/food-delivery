@@ -198,6 +198,7 @@
     border: 1px solid var(--light-border);
     border-radius: 8px;
     margin-right: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.158);
 }
 
 .auth_wrapper .right_sec .right_popup .otp_popup .otp_input_sec .input_box:last-child {
@@ -223,6 +224,7 @@
     position: relative;
     font-size: 19px;
     color: var(--theme-color);
+    cursor: pointer;
 }
 
 .auth_wrapper .right_sec .right_popup .otp_popup button {
