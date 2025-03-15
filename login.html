@@ -31,10 +31,70 @@
                         <i class="fa-solid fa-phone"></i>
                         <input type="text" placeholder="91+ xxxx xxxx xx">
                     </div>
-                    <button><i class="fa-solid fa-right-to-bracket"></i>Send Otp</button>
+                    <button onclick="openOTPpopup()"><i class="fa-solid fa-right-to-bracket"></i>Send Otp</button>
+                </div>
+            </div>
+            <div class="right_popup">
+                <div class="otp_popup">
+                    <div class="close_btn">
+                        <a onclick="closeOTPpopup()"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <div class="popup_head">
+                        <h3>Verify OTP</h3>
+                        <p>OTP sent to your mobile number ending with ****1996</p>
+                    </div>
+                    <div class="otp_input_sec">
+                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                    </div>
+                    <div class="resend_otp">
+                        <p>Didn't receive the OTP? <a>Resend now</a></p>
+                    </div>
+                    <button><i class="fa-solid fa-file-pen"></i>Verify</button>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script>
+
+        const otpPopupBox = document.querySelector(".right_popup");
+
+        function openOTPpopup() {
+            otpPopupBox.classList.add("active");
+        }
+
+        function closeOTPpopup() {
+            otpPopupBox.classList.remove("active");
+        }
+
+        function handleInput(input) {
+            let value = input.value;
+            let parent = input.parentElement;
+            let inputs = parent.querySelectorAll(".otp-input");
+
+            if (value.length === 1) {
+                let nextInput = input.nextElementSibling;
+                if (nextInput) {
+                    nextInput.focus();
+                }
+            }
+        }
+
+        function handleBackspace(input, event) {
+            if (event.key === "Backspace" && input.value === "") {
+                let prevInput = input.previousElementSibling;
+                if (prevInput) {
+                    prevInput.focus();
+                }
+            }
+        }
+    </script>
+
 </body>
 </html>
