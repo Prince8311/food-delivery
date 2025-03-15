@@ -88,7 +88,7 @@
     position: relative;
     width: 100%;
     height: 60px;
-    padding: 0 30px;
+    padding: 0 35px;
     border-radius: 120px;
     background: var(--grey-background-5);
     display: flex;
@@ -96,11 +96,11 @@
 
 .auth_wrapper .right_sec .right_inner .form_sec .input_sec i{
     position: relative;
-    width: 70px;
+    width: 50px;
     height: 100%;
     display: flex;
     align-items: center;
-    font-size: 17px;
+    font-size: 19px;
     color: var(--dark-color-1);
 }
 
@@ -111,7 +111,7 @@
     border: none;
     outline: none;
     padding: 5px 0;
-    font-size: 15px;
+    font-size: 17px;
     color: var(--dark-color-1);
     background-color: transparent;
 }
