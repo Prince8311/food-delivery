@@ -36,7 +36,7 @@
 .auth_wrapper .right_sec .right_inner {
     position: relative;
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -134,5 +134,114 @@
 }
 
 .auth_wrapper .right_sec .right_inner .form_sec button i{
+    margin-right: 10px;
+}
+
+.auth_wrapper .right_sec .right_popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup {
+    position: relative; 
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--light-border);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.158);
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup .popup_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup .popup_head h3 {
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup .popup_head p {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+    margin-top: 5px;
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup .otp_input_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup .otp_input_sec .input_box {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--light-border);
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup .otp_input_sec .input_box:last-child {
+    margin-right: 0;
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup .resend_otp {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup .resend_otp p {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup .resend_otp p a {
+    position: relative;
+    font-size: 19px;
+    color: var(--theme-color);
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup button {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 120px;
+    color: var(--light-color);
+    background-color: var(--theme-color);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.auth_wrapper .right_sec .right_popup .otp_popup button i {
     margin-right: 10px;
 }
