@@ -323,9 +323,14 @@
     transition: all 0.5s;
 }
 
-.pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .bottom_items li:hover a{
+.pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .bottom_items li a.item.active{
     background: var(--dark-color);
     color: #fff;
+}
+
+.pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .bottom_items li:hover a{
+    background: var(--light-border);
+    color: var(--dark-color-1);
 }
 
 .pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_img{
@@ -866,6 +871,7 @@
     justify-content: space-between;
     padding: 0 25px;
     border: none;
+    cursor: pointer;
 }
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .price_total button h6{
@@ -933,7 +939,31 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .delivary_sec .delivary_box{
     position: relative;
-    width: 45%;
+    width: 50%;
+    display: flex;
+}
+
+.pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .delivary_sec .delivary_box:first-child{
+    padding-right: 20px;
+}
+
+.pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .delivary_sec .delivary_box:last-child{
+    padding-left: 20px;
+}
+
+.pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .delivary_sec .delivary_box:first-child::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--light-border));
+}
+
+.pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .delivary_sec .delivary_box .box_inner{
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -943,15 +973,6 @@
     border-radius: 12px;
 }
 
-/* .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .delivary_sec .delivary_box:first-child::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(to bottom, var(--light-border));
-} */
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .delivary_sec .delivary_box img {
     position: relative;
     width: 35px;
@@ -995,6 +1016,7 @@
     font-size: 24px;
     font-weight: 600;
     color: var(--light-color);
+    cursor: pointer;
 }
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .checkout_sec button a {
