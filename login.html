@@ -44,12 +44,12 @@
                         <p>OTP sent to your mobile number ending with ****1996</p>
                     </div>
                     <div class="otp_input_sec">
-                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
-                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
-                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
-                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
-                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
-                        <input type="text" class="otp-input" maxlength="1" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" inputmode="numeric" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" inputmode="numeric" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" inputmode="numeric" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" inputmode="numeric" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" inputmode="numeric" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
+                        <input type="text" class="otp-input" maxlength="1" inputmode="numeric" oninput="handleInput(this)" onkeydown="handleBackspace(this, event)" />
                     </div>
                     <div class="resend_otp">
                         <p>Didn't receive the OTP? <a>Resend now</a></p>
@@ -78,7 +78,9 @@
             let parent = input.parentElement;
             let inputs = parent.querySelectorAll(".otp-input");
 
-            if (value.length === 1) {
+            input.value = value.replace(/[^0-9]/g, "");
+
+            if (input.value.length === 1) {
                 let nextInput = input.nextElementSibling;
                 if (nextInput) {
                     nextInput.focus();
