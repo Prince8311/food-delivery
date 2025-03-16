@@ -56,6 +56,13 @@
     display: flex;
 }
 
+
+
+
+
+
+/* ============== Meal Deal Modal ============== */
+
 .modal_wrapper .modal_box .modal_inner .modal_img_sec img {
     position: relative;
     width: 100%;
