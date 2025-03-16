@@ -8,13 +8,13 @@
     padding: 80px 100px;
     background-color: var(--modal-background);
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .modal_wrapper .modal_box  {
     position: relative;
     width: 750px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     border-radius: 12px;
