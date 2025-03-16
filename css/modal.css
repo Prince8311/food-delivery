@@ -6,6 +6,329 @@
     height: 100vh;
     overflow-y: auto;
     padding: 80px 100px;
+    background-color: var(--modal-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_wrapper .modal_box  {
+    position: relative;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: var( --light-color);
+}
+
+.modal_wrapper .modal_box .modal_close {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    z-index: 10;
+}
+
+.modal_wrapper .modal_box .modal_close a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: var(--theme-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-color);
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.modal_wrapper .modal_box .modal_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_wrapper .modal_box .modal_inner .modal_img_sec {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: flex;
+}
+
+.modal_wrapper .modal_box .modal_inner .modal_img_sec img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec {
+    position: relative;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_head h6 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_head h6 span {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    color: var( --dark-color-1);
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_head h6 i {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--light-border);
+    margin: 0 10px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_head p {
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background: var(--grey-background-4);
+    border-radius: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box:hover {
+    background: var(--dark-color-1);
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_img {
+    position: relative;
+    width: 115px;
+    display: flex;
+    padding-right: 15px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_img::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--light-color));
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_product_name {
+    position: relative;
+    width: calc(100% - 315px);
+    display: flex;
+    padding-left: 20px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_product_name h4 {
+    position: relative;
+    font-size: 25px;
+    color: var(--dark-color-1);
+    font-weight: 700;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box:hover .list_product_name h4 {
+    color: var(--theme-color);
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_count {
+    position: relative;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_count .minus {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    cursor: pointer;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_count .minus img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box:hover .list_count .minus img {
+    background: var(--light-color);
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_count .number {
+    position: relative;
+    width: 80px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    margin: 0 15px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_count .number h5 {
+    position: relative;
+    font-size: 20px;
+    color: var(--dark-color-1);
+    font-weight: 700;
+}
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_count .plus {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box .list_count .plus img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box:hover .list_count .plus img {
+    background: var(--light-color);
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .list_btns {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .list_btns .top_list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .list_btns .top_list button {
+    position: relative;
+    width: 280px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--theme-color);
+    color: var(--light-color);
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .list_btns .top_list button span {
+    font-size: 20px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .list_btns .top_list p {
+    position: relative;
+    font-size: 13px;
+    color: var(--dark-color-1);
+    font-weight: 400;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .list_btns .bottom_list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .list_btns .bottom_list p {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--dark-color-1);
+    margin-right: 30px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .list_btns .bottom_list button {
+    position: relative;
+    width: 280px;
+    height: 60px;
+    display: flex;
+    border-radius: 8px;
+    background-color: var(--green-color);
+    align-items: center;
+    padding: 0 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .list_btns .bottom_list button a  {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    margin-right: 50px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .list_btns .bottom_list button a img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
