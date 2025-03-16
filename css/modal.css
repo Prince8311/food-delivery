@@ -58,11 +58,6 @@
 
 
 
-
-
-
-/* ============== Meal Deal Modal ============== */
-
 .modal_wrapper .modal_box .modal_inner .modal_img_sec img {
     position: relative;
     width: 100%;
@@ -72,7 +67,7 @@
 .modal_wrapper .modal_box .modal_inner .content_sec {
     position: relative;
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 60px;
     display: flex;
     flex-direction: column;
 }
@@ -122,6 +117,13 @@
     flex-direction: column;
     padding: 20px 0;
 }
+
+
+
+
+
+
+/* ============== Meal Deal Modal ============== */
 
 .modal_wrapper .modal_box .modal_inner .content_sec .content_list .list_box {
     position: relative;
@@ -340,4 +342,68 @@
 
 
 
-/* ============== Meal Deal Modal ============== */
+/* ============== Add your request ============== */
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .product_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .product_box .product_img {
+    position: relative;
+    width: 115px;
+    display: flex;
+    padding-right: 15px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .product_box .product_img::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--light-border));
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .product_box .product_img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .product_box .product_name {
+    position: relative;
+    width: calc(100% - 120px);
+    display: flex;
+    padding-left: 20px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .product_box .product_name h4 {
+    position: relative;
+    font-size: 30px;
+    color: var(--theme-color);
+    font-weight: 700;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list textarea {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background: var(--grey-background-3);
+    display: flex;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 30px;
+    border: none;
+    font-size: 17px;
+    color: var(--dark-color-1);
+    resize: none;
+    box-shadow: 5px 6px 8px rgba(0,0,0,0.2);
+    margin-top: 30px;
+}
+
