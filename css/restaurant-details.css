@@ -180,6 +180,158 @@
     margin-left: 15px;
 }
 
+/* =============== Responsive start ============== */
+
+@media (max-width: 1699px) {
+    .banner .sec_content .banner_items .left_part {
+        width: 50%;
+    }
+    .banner .sec_content .banner_items .left_part h2 {
+        line-height: 1.1;
+        margin-top: 10px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1499px) {
+    .banner {
+        padding: 0 50px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        height: 80%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .banner {
+        height: max-content;
+    }
+    .banner .sec_content .sec_bacground {
+        display: none;
+    }
+    .banner .sec_content .banner_items {
+        height: max-content;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .banner .sec_content .banner_items .right_part {
+        position: relative;
+        top: inherit;
+        right: inherit;
+    }
+    .banner .sec_content .banner_items .left_part {
+        width: 100%;
+        padding-top: 15px;
+        align-items: center;
+        text-align: center;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        flex-direction: row;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+        margin-left: 15px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner .sec_content .banner_items .left_part p {
+        font-size: 18px;
+    }
+    .banner .sec_content .banner_items .left_part h2 {
+        font-size: 42px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        flex-direction: column;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        width: 450px;
+        height: max-content;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec {
+        width: 105px;
+        padding: 15px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec h5 {
+        font-size: 35px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec ul {
+        margin-top: 7px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec ul i {
+        font-size: 11px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner {
+        padding: 0 35px;
+    }
+    .banner .sec_content .banner_items .right_part {
+        padding: 25px;
+        padding-top: 35px;
+        padding-left: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner {
+        width: 100%;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        width: 100%;
+    }
+    .banner .sec_content .banner_items .left_part {
+        padding: 30px;
+        padding-top: 15px;
+        padding-bottom: 55px;
+    }
+    .banner .sec_content .banner_items .left_part p {
+        font-size: 16px;
+    }
+    .banner .sec_content .banner_items .left_part h2 {
+        font-size: 28px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        width: 100%;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button {
+        width: 100%;
+        justify-content: center;
+        padding: 17px 35px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button img {
+        width: 26px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button span {
+        font-size: 15px;
+    }
+}
+
+/* =============== Responsive end ============== */
+
+
 /* =============== offer section ============ */
 
 .offer_tabs_sec {
