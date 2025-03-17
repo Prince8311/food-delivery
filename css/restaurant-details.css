@@ -482,6 +482,8 @@
 @media (max-width: 768px) {
     .offer_tabs_sec .top_sec .top_inner h3 {
         font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
     }
     .offer_tabs_sec .bottom_sec .bottom_inner .swiper {
         display: none;
@@ -524,6 +526,7 @@
         width: 30px;
         height: 30px;
         object-fit: cover;
+        cursor: pointer;
     }
 }
 @media (max-width: 575px) {
@@ -1660,12 +1663,34 @@
     .similar_restaurants_sec {
         padding: 25px 50px;
     }
+    .similar_restaurants_sec .sec_content .sec_items {
+        margin-top: 10px;
+    }
+    .similar_restaurants_sec .sec_content .sec_items .swiper .swiper-slide {
+        width: 25%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    .similar_restaurants_sec .sec_content .sec_head h3 {
+        font-size: 24px;
+    }
+    .similar_restaurants_sec .sec_content .sec_items .swiper .swiper-slide {
+        width: 33.33%;
+    }
 }
 
 
 @media (max-width: 575px) {
     .similar_restaurants_sec {
         padding: 0 25px;
+    }
+    .similar_restaurants_sec .sec_content .sec_head h3 {
+        font-size: 20px;
+    }
+    .similar_restaurants_sec .sec_content .sec_items .swiper .swiper-slide {
+        width: 50%;
     }
 }
 
