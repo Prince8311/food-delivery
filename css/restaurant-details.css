@@ -364,7 +364,7 @@
 .offer_tabs_sec .top_sec .top_inner .search_sec {
     position: relative;
     width: 345px;
-    height: 63px;
+    height: 60px;
     display: flex;
     border: 1px solid var(--light-border);
     border-radius: 120px;
@@ -382,7 +382,6 @@
 .offer_tabs_sec .top_sec .top_inner .search_sec input {
     position: relative;
     width: calc(100% - 25px);
-    height: 60px;
     display: flex;
     background: transparent;
     outline: none;
@@ -409,10 +408,22 @@
     justify-content: space-between;
 }
 
+.offer_tabs_sec .bottom_sec .bottom_inner .swiper {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    padding: 20px 0;
+}
+
+.offer_tabs_sec .bottom_sec .bottom_inner .swiper .swiper-slide {
+    position: relative;
+    width: max-content;
+    margin: 0 3px;
+}
+
 .offer_tabs_sec .bottom_sec .bottom_inner li {
     position: relative;
     list-style: none;
-    margin: 0 3px;
 }
 
 .offer_tabs_sec .bottom_sec .bottom_inner li a {
@@ -438,7 +449,103 @@
     transition: all 0.5s;
 }
 
+.offer_tabs_sec .bottom_sec .bottom_inner_menu{
+   position: relative;
+   width: 100%;
+   display: none;
+}
 
+
+
+
+/* ============== responsive start ============= */
+@media (max-width: 1399px) {
+    .offer_tabs_sec .top_sec {
+        padding: 0 80px;
+    }
+    .offer_tabs_sec .bottom_sec {
+        padding: 0 70px;
+    }
+}
+@media (max-width: 991px) {
+    .offer_tabs_sec .bottom_sec {
+        padding: 0 50px;
+    }
+    .offer_tabs_sec .top_sec .top_inner {
+        flex-direction: column-reverse;
+    }
+    .offer_tabs_sec .top_sec .top_inner .search_sec {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .offer_tabs_sec .top_sec .top_inner h3 {
+        font-size: 20px;
+    }
+    .offer_tabs_sec .bottom_sec .bottom_inner .swiper {
+        display: none;
+    }
+    .offer_tabs_sec .bottom_sec .bottom_inner_menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .offer_tabs_sec .bottom_sec .bottom_inner_menu h3{
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        color: var(--dark-color-1);
+        font-weight: 700;
+    }
+    .offer_tabs_sec .bottom_sec .bottom_inner_menu h3 img {
+        position: relative;
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+        margin-right: 15px;
+    }
+    .offer_tabs_sec .bottom_sec .bottom_inner_menu .select_box_sec {
+        position: relative;
+        display: flex;
+    }
+    .offer_tabs_sec .bottom_sec .bottom_inner_menu .select_box_sec .dropdown_btn {
+        display: flex;
+        align-items: center;
+    }
+    .offer_tabs_sec .bottom_sec .bottom_inner_menu .select_box_sec .dropdown_btn p {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--dark-color-1);
+        margin-right: 40px;
+    }
+    .offer_tabs_sec .bottom_sec .bottom_inner_menu .select_box_sec .dropdown_btn img {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 575px) {
+    .offer_tabs_sec .bottom_sec {
+        padding: 0 25px;
+    }
+    .offer_tabs_sec .top_sec {
+        padding: 0 60px;
+    }
+    .offer_tabs_sec .top_sec .top_inner h3 {
+        font-size: 15px;
+    }
+    .offer_tabs_sec .top_sec .top_inner .search_sec {
+        height: 50px;
+    }
+    .offer_tabs_sec .top_sec .top_inner .search_sec input {
+        font-size: 14px;
+    } 
+}
+
+
+/* ============== responsive end ============= */
 
 
 
@@ -1540,4 +1647,27 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 } 
+
+/* ============== responsive start ============= */
+
+@media (max-width: 1399px) {
+    .similar_restaurants_sec {
+        padding: 50px 70px;
+    }
+}
+
+@media (max-width: 991px) {
+    .similar_restaurants_sec {
+        padding: 25px 50px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .similar_restaurants_sec {
+        padding: 0 25px;
+    }
+}
+
+/* ============== responsive end ============= */
 

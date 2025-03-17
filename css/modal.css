@@ -432,32 +432,42 @@
     position: absolute;
     top: -30px;
     left: 30px;
-    max-width: 300px;
-    height: 60px;
-    background-color: var(--dark-color-1);
-    border-radius: 8px;
-    border: 1px solid var(--light-border);
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    font-weight: bold;
-    color: var(--light-color);
-    
+    padding-left: 40px;
+    padding-right: 10px;
+    background: var(--light-background);
 }
 
 .modal_wrapper .modal_box .modal_inner .content_sec .content_list .customize_sec .customize_box .box_head .img {
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
     background-color: #FFA500;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+    z-index: 5;
 }
 
 .modal_wrapper .modal_box .modal_inner .content_sec .content_list .customize_sec .customize_box .box_head .img img {
-    width: 20px;
+    width: 30px;
+}
+
+.modal_wrapper .modal_box .modal_inner .content_sec .content_list .customize_sec .customize_box .box_head h4 {
+    position: relative;
+    height: 50px;
+    background-color: var(--dark-color-1);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--light-color);
 }
 
 .modal_wrapper .modal_box .modal_inner .content_sec .content_list .customize_sec .customize_box .box_inner {

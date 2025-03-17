@@ -134,18 +134,33 @@
             </div>
             <div class="bottom_sec">
                 <div class="bottom_inner">
-                    <li><a href="#" class="active">Offers</a></li>
-                    <li><a href="#">Burgers</a></li>
-                    <li><a href="#">Fries</a></li>
-                    <li><a href="#">Snakas</a></li>
-                    <li><a href="#">Salads</a></li>
-                    <li><a href="#">Cold Drinks</a></li>
-                    <li><a href="#">Happy Meals</a></li>
-                    <li><a href="#">Happy Meals</a></li>
-                    <li><a href="#">Desserts</a></li>
-                    <li><a href="#">Hot Drinks</a></li>
-                    <li><a href="#">Sauces</a></li>
-                    <li><a href="#">Orbit</a></li>
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><li><a href="#" class="active">Offers</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Burgers</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Fries</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Snakas</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Salads</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Cold Drinks</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Happy Meals</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Happy Meals</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Desserts</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Hot Drinks</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Sauces</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Orbit</a></li></div>
+                            <div class="swiper-slide"><li><a href="#">Orbit</a></li></div>
+                        </div>
+                    </div> 
+                    <div class="bottom_inner_menu">
+                        <h3><img src="img/order_menu_img.svg" alt="">Menu</h3>
+                        <div class="select_box_sec">
+                            <div class="dropdown_btn">
+                                <p>Pizzas</p>
+                                <img src="img/order-page-Forward- Button.svg" alt="">
+                            </div>
+                            <div class="dropdown"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -845,6 +860,12 @@
     </script>
     <script>
         var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 'auto',
         spaceBetween: 0,
         });
