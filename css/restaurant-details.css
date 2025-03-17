@@ -1060,7 +1060,6 @@
 .review_sec {
     position: relative;
     width: 100%;
-    height: 600px;
     background: var( --grey-background-4);
     padding: 100px 90px;
     display: flex;
@@ -1341,6 +1340,9 @@
     .review_sec {
         padding: 25px 20px;
     }
+    .review_sec .sec_content .sec_head h3 {
+        font-size: 25px;
+    }
     .review_sec .sec_content .sec_head .slider_btn_sec {
         display: none;
     }
@@ -1388,6 +1390,13 @@
 }
 
 @media (max-width: 470px) {
+
+    .review_sec .sec_content .sec_head h3 {
+        font-size: 20px;
+    }
+    .review_sec .sec_content .sec_items {
+        margin-top: 20px;
+    }
 
     .review_sec .sec_content .sec_items .swiper .swiper-slide .review_box {
         padding: 25px 10px;
