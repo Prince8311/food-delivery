@@ -450,25 +450,26 @@
     border-radius: 120px;
     align-items: center;
     padding: 0 20px;
+    background: var(--grey-background-2);
 }
 
 .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .head_part .search_sec img {
     position: relative;
     width: 25px;
-    height: 25px;
-    margin-right: 10px;
+    height: auto;
 }
 
-.pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .head_part .search_sec input {
+.pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .head_part .search_sec p {
     position: relative;
     width: calc(100% - 25px);
-    height: 60px;
     display: flex;
     background: transparent;
     outline: none;
     border: none;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .pizza_type_sec {
