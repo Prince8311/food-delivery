@@ -484,8 +484,8 @@
     .exclusive_deals_sec {
         padding: 25px 40px;
     }
-    .exclusive_deals_sec .sec_content .head_tabs li {
-       display: none;
+    .exclusive_deals_sec .sec_content .head_tabs {
+        display: none;
     }
 }
 
@@ -536,7 +536,7 @@
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
     .exclusive_deals_sec {
         padding: 25px 25px;
     }
@@ -682,7 +682,7 @@
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
     .popular_categories_sec {
         padding: 25px 25px;
     }
@@ -819,7 +819,7 @@
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
     .popular_restaurants_sec {
         padding: 25px 25px;
     }
@@ -1215,7 +1215,7 @@
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
     .partner_sec {
         padding: 25px 35px;
     }
@@ -1554,7 +1554,7 @@
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
     .know_more_sec {
         padding: 25px 35px;
     }
