@@ -119,7 +119,27 @@
 }
 
 
+@media (max-width: 991px) {
+    .modal_wrapper  {
+        padding: 50px;
+    }
+    
+    .modal_wrapper .modal_box  {
+        width: 100%;
+    }
+}
 
+@media (max-width: 575px) {
+    .modal_wrapper  {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .modal_wrapper  {
+        padding: 20px;
+    }
+}
 
 
 
