@@ -381,7 +381,7 @@
 .offer_tabs_sec .top_sec .top_inner .search_sec img {
     position: relative;
     width: 25px;
-    height: 25px;
+    height: auto;
     margin-right: 10px;
 }
 
@@ -1607,9 +1607,6 @@
 
 
 /* ============== responsive end ============= */
-
-
-
 
 
 
