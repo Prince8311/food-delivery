@@ -465,7 +465,7 @@
 
 
 /* ============== responsive start ============= */
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .offer_tabs_sec .top_sec {
         padding: 0 80px;
     }
@@ -479,10 +479,11 @@
     }
     .offer_tabs_sec .top_sec .top_inner {
         flex-direction: column-reverse;
+        text-align: center;
     }
     .offer_tabs_sec .top_sec .top_inner .search_sec {
         width: 100%;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 768px) {
@@ -657,9 +658,9 @@
 
 /* ============== responsive start ============= */
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .discount_section {
-        padding: 50px 70px;
+        padding: 50px 50px;
     }
 }
 
@@ -675,12 +676,6 @@
     }
 }
 
-@media (max-width: 991px) {
-    .discount_section {
-        padding: 25px 50px;
-    }
-}
-
 @media (max-width: 860px) {
     .discount_section .discount_inner .discount_box {
         width: 100%;
@@ -689,7 +684,7 @@
 
 @media (max-width: 575px) {
     .discount_section {
-        padding: 0 25px;
+        padding: 0  35px;
     }
     
     .discount_section .discount_inner .discount_box .box_content a {
@@ -713,6 +708,12 @@
         width: 70px;
         height: 45px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .discount_section {
+        padding: 0 25px;
     }
 }
 
@@ -837,9 +838,9 @@
 
 /* ============== responsive start ============= */
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .product_categories_sec {
-        padding: 50px 70px;
+        padding: 25px 50px;
     }
 }
 
@@ -852,9 +853,6 @@
 
 
 @media (max-width: 991px) {
-    .product_categories_sec {
-        padding: 25px 50px;
-    }
     
     .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .left_box {
         width: calc(100% - 150px);
@@ -887,7 +885,7 @@
 
 @media (max-width: 575px) {
     .product_categories_sec {
-        padding: 0 25px;
+        padding: 25px 35px;
     }
     .product_categories_sec .categories .sec_content .sec_head h3 {
         font-size: 25px;
@@ -909,6 +907,12 @@
     }
     .product_categories_sec .categories .sec_content .sec_items .product_box .box_inner .add_btn a img {
         width: 32px;
+    }
+}
+
+@media (max-width: 450px) {
+    .product_categories_sec {
+        padding: 25px 25px;
     }
 }
 
@@ -1020,16 +1024,14 @@
     }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .about_sec {
-        padding: 50px 70px;
+        padding: 25px 50px;
     }
 }
 
 @media (max-width: 991px) {
-    .about_sec {
-        padding: 25px 50px;
-    }
+    
     .about_sec .sec_content .content_box {
         width: 100%;
         padding: 50px 30px;
@@ -1055,7 +1057,7 @@
 
 @media (max-width: 575px) {
     .about_sec {
-        padding: 0 25px;
+        padding: 25px 35px;
     }
     .about_sec .sec_content .content_box .box_head img {
         width: 30px;
@@ -1073,7 +1075,10 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 450px) {
+    .about_sec {
+        padding: 25px 25px;
+    }
     .about_sec .sec_content .content_box .box_head img {
         width: 30px;
     }
@@ -1166,6 +1171,47 @@
     position: relative;
     font-size: 17px;
     color: var(--theme-color);
+}
+
+
+@media (max-width: 1499px) {
+    .online_location_sec {
+        padding: 35px 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .online_location_sec {
+        padding: 25px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .online_location_sec .sec_inner .location_details {
+        left: 35px;
+        width: 300px;
+        height: 400px;
+        padding: 50px 30px;
+    }
+    .online_location_sec .sec_inner .location_details h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 450px) {
+    .online_location_sec .sec_inner .location_details {
+        left: 25px;
+        height: 320px;
+    }
+    .online_location_sec .sec_inner .location_details h3 {
+        font-size: 24px;
+    }
+    .online_location_sec .sec_inner .location_details h6 {
+        font-size: 16px;
+    }
+    .online_location_sec .sec_inner .location_details p {
+        font-size: 14px;
+    }
 }
 
 
@@ -1436,16 +1482,14 @@
     }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .review_sec {
-        padding: 70px 60px;
+        padding: 50px 40px;
     }
 }
 
 @media (max-width: 991px) {
-    .review_sec {
-        padding: 50px 40px;
-    }
+   
     .review_sec .sec_content .sec_items .swiper .swiper-slide {
         width: 100%;
     }
@@ -1454,7 +1498,7 @@
 
 @media (max-width: 575px) {
     .review_sec {
-        padding: 25px 20px;
+        padding: 25px 25px;
     }
     .review_sec .sec_content .sec_head h3 {
         font-size: 25px;
@@ -1505,7 +1549,11 @@
     
 }
 
-@media (max-width: 470px) {
+@media (max-width: 450px) {
+
+    .review_sec {
+        padding: 25px 15px;
+    }
 
     .review_sec .sec_content .sec_head h3 {
         font-size: 20px;
@@ -1659,16 +1707,13 @@
 
 /* ============== responsive start ============= */
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .similar_restaurants_sec {
-        padding: 50px 70px;
+        padding: 25px 50px;
     }
 }
 
 @media (max-width: 991px) {
-    .similar_restaurants_sec {
-        padding: 25px 50px;
-    }
     .similar_restaurants_sec .sec_content .sec_items {
         margin-top: 10px;
     }
@@ -1690,13 +1735,19 @@
 
 @media (max-width: 575px) {
     .similar_restaurants_sec {
-        padding: 0 25px;
+        padding: 0 35px;
     }
     .similar_restaurants_sec .sec_content .sec_head h3 {
         font-size: 20px;
     }
     .similar_restaurants_sec .sec_content .sec_items .swiper .swiper-slide {
         width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .similar_restaurants_sec {
+        padding: 25px 25px;
     }
 }
 
