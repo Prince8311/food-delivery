@@ -180,6 +180,163 @@
     margin-left: 15px;
 }
 
+/* =============== Responsive start ============== */
+
+@media (max-width: 1699px) {
+    .banner .sec_content .banner_items .left_part {
+        width: 50%;
+    }
+    .banner .sec_content .banner_items .left_part h2 {
+        line-height: 1.1;
+        margin-top: 10px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1499px) {
+    .banner {
+        padding: 0 50px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        height: 80%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .banner {
+        height: max-content;
+    }
+    .banner .sec_content .sec_bacground {
+        display: none;
+    }
+    .banner .sec_content .banner_items {
+        height: max-content;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .banner .sec_content .banner_items .right_part {
+        position: relative;
+        top: inherit;
+        right: inherit;
+    }
+    .banner .sec_content .banner_items .left_part {
+        width: 100%;
+        padding-top: 15px;
+        align-items: center;
+        text-align: center;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        flex-direction: row;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+        margin-left: 15px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner .sec_content .banner_items .left_part p {
+        font-size: 18px;
+    }
+    .banner .sec_content .banner_items .left_part h2 {
+        font-size: 42px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        flex-direction: column;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        width: 450px;
+        height: max-content;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec {
+        width: 105px;
+        padding: 15px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec h5 {
+        font-size: 35px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec ul {
+        margin-top: 7px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec ul i {
+        font-size: 11px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner {
+        padding: 0 35px;
+    }
+    .banner .sec_content .banner_items .right_part {
+        padding: 25px;
+        padding-top: 35px;
+        padding-left: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner {
+        width: 100%;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        width: 100%;
+    }
+    .banner .sec_content .banner_items .left_part {
+        padding: 30px;
+        padding-top: 15px;
+        padding-bottom: 55px;
+    }
+    .banner .sec_content .banner_items .left_part p {
+        font-size: 16px;
+    }
+    .banner .sec_content .banner_items .left_part h2 {
+        font-size: 28px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        width: 100%;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button {
+        width: 100%;
+        justify-content: center;
+        padding: 17px 35px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button img {
+        width: 26px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner {
+        padding: 0 25px;
+    }
+}
+
+/* =============== Responsive end ============== */
+
 /* ========== pizza order section ============ */
 
 .pizza_order_sec {
@@ -291,6 +448,29 @@
     font-weight: 600;
     margin-left: 15px;
     color: var(--dark-color);
+}
+
+.pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .top_items .dropdown_btn{
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .top_items .dropdown_btn p{
+    position: relative;
+    font-size: 16px;
+    color: var(--dark-color);
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .top_items .dropdown_btn img{
+    position: relative;
+    margin-left: 15px;
+    width: 30px;
+    height: auto;
 }
 
 .pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .bottom_items{
@@ -443,7 +623,7 @@
 
 .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .head_part .search_sec {
     position: relative;
-    width: 345px;
+    width: 270px;
     height: 50px;
     display: flex;
     border: 1px solid var(--light-border);
@@ -462,7 +642,7 @@
 .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .head_part .search_sec input {
     position: relative;
     width: calc(100% - 25px);
-    height: 60px;
+    height: 100%;
     display: flex;
     background: transparent;
     outline: none;
@@ -503,8 +683,9 @@
 
 .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .pizza_type_sec .pizza_box .inner_box .content_box .content_left {
     position: relative;
-    width: calc(100% - 400px);
+    width: calc(100% - 200px);
     display: flex;
+    padding-right: 25px;
 }
 
 .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .pizza_type_sec .pizza_box .inner_box .content_box .content_left .content_inner {
@@ -583,6 +764,7 @@
     position: relative;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .pizza_type_sec .pizza_box .inner_box .btn_boxs .top_btn button{
@@ -592,12 +774,14 @@
     border: 1px solid var(--light-border);
     display: flex;
     padding: 8px 13px;
+    padding-right: 5px;
     justify-content: space-between;
     align-items: center;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 700;
     margin-right: 15px;
+    margin-bottom: 15px;
     background: var(--light-color);
     color: var(--dark-color-1);
 }
@@ -627,7 +811,6 @@
     position: relative;
     width: 100%;
     display: flex;
-    margin-top: 20px;
 }
 
 .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .pizza_type_sec .pizza_box .inner_box .btn_boxs .bottom_btn button {
@@ -637,6 +820,7 @@
     border: 1px solid var(--light-border);
     display: flex;
     padding: 8px 13px;
+    padding-right: 5px;
     justify-content: space-between;
     align-items: center;
     border-radius: 4px;
@@ -1033,6 +1217,102 @@
     height: auto;
 }
 
+
+/* =============== Responsive start ============== */
+
+@media (max-width: 1599px) {
+    .pizza_order_sec .sec_inner .inner_body .middle_part {
+        width: calc(100% - 365px);
+        padding-right: 0;
+    }
+    .pizza_order_sec .sec_inner .inner_body .right_part {
+        display: none;
+    }
+}
+
+@media (max-width: 1499px) {
+    .pizza_order_sec {
+        padding: 25px 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .pizza_type_sec .pizza_box .inner_box .content_box {
+        flex-direction: column-reverse;
+    }
+    .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .pizza_type_sec .pizza_box .inner_box .content_box .content_left {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .pizza_order_sec .sec_inner .sec_head {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .pizza_order_sec .sec_inner .sec_head .search_sec {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .pizza_order_sec .sec_inner .sec_head h3 {
+        font-size: 22px;
+    }
+    .pizza_order_sec .sec_inner .inner_body {
+        flex-direction: column;
+    }
+    .pizza_order_sec .sec_inner .inner_body .left_part {
+        width: 100%;
+    }
+    .pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .top_items {
+        padding: 10px 20px;
+    }
+    .pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .bottom_items {
+        display: none;
+    }
+    .pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_img {
+        display: none;
+    }
+    .pizza_order_sec .sec_inner .inner_body .middle_part {
+        width: 100%;
+        padding-left: 0;
+    }
+    .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .head_part {
+        padding: 0;
+    }
+    .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .pizza_type_sec {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .pizza_order_sec {
+        padding: 25px 35px;
+    }
+    .pizza_order_sec .sec_inner .sec_head h3 {
+        font-size: 18px;
+    }
+    .pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .top_items img {
+        width: 50px;
+    }
+    .pizza_order_sec .sec_inner .inner_body .left_part .left_part_inner .inner_items .top_items h5 {
+        font-size: 25px;
+    }
+    .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .head_part h3 {
+        font-size: 22px;
+    }
+    .pizza_order_sec .sec_inner .inner_body .middle_part .middle_part_inner .head_part .search_sec {
+        width: 220px;
+    }
+}
+
+@media (max-width: 450px) {
+    .pizza_order_sec {
+        padding: 25px 25px;
+    }
+}
+
+/* =============== Responsive end ============== */
 
 
 

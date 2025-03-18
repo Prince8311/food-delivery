@@ -329,6 +329,12 @@
     }
 }
 
+@media (max-width: 450px) {
+    .banner {
+        padding: 0 25px;
+    }
+}
+
 /* =============== Responsive end ============== */
 
 
