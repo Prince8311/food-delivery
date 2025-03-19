@@ -729,12 +729,20 @@
         width: 49%;
     }
     .modal_wrapper .modal_box .modal_inner .content_sec .content_list .customize_sec .customize_box .box_inner label p {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 575px) {
     .modal_wrapper .modal_box .modal_inner .content_sec .content_list .customize_sec .customize_box .box_inner label {
         width: 100%;
+    }
+    .modal_wrapper .modal_box .modal_inner .content_sec .content_list .customize_sec .customize_box .box_head .img {
+        width: 55px;
+        height: 55px;
+    }
+    .modal_wrapper .modal_box .modal_inner .content_sec .content_list .customize_sec .customize_box .box_head h4 {
+        height: 45px;
+        font-size: 16px;
     }
 }
