@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery | Restaurants</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/all-restaurants.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- font awesome -->
+    <script src="js/fontawesome.js"></script>
+
+</head>
+<body>
+    <div class="page_wrapper">
+
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="nav_top">
+                <div class="top_inner">
+                    <div class="offer_sec">
+                        <img src="img/star.png" alt="">
+                        <p> Get 5% Off your first order, <a href="#">Promo: ORDER5</a></p>
+                    </div>
+                    <div class="top_item_sec">
+                        <div class="location_sec">
+                            <img src="img/Location.svg" alt="">
+                            <p>Regent Street, A4, A4201, London</p>
+                            <a href="#">Change Location</a>
+                        </div>
+                        <div class="cart_sec">
+                            <div class="cart_btn"><img src="img/Shopping-Basket.svg" alt=""></div>
+                            <div class="cart_item_count"><p>23 Items</p></div>
+                            <div class="cart_price"><p>GBP 79.89</p></div>
+                            <div class="forward_btn"><img src="img/Forward-Button.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_bottom">
+                <div class="bottom_inner">
+                    <div class="logo_sec">
+                        <div class="logo">
+                            <img src="img/LOGO.svg" alt="">
+                        </div>
+                        <div class="res_location_sec">
+                            <img src="img/Location.svg" alt="">
+                            <p>Regent Street, A4, A4201, London</p>
+                        </div>
+                    </div>
+                    <div class="res_cart_btn">
+                        <a><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div class="res_nav_toggle_btn">
+                        <a><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                    <div class="nav_items">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Browse Menu</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </div>
+                    <div class="auth_btn">
+                        <a>
+                            <img src="img/Avatar.svg" alt="">
+                            <span>Login/Signup</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="banner">
+            <div class="sec_content">
+                <div class="background_1">
+                    <div class="background_items">
+                        <div class="items_inner">
+                            <div class="img_sec"><img src="img/Home-banner-2.svg" alt=""></div>
+                            <div class="background_status status_1">
+                                <div class="status_inner">
+                                    <h3>1</h3>
+                                    <img src="img/LOGO.svg" alt="">
+                                    <h5>We've Received your order!</h5>
+                                    <p>Awaiting Restaurant acceptance</p>
+                                    <span>now</span>
+                                </div>
+                            </div>
+                            <div class="background_status status_2">
+                                <div class="status_inner">
+                                    <h3>2</h3>
+                                    <img src="img/LOGO.svg" alt="">
+                                    <h5>Order Accepted! ✅</h5>
+                                    <p>Your order will be delivered shortly</p>
+                                    <span>now</span>
+                                </div>
+                            </div>
+                            <div class="background_status status_3">
+                                <div class="status_inner">
+                                    <h3>3</h3>
+                                    <img src="img/LOGO.svg" alt="">
+                                    <h5>Your rider is nearby 🎉</h5>
+                                    <p>They're almost there - get ready!</p>
+                                    <span>now</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="background_2"><img src="img/Home-banner-1.svg" alt=""></div>
+                <div class="banner_content">
+                    <div class="heading_sec">
+                        <p>Order Restaurant food, takeaway and groceries.</p>
+                        <h1>Feast Your Senses, <br><span>Fast and Fresh</span></h1>
+                    </div>
+                    <div class="search_sec">
+                        <p>Enter a postcode to see what we deliver</p>
+                        <div class="search_input_box">
+                            <input type="text" placeholder="e.g. EC4R 3TE">
+                            <button class="desk_search_btn">Search</button>
+                            <button class="res_search_btn"><img src="img/res-search-btn.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- restaurant section -->
+        <div class="restaurant_section">
+            <div class="sec_content">
+                <div class="box_head">
+                    <h3>Restaurants</h3>
+                    <div class="search_sec">
+                        <img src="img/Search More.svg" alt="">
+                        <input type="text" placeholder="Search by restaurant or dish name...">
+                    </div>
+                </div>
+                <div class="restaurant_box_sec">
+                    <div class="restaurant_box">
+                        <div class="box_inner">
+                            <div class="box_banner">
+                                <div class="swiper mySwiper1">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="img/Burgers.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Salads.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pasta.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pizza.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Breakfast.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="pagination">
+                                    <div class="swiper_pagination swiper-pagination-1"></div>
+                                </div>
+                            </div>
+                            <div class="box_content">
+                                <div class="type">
+                                    <p class="veg">
+                                        <i class="fa-solid fa-leaf"></i>
+                                        <span>Pure Veg</span>
+                                    </p>
+                                </div>
+                                <div class="content_items">
+                                    <h4>Ahare Bengali</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant_box">
+                        <div class="box_inner">
+                            <div class="box_banner">
+                                <div class="swiper mySwiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="img/Burgers.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Salads.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pasta.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pizza.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Breakfast.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="pagination">
+                                    <div class="swiper_pagination swiper-pagination-2"></div>
+                                </div>
+                            </div>
+                            <div class="box_content">
+                                <div class="type">
+                                    <p class="veg">
+                                        <i class="fa-solid fa-leaf"></i>
+                                        <span>Pure Veg</span>
+                                    </p>
+                                </div>
+                                <div class="content_items">
+                                    <h4>Ahare Bengali</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant_box">
+                        <div class="box_inner">
+                            <div class="box_banner">
+                                <div class="swiper mySwiper3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="img/Burgers.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Salads.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pasta.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pizza.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Breakfast.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="pagination">
+                                    <div class="swiper_pagination swiper-pagination-3"></div>
+                                </div>
+                            </div>
+                            <div class="box_content">
+                                <div class="type">
+                                    <p class="non_veg">
+                                        <i class="fa-solid fa-drumstick-bite"></i>
+                                        <span>Non Veg</span>
+                                    </p>
+                                </div>
+                                <div class="content_items">
+                                    <h4>Ahare Bengali</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant_box">
+                        <div class="box_inner">
+                            <div class="box_banner">
+                                <div class="swiper mySwiper4">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="img/Burgers.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Salads.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pasta.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pizza.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Breakfast.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="pagination">
+                                    <div class="swiper_pagination swiper-pagination-4"></div>
+                                </div>
+                            </div>
+                            <div class="box_content">
+                                <div class="type">
+                                    <p class="veg">
+                                        <i class="fa-solid fa-leaf"></i>
+                                        <span>Pure Veg</span>
+                                    </p>
+                                </div>
+                                <div class="content_items">
+                                    <h4>Ahare Bengali</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant_box">
+                        <div class="box_inner">
+                            <div class="box_banner">
+                                <div class="swiper mySwiper5">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="img/Burgers.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Salads.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pasta.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pizza.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Breakfast.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="pagination">
+                                    <div class="swiper_pagination swiper-pagination-5"></div>
+                                </div>
+                            </div>
+                            <div class="box_content">
+                                <div class="type">
+                                    <p class="veg">
+                                        <i class="fa-solid fa-leaf"></i>
+                                        <span>Pure Veg</span>
+                                    </p>
+                                </div>
+                                <div class="content_items">
+                                    <h4>Ahare Bengali</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant_box">
+                        <div class="box_inner">
+                            <div class="box_banner">
+                                <div class="swiper mySwiper6">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="img/Burgers.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Salads.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pasta.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Pizza.svg" alt=""></div>
+                                        <div class="swiper-slide"><img src="img/Breakfast.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="pagination">
+                                    <div class="swiper_pagination swiper-pagination-6"></div>
+                                </div>
+                            </div>
+                            <div class="box_content">
+                                <div class="type">
+                                    <p class="non_veg">
+                                        <i class="fa-solid fa-drumstick-bite"></i>
+                                        <span>Non Veg</span>
+                                    </p>
+                                </div>
+                                <div class="content_items">
+                                    <h4>Ahare Bengali</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer_top">
+                <div class="top_inner">
+                    <div class="left_part">
+                        <div class="footer_logo">
+                            <img src="img/LOGO-White.svg" alt="">
+                        </div>
+                        <div class="btn_sec">
+                            <a href="#"><img src="img/App-Store.svg" alt=""></a>
+                            <a href="#"><img src="img/Google-Play-Store.svg" alt=""></a>
+                        </div>
+                        <p>Company # 490039-445, Registered with House of companies.</p>
+                    </div>
+                    <div class="right_part">
+                        <div class="subscribe_sec">
+                            <h4>Get Exclusive Deals in your Inbox</h4>
+                            <div class="input_sec">
+                                <input type="text" placeholder="youremail@gmail.com">
+                                <button>Subscribe</button>
+                            </div>
+                            <p>we won't spam, read our <a href="#">email policy</a></p>
+                            <div class="social_media">
+                                <a href="#"><img src="img/Facebook.svg" alt=""></a>
+                                <a href="#"><img src="img/Instagram.svg" alt=""></a>
+                                <a href="#"><img src="img/TikTok.svg" alt=""></a>
+                                <a href="#"><img src="img/Snapchat.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="links_sec">
+                            <div class="link_box">
+                                <h5>Legal Pages</h5>
+                                <ul>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Terms and conditions</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Privacy</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Cookies</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Modern Slavery Statement</a>
+                                </ul>
+                            </div>
+                            <div class="link_box">
+                                <h5>Important Links</h5>
+                                <ul>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Get help</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Add your restaurant</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Sign up to deliver</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Create a business account</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="bottom_inner">
+                    <p>Order.uk Copyright 2024, All Rights Reserved.</p>
+                    <ul>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Pricing</a>
+                        <span>Do not sell or share my personal information</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+        let restaurantBoxes = document.querySelectorAll(".restaurant_box");
+
+        console.log(restaurantBoxes.length);
+
+        for(i = 1; i <= restaurantBoxes.length; i++) {
+            let delayTime = i % 2 === 0 ? 4000 + (i * 11) : 4000 - (i * 11);
+            var swiper = new Swiper(`.mySwiper${i}`, {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                loop: true,
+                autoplay: {
+                    delay: delayTime,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: `.swiper-pagination-${i}`,
+                    dynamicBullets: true,
+                    clickable: true,
+                },
+            });
+        }
+    </script>
+</body>
+</html>
