@@ -382,6 +382,27 @@
     color: var(--dark-color-1);
 }
 
+.restaurant_section .sec_content .box_head button {
+    position: relative;
+    height: 60px;
+    padding: 15px 55px;
+    background: var(--theme-color);
+    border: none;
+    border-radius: 12px;
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.restaurant_section .sec_content .box_head button i {
+    position: relative;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
 .restaurant_section .sec_content .restaurant_box_sec {
     position: relative;
     width: 100%;
@@ -495,7 +516,6 @@
     position: relative;
     margin-top: 10px;
     width: 100%;
-    height: 150px;
     background: var(--grey-background-2);
     border-radius: 15px;
     border-top-left-radius: 0;
@@ -557,6 +577,7 @@
     font-weight: 600;
     margin-left: 8px;
 }
+
 .restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items {
     position: relative;
     width: 100%;
@@ -565,9 +586,85 @@
     display: flex;
     flex-direction: column;
 }
-.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items h4 {
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .restaurants_brief {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .restaurants_brief h4 {
     position: relative;
     font-size: 22px;
     font-weight: 600;
     color: var(--dark-color-1);
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .restaurants_brief p {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark-color-1);
+    margin-top: 5px;
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .restaurants_brief h6 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .restaurants_brief h6 i {
+    margin-left: 5px;
+    color: var(--theme-color);
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .restaurants_brief h6 span {
+    margin-left: 15px;
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .restaurants_brief a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: var( --green-color-2);
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .restaurants_brief a i {
+    margin-right: 8px;
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .avalability_status {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .avalability_status p {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .avalability_status p.open {
+    color: var(--veg-color);
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .avalability_status p.close {
+    color: var(--red-color);
+}
+
+.restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .avalability_status p.closing-soon {
+    color: var(--yellow-color);
 }
