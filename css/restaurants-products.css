@@ -161,16 +161,19 @@
     padding-left: 35px;
 }
 .restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner::before {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid var(--light-border);
-    border-radius: 12px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.158);
-    background: var(--light-background);
-    padding: 20px;
-    padding-left: 35px;
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 12px;
+    width: 6px;
+    height: 70%;
+    border-radius: 50px;
+}
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box.veg .box_inner::before {
+    background: var(--veg-color);
+}
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box.non_veg .box_inner::before {
+    background: var(--non-veg-color);
 }
 
 .restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif {
