@@ -1,0 +1,527 @@
+/* =============== Banner ============ */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 475px;
+    padding: 0 100px;
+    margin-bottom: 70px;
+}
+.banner .sec_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.banner .sec_content .sec_bacground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.banner .sec_content .sec_bacground img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .sec_content .banner_items {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--banner-overlay);
+    border-radius: 12px;
+}
+.banner .sec_content .banner_items .left_part {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner .sec_content .banner_items .left_part p {
+    position: relative;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--dark-color-1);
+}
+.banner .sec_content .banner_items .left_part h2 {
+    position: relative;
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.banner .sec_content .banner_items .left_part .btn_sec {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.banner .sec_content .banner_items .left_part .btn_sec button {
+    position: relative;
+    padding: 15px 35px;
+    display: flex;
+    align-items: center;
+    background: var(--dark-color-1);
+    border: none;
+    border-radius: 120px;
+    cursor: pointer;
+}
+.banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+    position: relative;
+    margin-left: 15px;
+}
+.banner .sec_content .banner_items .left_part .btn_sec button img {
+    position: relative;
+    width: 34px;
+    height: auto;
+}
+.banner .sec_content .banner_items .left_part .btn_sec button span {
+    position: relative;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--light-color);
+}
+
+.banner .sec_content .banner_items .right_part {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: max-content;
+    height: 100%;
+    padding: 55px;
+}
+.banner .sec_content .banner_items .right_part .right_inner {
+    position: relative;
+    width: max-content;
+    height: 100%;
+    display: flex;
+}
+.banner .sec_content .banner_items .right_part .right_inner img {
+    position: relative;
+    height: 100%;
+    width: auto;
+}
+.banner .sec_content .banner_items .right_part .right_inner .review_count_sec {
+    position: absolute;
+    bottom: -10px;
+    left: -60px;
+    width: 140px;
+    background: var(--light-background);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.158);
+}
+.banner .sec_content .banner_items .right_part .right_inner .review_count_sec h5 {
+    position: relative;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--dark-color-1);
+}
+.banner .sec_content .banner_items .right_part .right_inner .review_count_sec ul {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .sec_content .banner_items .right_part .right_inner .review_count_sec ul i {
+    position: relative;
+    font-size: 16px;
+    margin: 0 2px;
+    color: var(--theme-color);
+}
+.banner .sec_content .banner_items .right_part .right_inner .review_count_sec p {
+    position: relative;
+    margin-top: 8px;
+    font-size: 15px;
+    color: var(--dark-color-1);
+}
+
+.banner .sec_content .banner_items .close_timing_btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+}
+.banner .sec_content .banner_items .close_timing_btn a {
+    position: relative;
+    padding: 15px 60px;
+    background: var(--theme-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0 12px 12px 0;
+}
+.banner .sec_content .banner_items .close_timing_btn a img {
+    position: relative;
+    width: 29px;
+    height: auto;
+}
+.banner .sec_content .banner_items .close_timing_btn a span {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--light-color);
+    margin-left: 15px;
+}
+
+/* =============== Responsive start ============== */
+
+@media (max-width: 1699px) {
+    .banner .sec_content .banner_items .left_part {
+        width: 50%;
+    }
+    .banner .sec_content .banner_items .left_part h2 {
+        line-height: 1.1;
+        margin-top: 10px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1499px) {
+    .banner {
+        padding: 0 50px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        height: 80%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .banner {
+        height: max-content;
+    }
+    .banner .sec_content .sec_bacground {
+        display: none;
+    }
+    .banner .sec_content .banner_items {
+        height: max-content;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .banner .sec_content .banner_items .right_part {
+        position: relative;
+        top: inherit;
+        right: inherit;
+    }
+    .banner .sec_content .banner_items .left_part {
+        width: 100%;
+        padding-top: 15px;
+        align-items: center;
+        text-align: center;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        flex-direction: row;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+        margin-left: 15px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner .sec_content .banner_items .left_part p {
+        font-size: 18px;
+    }
+    .banner .sec_content .banner_items .left_part h2 {
+        font-size: 42px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        flex-direction: column;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button:last-child {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        width: 450px;
+        height: max-content;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec {
+        width: 105px;
+        padding: 15px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec h5 {
+        font-size: 35px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec ul {
+        margin-top: 7px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec ul i {
+        font-size: 11px;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner .review_count_sec p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner {
+        padding: 0 35px;
+    }
+    .banner .sec_content .banner_items .right_part {
+        padding: 25px;
+        padding-top: 35px;
+        padding-left: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner {
+        width: 100%;
+    }
+    .banner .sec_content .banner_items .right_part .right_inner img {
+        width: 100%;
+    }
+    .banner .sec_content .banner_items .left_part {
+        padding: 30px;
+        padding-top: 15px;
+        padding-bottom: 55px;
+    }
+    .banner .sec_content .banner_items .left_part p {
+        font-size: 16px;
+    }
+    .banner .sec_content .banner_items .left_part h2 {
+        font-size: 28px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec {
+        width: 100%;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button {
+        width: 100%;
+        justify-content: center;
+        padding: 17px 35px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button img {
+        width: 26px;
+    }
+    .banner .sec_content .banner_items .left_part .btn_sec button span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner {
+        padding: 0 25px;
+    }
+}
+
+/* =============== Responsive end ============== */
+
+.restaurant_products_section {
+    position: relative;
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.restaurant_products_section .sec_content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant_products_section .sec_content .restaurant_name_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant_products_section .sec_content .restaurant_name_sec .img {
+    position: relative;
+    width: 100%;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.restaurant_products_section .sec_content .restaurant_name_sec .img img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.restaurant_products_section .sec_content .restaurant_name_sec .restaurant {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(3, 8, 31, 0.89) 10%, rgba(3, 8, 31, 0.19) 60%, rgba(255, 255, 255, 0) 100%);
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.restaurant_products_section .sec_content .restaurant_name_sec .restaurant h3 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--light-color);
+}
+
+.restaurant_products_section .sec_content .restaurant_name_sec .restaurant p {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--light-color);
+    margin-top: 20px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .search_sec {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 6px 25px;
+    border: 1px solid var(--light-border);
+    height: 60px;
+    border-radius: 120px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .search_sec img {
+    position: relative;
+    width: 45px;
+    padding-right: 15px;
+    border-right: 1px solid var(--light-border);
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .search_sec input {
+    position: relative;
+    width: 450px;
+    height: 100%;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: var(--dark-color-1);
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .mode_sec {
+    position: relative;
+    width: 500px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .mode_sec .mode_box {
+    position: relative;
+    width: 49%;
+    display: flex;
+    padding: 8px 20px;
+    background: var(--grey-background-2);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .mode_sec .mode_box .blank_box {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background: var(--light-color);
+    border-radius: 12px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .mode_sec .mode_box p {
+    position: relative;
+    width: calc(100% - 50px);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark-color-1);
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type {
+    position: relative;
+    width: calc(100% - 1100px);
+    display: flex;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box {
+    position: relative;
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--light-border);
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box p {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: var(--dark-color-1);
+    font-weight: 500;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box p.veg {
+    color: var(--veg-color);
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box p.non_veg {
+    color: var(--non-veg-color);
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box p.bestsell {
+    color: rgb(246, 106, 19);
+}
+
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box p i {
+    position: relative;
+    font-size: 18px;
+    margin-right: 8px;
+}

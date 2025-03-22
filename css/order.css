@@ -592,7 +592,7 @@
 
 .pizza_order_sec .sec_inner .inner_body .middle_part{
     position: relative;
-    width: calc(100% - 730px);
+    width: calc(100% - 715px);
     padding: 0 20px;
     margin-top: 30px;
 }
@@ -846,7 +846,7 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part{
     position: relative;
-    width: 365px;
+    width: 350px;
 }
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner{
@@ -869,8 +869,8 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .top_part .img{
     position: relative;
-    width: 58px;
-    height: 58px;
+    width: 55px;
+    height: 55px;
     display: flex;
     margin-right: 20px;
 }
@@ -883,7 +883,7 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .top_part h6{
     position: relative;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     color: var(--light-color);
 }
@@ -911,8 +911,8 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .cart_head_sec .head_img{
     position: relative;
-    width: 58px;
-    height: 58px;
+    width: 55px;
+    height: 55px;
     display: flex;
     margin-right: 20px;
 }
@@ -925,7 +925,7 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .cart_head_sec h3{
     position: relative;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 600;
     color: var(--light-color);
 }
@@ -948,8 +948,8 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .cart_item_sec .item_box .item_number{
     position: relative;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -959,27 +959,27 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .cart_item_sec .item_box .item_number h3{
     position: relative;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 700;
     color: var(--light-color);
 }
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .cart_item_sec .item_box .item_des{
     position: relative;
-    width: calc(100% - 80px);
+    width: calc(100% - 55px);
     padding-left: 20px;
 }
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .cart_item_sec .item_box .item_des h4{
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--green-color);
 }
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .cart_item_sec .item_box .item_des h6{
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--dark-color-1);
     margin: 3px 0;
@@ -987,15 +987,15 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .cart_item_sec .item_box .item_des p{
     position: relative;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     color: var(--dark-color-1);
 }
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .cart_item_sec .item_box .item_action{
     position: relative;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     display: flex;
     cursor: pointer;
 }
@@ -1020,7 +1020,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--dark-color);
     margin-top: 10px;
@@ -1032,7 +1032,7 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .cart_price_sec h4 span{
     position: relative;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     color: var( --dark-color-1);
 }
@@ -1061,14 +1061,14 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .price_total button h6{
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--light-color);
 }
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .price_total button h2{
     position: relative;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
     color: var(--light-color);
 }
@@ -1160,14 +1160,14 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .delivary_sec .delivary_box img {
     position: relative;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     display: flex;
 }
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .delivary_sec .delivary_box h6 {
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--dark-color);
     margin: 3px 0;
@@ -1175,7 +1175,7 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .delivary_sec .delivary_box p {
     position: relative;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     color: var(--dark-color);
 }
@@ -1198,7 +1198,7 @@
     align-items: center;
     padding: 0 25px;
     border: none;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     color: var(--light-color);
     cursor: pointer;
@@ -1206,8 +1206,8 @@
 
 .pizza_order_sec .sec_inner .inner_body .right_part .right_part_inner .bottom_part .checkout_sec button a {
     position: relative;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     display: flex;
     margin-right: 50px;
 }
