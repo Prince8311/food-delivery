@@ -54,6 +54,12 @@
     color: var(--light-color);
 }
 
+.restaurant_products_section .sec_content .restaurant_name_sec .restaurant h3 i {
+   margin-left: 15px;
+   color: var(--light-color);
+   font-size: 32px;
+}
+
 .restaurant_products_section .sec_content .restaurant_name_sec .restaurant p {
     position: relative;
     font-size: 20px;
@@ -105,84 +111,157 @@
     color: var(--dark-color-1);
 }
 
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .mode_sec {
-    position: relative;
-    width: 500px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .mode_sec .mode_box {
-    position: relative;
-    width: 49%;
-    display: flex;
-    padding: 8px 20px;
-    background: var(--grey-background-2);
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 12px;
-}
-
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .mode_sec .mode_box .blank_box {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    background: var(--light-color);
-    border-radius: 12px;
-}
-
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .mode_sec .mode_box p {
-    position: relative;
-    width: calc(100% - 50px);
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--dark-color-1);
-}
-
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type {
-    position: relative;
-    width: calc(100% - 1100px);
-    display: flex;
-}
-
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box {
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec button {
     position: relative;
     height: 60px;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--light-border);
+    padding: 15px 55px;
+    background: var(--theme-color);
+    border: none;
     border-radius: 12px;
-    margin-right: 20px;
-}
-
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box p {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    font-size: 18px;
-    color: var(--dark-color-1);
-    font-weight: 500;
+    margin-left: 25px;
 }
 
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box p.veg {
-    color: var(--veg-color);
-}
-
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box p.non_veg {
-    color: var(--non-veg-color);
-}
-
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box p.bestsell {
-    color: rgb(246, 106, 19);
-}
-
-.restaurant_products_section .sec_content .product_list_sec .list_head_sec .product_type .type_box p i {
+.restaurant_products_section .sec_content .product_list_sec .list_head_sec button i {
     position: relative;
     font-size: 18px;
     margin-right: 8px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box {
+    position: relative;
+    width: 25%;
+    padding: 10px;
+    display: flex;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--light-border);
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.158);
+    background: var(--light-background);
+    padding: 20px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif {
+    position: relative;
+    width: calc(100% - 150px);
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif h4 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif p {
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--dark-color-1);
+    margin-top: 5px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif h6 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif h6 i {
+    margin-left: 5px;
+    color: var(--theme-color);
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif h6 span {
+    margin-left: 15px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif a {
+    position: relative;
+    display: flex;
+    font-size: 17px;
+    font-weight: 500;
+    color: var( --dark-color-1);
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif a:hover {
+   color: var(--theme-color);
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_img {
+    position: relative;
+    width: 160px;
+  height: 130px;
+    display: flex;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_img img {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_count_sec {
+    position: absolute;
+    bottom: 26px;
+    right: 36px;
+    height: 40px;
+    width: 120px;
+    background-color: var(--light-background);
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;padding: 0 15px;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_count_sec a {
+    position: relative;
+    font-size: 15px;
+    color: var(--dark-color-1);
+    cursor: pointer;
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_count_sec .number {
+    position: relative;
+    width: 35px;
+    height: 28px;
+    border: 1px solid var(--light-border);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.158);
+}
+
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_count_sec .number p {
+   font-size: 16px;
+   color: var(--dark-color-1);
+   font-weight: 600;
 }
