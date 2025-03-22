@@ -390,10 +390,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-
         let restaurantBoxes = document.querySelectorAll(".restaurant_box");
-
-        console.log(restaurantBoxes.length);
 
         for(i = 1; i <= restaurantBoxes.length; i++) {
             let delayTime = i % 2 === 0 ? 4000 + (i * 11) : 4000 - (i * 11);
