@@ -241,7 +241,7 @@
     transition: all 0.5s;
 }
 .navbar .nav_bottom .bottom_inner .nav_items li a:hover {
-    background: var(--theme-light-color);
+    color: var(--theme-color);
     transition: all 0.5s;
 }
 .navbar .nav_bottom .bottom_inner .nav_items li a.active {
