@@ -189,7 +189,7 @@
                             <img src="img/Search More.svg" alt="">
                             <input type="text" placeholder="Search by restaurant or dish name...">
                         </div>
-                        <button><i class="fa-solid fa-arrow-down-wide-short"></i>Filtter by</button>
+                        <button class="filter_btn"><i class="fa-solid fa-arrow-down-wide-short"></i>Filtter by</button>
                     </div>
                     <div class="product_box_sec">
                         <div class="product_box veg">
@@ -466,5 +466,22 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+            const filterToggleBtn = document.querySelector(".filter_btn");
+            const closeFilterBtn = document.querySelector(".filter_head a");
+            const pageFilter = document.querySelector(".page_filter");
+
+            filterToggleBtn.addEventListener("click", function () {
+                pageFilter.classList.add("active");
+            });
+
+            closeFilterBtn.addEventListener("click", function () {
+                pageFilter.classList.remove("active");
+            });
+        });
+    </script>
 </body>
 </html>

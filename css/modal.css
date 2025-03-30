@@ -1111,10 +1111,14 @@
     top: 0;
     left: 0;
     width: 300px;
+    display: none;
     height: 100vh;
     background: #FFF;
     z-index: 1199;
     box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+}
+.page_filter.active {
+    display: block;
 }
 .page_filter .filter_inner {
     position: relative;
