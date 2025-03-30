@@ -483,6 +483,13 @@
         .restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box {
             width: 100%;
         }
+        .restaurant_products_section .sec_content .product_list_sec .list_head_sec {
+            flex-direction: column;
+        }
+        .restaurant_products_section .sec_content .product_list_sec .list_head_sec button {
+            margin-top: 25px;
+            margin-left: 0;
+        }
     } 
    @media (max-width: 575px) {
         .restaurant_products_section {
