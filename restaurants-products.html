@@ -413,6 +413,7 @@
                     <div class="box_items">
                         <label for="star-5">
                             <input type="radio" name="star" id="star-5">
+                            <span class="radio_box"></span>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -423,6 +424,7 @@
                         </label>
                         <label for="star-4">
                             <input type="radio" name="star" id="star-4">
+                            <span class="radio_box"></span>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -433,6 +435,7 @@
                         </label>
                         <label for="star-3">
                             <input type="radio" name="star" id="star-3">
+                            <span class="radio_box"></span>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -443,6 +446,7 @@
                         </label>
                         <label for="star-2">
                             <input type="radio" name="star" id="star-2">
+                            <span class="radio_box"></span>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -453,6 +457,7 @@
                         </label>
                         <label for="star-1">
                             <input type="radio" name="star" id="star-1">
+                            <span class="radio_box"></span>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
@@ -463,8 +468,86 @@
                         </label>
                     </div>
                 </div>
+                <div class="filter_box">
+                    <div class="box_head">
+                        <h5>Price Range :</h5>
+                    </div>
+                    <div class="box_items">
+                        <div class="range_slider_sec">
+                            <div class="range_slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range_input">
+                                <input type="range" name="range-min" min="0" max="6000" value="0">
+                                <input type="range" name="range-max" min="0" max="6000" value="6000">
+                            </div>
+                        </div>
+                        <div class="range_fields">
+                            <div class="field_box">
+                                <span>Minimum :</span>
+                                <input type="number" class="input-min" value="0">
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                            </div>
+                            <div class="field_box">
+                                <span>Maximum :</span>
+                                <input type="number" class="input-max" value="6000">
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_box">
+                    <div class="box_head">
+                        <h5>Categories :</h5>
+                    </div>
+                    <div class="box_items categories">
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>North Indian</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Thali</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Pizza</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Burger</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Fried Rice</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Biriyani</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Chicken</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Noodles</p>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="js/nav.js"></script>
+    <script src="js/filter.js"></script>
 </body>
 </html>
