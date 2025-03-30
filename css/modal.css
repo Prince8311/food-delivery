@@ -1100,3 +1100,132 @@
 
 
 /* =============== Responsive end ============== */
+
+
+
+
+/* =============== Filter ============== */
+
+.page_filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background: #FFF;
+    z-index: 1199;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+}
+.page_filter .filter_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.page_filter .filter_inner .filter_head {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    border-bottom: 2px double var(--dark-color);
+}
+.page_filter .filter_inner .filter_head h3 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--theme-color);
+}
+.page_filter .filter_inner .filter_head a {
+    position: relative;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--dark-color-1);
+}
+
+.page_filter .filter_inner .filter_content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+}
+.page_filter .filter_inner .filter_content::-webkit-scrollbar {
+    display: none;
+}
+
+.page_filter .filter_inner .filter_content .filter_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--grey-background-5);
+}
+.page_filter .filter_inner .filter_content .filter_box .box_head {
+    position: relative;
+    width: 100%;
+    padding: 15px 30px;
+    border-bottom: 1px solid var(--grey-background-5);
+}
+.page_filter .filter_inner .filter_content .filter_box .box_head h5 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.page_filter .filter_inner .filter_content .filter_box .box_items {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
+}
+.page_filter .filter_inner .filter_content .filter_box .box_items.foodType {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.page_filter .filter_inner .filter_content .filter_box .box_items.foodType label {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.page_filter .filter_inner .filter_content .filter_box .box_items.foodType label input[type="checkbox"] {
+    display: none;
+}
+.page_filter .filter_inner .filter_content .filter_box .box_items.foodType label .check_box {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    border: 1px solid var(--grey-background-5);
+    border-radius: 4px;
+}
+.page_filter .filter_inner .filter_content .filter_box .box_items.foodType label .check_box img {
+    position: absolute;
+    left: 2px;
+    bottom: 3px;
+    width: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+.page_filter .filter_inner .filter_content .filter_box .box_items.foodType label p {
+    position: relative;
+    font-size: 16px;
+    margin-left: 8px;
+}
+.page_filter .filter_inner .filter_content .filter_box .box_items.foodType label input[type="checkbox"]:checked ~ .check_box img {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
