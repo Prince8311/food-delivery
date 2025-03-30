@@ -15,12 +15,13 @@
     position: relative;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 .restaurant_products_section .sec_content .restaurant_banner_sec .banner_left {
     position: relative;
-    width: calc(100% - 620px);
+    width: 55%;
     display: flex;
     flex-direction: column;
     border: 1px solid #555;
@@ -36,14 +37,14 @@
 .restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .head_part p {
     position: relative;
     color: var(--dark-color-1);
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 16px;
 }
 
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .head_part h3 {
+.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .head_part h4 {
     position: relative;
     color: var(--theme-color);
-    font-size: 18px;
+    font-size: 55px;
+    line-height: 1.2;
     font-weight: 600;
     margin-top: 3px;
 }
@@ -53,31 +54,35 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating {
     position: relative;
     width: 100%;
     display: flex;
+    align-items: baseline;
 }
 
 .restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating h4 {
     position: relative;
     display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     color: var(--dark-color-1);
 }
 
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating h4 a {
+.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating a {
     position: relative;
     color: var(--theme-color);
-    margin: 0 8px;
+    margin-left: 10px;
+}
+.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating a i {
+    position: relative;
+    font-size: 18px;
 }
 
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating h4 span {
+.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating span {
     color: #555;
 }
 
@@ -158,7 +163,7 @@
 
 .restaurant_products_section .sec_content .restaurant_banner_sec .banner_right {
     position: relative;
-    width: 600px;
+    width: 43%;
     height: 600px;
     display: flex;
     border-radius: 12px;

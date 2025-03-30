@@ -1,3 +1,17 @@
+const filterToggleBtn = document.querySelector(".filter_btn");
+const closeFilterBtn = document.querySelector(".filter_head a");
+const pageFilter = document.querySelector(".page_filter");
+
+filterToggleBtn.addEventListener("click", function () {
+    pageFilter.classList.toggle("active");
+});
+
+closeFilterBtn.addEventListener("click", function () {
+    pageFilter.classList.remove("active");
+});
+
+
+
 const rangeInputs = document.querySelectorAll(".range_input input");
 const priceInputs = document.querySelectorAll(".range_fields input");
 const progress = document.querySelector(".range_slider .progress");
