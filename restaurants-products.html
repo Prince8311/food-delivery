@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav-footer.css">
     <link rel="stylesheet" href="css/restaurants-products.css">
+    <link rel="stylesheet" href="css/modal.css">
 
     <!-- font awesome -->
     <script src="js/fontawesome.js"></script>
@@ -16,6 +17,7 @@
 </head>
 <body>
     <div class="page_wrapper">
+        
         <!-- navbar -->
         <div class="navbar">
             <div class="nav_top">
@@ -56,12 +58,86 @@
                     <div class="res_nav_toggle_btn">
                         <a><i class="fa-solid fa-bars"></i></a>
                     </div>
-                    <div class="nav_items">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Browse Menu</a></li>
-                        <li><a href="#">Special Offers</a></li>
-                        <li><a href="#">Restaurants</a></li>
-                        <li><a href="#">Track Order</a></li>
+                    <div class="nav_items menu_dropdown_btn">
+                        <li class="nav_item"><a href="#" class="item_link active">Home</a></li>
+                        <li class="nav_item">
+                            <a href="#" class="item_link">Browse Menu</a>
+                            <div class="menu_dropdown">
+                                <ul class="menu_dropdown_inner">
+                                    <li class="item_menu">
+                                        <a href="#" class="menu_link">Category 1<i class="fa-solid fa-angles-right"></i></a>
+                                        <div class="sub_menu_dropdown">
+                                            <ul class="sub_menu_dropdown_inner">
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 1</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 2</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 3</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 4</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 5</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 6</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 7</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 8</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 9</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 10</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#" class="menu_link">Category 2<i class="fa-solid fa-angles-right"></i></a>
+                                        <div class="sub_menu_dropdown">
+                                            <ul class="sub_menu_dropdown_inner">
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 1</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 2</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 3</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 4</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 5</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 6</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 7</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 8</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 9</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 10</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#" class="menu_link">Category 3<i class="fa-solid fa-angles-right"></i></a>
+                                        <div class="sub_menu_dropdown">
+                                            <ul class="sub_menu_dropdown_inner">
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 1</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 2</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 3</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 4</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 5</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 6</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 7</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 8</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 9</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 10</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#" class="menu_link">Category 4<i class="fa-solid fa-angles-right"></i></a>
+                                        <div class="sub_menu_dropdown">
+                                            <ul class="sub_menu_dropdown_inner">
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 1</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 2</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 3</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 4</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 5</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 6</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 7</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 8</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 9</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 10</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav_item"><a href="#" class="item_link">Special Offers</a></li>
+                        <li class="nav_item"><a href="#" class="item_link">Restaurants</a></li>
+                        <li class="nav_item"><a href="#" class="item_link">Track Order</a></li>
                     </div>
                     <div class="auth_btn">
                         <a>
@@ -304,6 +380,88 @@
                         <a href="#">Pricing</a>
                         <span>Do not sell or share my personal information</span>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page_filter">
+        <div class="filter_inner">
+            <div class="filter_head">
+                <h3>Filter</h3>
+                <a><i class="fa-solid fa-arrow-left-long"></i></a>
+            </div>
+            <div class="filter_content">
+                <div class="filter_box">
+                    <div class="box_items foodType">
+                        <label for="veg">
+                            <input type="checkbox" id="veg">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Veg</p>
+                        </label>
+                        <label for="non-veg">
+                            <input type="checkbox" id="non-veg">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Non Veg</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter_box">
+                    <div class="box_head">
+                        <h5>Ratings :</h5>
+                    </div>
+                    <div class="box_items">
+                        <label for="star-5">
+                            <input type="radio" name="star" id="star-5">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </label>
+                        <label for="star-4">
+                            <input type="radio" name="star" id="star-4">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </label>
+                        <label for="star-3">
+                            <input type="radio" name="star" id="star-3">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </label>
+                        <label for="star-2">
+                            <input type="radio" name="star" id="star-2">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </label>
+                        <label for="star-1">
+                            <input type="radio" name="star" id="star-1">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
