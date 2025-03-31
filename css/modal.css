@@ -747,7 +747,7 @@
     }
 }
 
-/* ============== Locatio modal ============= */
+/* ============== Location modal ============= */
 
 .modal_wrapper .modal_box .modal_inner .modal_head {
     position: relative;
@@ -771,23 +771,12 @@
     margin-bottom: 30px;
     align-items: center;
     justify-content: center;
-}
-.modal_wrapper .modal_box .modal_inner .location iframe {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    display: flex;
-    border-radius: 12px;
-    margin-top: 25px;
+    flex-direction: column;
 }
 .modal_wrapper .modal_box .modal_inner .location .btn_sec {
-    position: absolute;
-    top: 49px;
-    left: 0;
+    position: relative;
     width: 100%;
     display: flex;
-    z-index: 10;
-    justify-content: center;
     align-items: center;
 }
 
@@ -830,9 +819,18 @@
     border-radius: 12px;
     border: none;
     padding: 15px;
-    background: var(--light-color);
+    background: var(--light-border);
     font-size: 17px;
     color: var(--dark-color-1);
+}
+
+.modal_wrapper .modal_box .modal_inner .location iframe {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    border-radius: 12px;
+    margin-top: 25px;
 }
 
 

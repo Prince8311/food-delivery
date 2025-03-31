@@ -63,6 +63,7 @@
     flex-direction: column;
     border-radius: 12px;
     overflow: hidden;
+    justify-content: flex-end;
     z-index: 15;
 }
 
@@ -166,7 +167,7 @@
     position: relative;
     width: 100%;
     display: flex;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details p {
