@@ -10,174 +10,48 @@
     display: flex;
     flex-direction: column;
 }
-
-.restaurant_products_section .sec_content .restaurant_banner_sec {
+.restaurant_products_section .sec_content .restaurant_banner{
     position: relative;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left {
-    position: relative;
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #555;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .head_part {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .head_part p {
-    position: relative;
-    color: var(--dark-color-1);
-    font-size: 16px;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .head_part h4 {
-    position: relative;
-    color: var(--theme-color);
-    font-size: 55px;
-    line-height: 1.2;
-    font-weight: 600;
-    margin-top: 3px;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: baseline;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating h4 {
-    position: relative;
-    display: flex;
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--dark-color-1);
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating a {
-    position: relative;
-    color: var(--theme-color);
-    margin-left: 10px;
-}
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating a i {
-    position: relative;
-    font-size: 18px;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .rating span {
-    color: #555;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details a {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    color: var(--dark-color-1);
-    font-size: 18px;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details a i {
-    margin-right: 8px;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .avalability_status {
-    position: relative;
-    width: 100%;
-    display: flex;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .avalability_status p {
-    position: relative;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: right;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .avalability_status p.open {
-    color: var(--veg-color);
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .avalability_status p.close {
-    color: var(--red-color);
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .restaurant_details .avalability_status p.closing-soon {
-    color: var(--yellow-color);
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .offer_details {
-    position: relative;
-    width: 100%;
+    height: 500px;
     display: flex;
     margin-top: 50px;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .offer_details p {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    color: var(--dark-color-1);
-    font-weight: 500;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .offer_details p i {
-    color: var(--green-color-2);
-    margin-right: 8px;
-}
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_left .offer_details p span {
-    color: var(--green-color-2);
-    margin-left: 8px;
-    font-weight: 600;
-}
-
-
-
-
-
-
-
-
-
-
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_right {
-    position: relative;
-    width: 43%;
-    height: 600px;
-    display: flex;
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.158);
 }
 
-.restaurant_products_section .sec_content .restaurant_banner_sec .banner_right img {
+.restaurant_products_section .sec_content .restaurant_banner .banner_background{
     position: relative;
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    display: flex;
 }
 
-/* .restaurant_products_section .sec_content .restaurant_name_sec .restaurant {
+.restaurant_products_section .sec_content .restaurant_banner .banner_background .swiper {
+    position: relative;
+    width: 100%;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_background .swiper .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_background .swiper .swiper-slide .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_background .swiper .swiper-slide .img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content {
     position: absolute;
     top: 0;
     left: 0;
@@ -187,31 +61,142 @@
     padding: 45px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     border-radius: 12px;
     overflow: hidden;
+    z-index: 15;
 }
 
-.restaurant_products_section .sec_content .restaurant_name_sec .restaurant h3 {
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .head_part {
     position: relative;
-    font-size: 30px;
-    font-weight: 600;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .head_part p {
+    position: relative;
     color: var(--light-color);
+    font-size: 16px;
 }
 
-.restaurant_products_section .sec_content .restaurant_name_sec .restaurant h3 i {
-   margin-left: 15px;
-   color: var(--light-color);
-   font-size: 32px;
-}
-
-.restaurant_products_section .sec_content .restaurant_name_sec .restaurant p {
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .head_part h4 {
     position: relative;
+    color: var(--theme-color);
+    font-size: 55px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-top: 3px;
+}
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .rating {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .rating h4 {
+    position: relative;
+    display: flex;
     font-size: 20px;
     font-weight: 500;
     color: var(--light-color);
-    margin-top: 20px;
-} */
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .rating a {
+    position: relative;
+    color: var(--theme-color);
+    margin-left: 10px;
+}
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .rating a i {
+    position: relative;
+    font-size: 18px;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .rating span {
+    color: var(--light-color);
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .location_sec a {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--light-color);
+    font-size: 18px;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .location_sec a i {
+    margin-right: 8px;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .avalability_status {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .avalability_status p {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .avalability_status p.open {
+    color: var(--veg-color);
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .avalability_status p.close {
+    color: var(--red-color);
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .avalability_status p.closing-soon {
+    color: var(--yellow-color);
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details p {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: var(--light-color);
+    font-weight: 500;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details p i {
+    color: var(--green-color-2);
+    margin-right: 8px;
+}
+
+.restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details p span {
+    color: var(--green-color-2);
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
 
 .restaurant_products_section .sec_content .product_list_sec {
     position: relative;

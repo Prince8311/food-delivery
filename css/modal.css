@@ -747,6 +747,110 @@
     }
 }
 
+/* ============== Locatio modal ============= */
+
+.modal_wrapper .modal_box .modal_inner .modal_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.modal_wrapper .modal_box .modal_inner .modal_head h3 {
+    position: relative;
+    font-size: 25px;
+    color: var(--dark-color-1);
+}
+
+.modal_wrapper .modal_box .modal_inner .location {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 10px 25px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.modal_wrapper .modal_box .modal_inner .location iframe {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+.modal_wrapper .modal_box .modal_inner .location .btn_sec {
+    position: absolute;
+    top: 49px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_wrapper .modal_box .modal_inner .location button {
+    position: relative;
+    border: none;
+    padding: 15px 30px;
+    background: var(--theme-color);
+    color: var(--light-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    
+    cursor: pointer;
+}
+
+.modal_wrapper .modal_box .modal_inner .location a {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--light-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #7a7a7a;
+    text-decoration: none;
+    margin: 0 15px;
+    background: var(--light-color);
+}
+
+.modal_wrapper .modal_box .modal_inner .location input {
+    position: relative;
+    width: 350px;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+    padding: 15px;
+    background: var(--light-color);
+    font-size: 17px;
+    color: var(--dark-color-1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* my bucket */
 

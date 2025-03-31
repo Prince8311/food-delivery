@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/nav-footer.css">
     <link rel="stylesheet" href="css/restaurants-products.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- font awesome -->
     <script src="js/fontawesome.js"></script>
@@ -151,8 +152,20 @@
 
         <div class="restaurant_products_section">
             <div class="sec_content">
-                <div class="restaurant_banner_sec">
-                    <div class="banner_left">
+                <div class="restaurant_banner">
+                    <div class="banner_background">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img"><img src="img/res1.jpg" alt=""></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img"><img src="img/res2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner_content">
                         <div class="head_part">
                             <p>Restaurants</p>
                             <h4>Ahare Bengali</h4>
@@ -179,9 +192,6 @@
                         <div class="offer_details">
                             <p><i class="fa-solid fa-tags"></i>Upto 80% off use thid code <span>@UK325</span></p>
                         </div>
-                    </div>
-                    <div class="banner_right">
-                        <img src="img/Restaurant-details-banner-background.svg" alt="">
                     </div>
                 </div>
                 <div class="product_list_sec">
@@ -550,5 +560,13 @@
 
     <script src="js/nav.js"></script>
     <script src="js/filter.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        });
+    </script>
 </body>
 </html>
