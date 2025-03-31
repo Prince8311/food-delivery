@@ -154,7 +154,7 @@
             <div class="sec_content">
                 <div class="restaurant_banner">
                     <div class="banner_background">
-                        <div class="swiper mySwiper">
+                        <div class="swiper mySwiper2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="img"><img src="img/res1.jpg" alt=""></div>
@@ -166,31 +166,48 @@
                         </div>
                     </div>
                     <div class="banner_content">
-                        <div class="head_part">
-                            <p>Restaurants</p>
-                            <h4>Ahare Bengali</h4>
+                        <div class="content_left">
+                            <div class="head_part">
+                                <p>Restaurants</p>
+                                <h4>Ahare Bengali</h4>
+                            </div>
+                            <div class="restaurant_details">
+                                <div class="rating">
+                                    <h4>4.5</h4>
+                                    <a>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </a>
+                                    <span>(1001)</span>
+                                </div>
+                                <div class="location_sec">
+                                    <a><i class="fa-solid fa-location-dot"></i>Kolkata Sectoe-v, 700091</a>
+                                </div>
+                                <div class="avalability_status">
+                                    <p class="open">Open</p>
+                                </div>
+                            </div>
+                            <div class="offer_details">
+                                <p><i class="fa-solid fa-tags"></i>Upto 80% off use thid code <span>@UK325</span></p>
+                            </div>
                         </div>
-                        <div class="restaurant_details">
-                            <div class="rating">
-                                <h4>4.5</h4>
-                                <a>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                </a>
-                                <span>(1001)</span>
-                            </div>
-                            <div class="location_sec">
-                                <a><i class="fa-solid fa-location-dot"></i>Kolkata Sectoe-v, 700091</a>
-                            </div>
-                            <div class="avalability_status">
-                                <p class="open">Open</p>
-                            </div>
+                        <div class="content_right">
+                            <div thumbsSlider="" class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img"><img src="img/res1.jpg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img"><img src="img/res2.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                              </div>
                         </div>
-                        <div class="offer_details">
-                            <p><i class="fa-solid fa-tags"></i>Upto 80% off use thid code <span>@UK325</span></p>
+                        <div class="pagination">
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -564,8 +581,26 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
+            spaceBetween: 0,
+            slidesPerView: 'auto',
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
         });
     </script>
 </body>
