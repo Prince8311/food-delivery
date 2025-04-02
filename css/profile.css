@@ -95,8 +95,87 @@
 .profile_update_section .section_inner {
     position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile_update_section .section_inner form {
+    position: relative;
+    width: 100%;
+}
+.profile_update_section .section_inner form .form_section {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+.profile_update_section .section_inner form .form_section .form_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile_update_section .section_inner form .form_section .form_box input {
+    position: relative;
+    width: 100%;
+    border: 2px solid var(--light-border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    font-size: 17px;
+    line-height: 1;
+    color: var(--dark-color-1);
+    outline: none;
+    transition: all 0.4s;
+}
+.profile_update_section .section_inner form .form_section .form_box input:focus,
+.profile_update_section .section_inner form .form_section .form_box input:valid {
+    border: 2px solid #555;
+    transition: all 0.4s;
+}
+.profile_update_section .section_inner form .form_section .form_box span{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    font-size: 17px;
+    line-height: 1;
+    color: #afafaf;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.5s;
 }
 
+.profile_update_section .section_inner form .form_section .form_box input:focus ~ span,
+.profile_update_section .section_inner form .form_section .form_box input:valid ~ span {
+    top: 0px;
+    left: 15px;
+    font-size: 12px;
+    padding: 0px 5px;
+    background: #fff;
+    color: var(--theme-color);
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.profile_update_section .section_inner .profile_btn {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.profile_update_section .section_inner .profile_btn button {
+    position: relative;
+    padding: 15px 60px;
+    background: var(--theme-color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: var(--light-color);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
 /* =================== saved address section =================== */
 
 .saved_address_section {
@@ -107,6 +186,108 @@
 .saved_address_section .section_inner {
     position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.saved_address_section .section_inner .address_box_section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed var(--light-border);
+}
+.saved_address_section .section_inner .address_box_section .address_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--light-border);
+}
+.saved_address_section .section_inner .address_box_section .address_box:last-child {
+    border-bottom: none;
+}
+.saved_address_section .section_inner .address_box_section .address_box .address_part {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.saved_address_section .section_inner .address_box_section .address_box .address_part a {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    background: rgba(252, 137, 6, 0.08);
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.saved_address_section .section_inner .address_box_section .address_box .address_part a i {
+    position: relative;
+    color: var(--theme-color);
+    font-size: 20px;
+}
+.saved_address_section .section_inner .address_box_section .address_box .address_part li {
+    position: relative;
+    width: calc(100% - 45px);
+    display: flex;
+    padding-left: 30px;
+}
+.saved_address_section .section_inner .address_box_section .address_box .address_part li p {
+    position: relative;
+    font-size: 16px;
+    color: var(--dark-color-1);
+    font-weight: 500;
+}
+.saved_address_section .section_inner .address_box_section .address_box .btn_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+.saved_address_section .section_inner .address_box_section .address_box .btn_sec a {
+    position: relative;
+    width: 150px;
+    height: 45px;
+    background: #d0cfcf;
+    border-radius: 6px;
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.saved_address_section .section_inner .address_box_section .address_box .btn_sec a:nth-child(2) {
+    background: rgba(2, 134, 67, 1);
+    margin-left: 15px;
+}
+
+.saved_address_section .section_inner .address_btn {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+.saved_address_section .section_inner .address_btn button {
+    position: relative;
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    background: var(--theme-color);
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.saved_address_section .section_inner .address_btn button i {
+    margin-right: 8px;
 }
 
 /* =================== order list section =================== */

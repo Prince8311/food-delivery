@@ -8,7 +8,7 @@
     padding: 80px 100px;
     background-color: var(--modal-background);
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .modal_wrapper .modal_box  {
