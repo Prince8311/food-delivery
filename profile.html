@@ -183,27 +183,42 @@
                     <div class="profile_update_section" >
                         <div class="section_inner">
                             <form action="">
+                                <div class="profile_image_sec">
+                                    <div class="image_sec_inner">
+                                        <div class="image_box">
+                                            <img src="img/profile-image.png" alt="">
+                                        </div>
+                                        <div class="upload_btn">
+                                            <a><i class="fa-solid fa-pen-to-square"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="form_section">
                                     <div class="form_box">
                                         <input type="text" required>
+                                        <div class="line"></div>
                                         <span>Full Name</span>
                                     </div>
                                     <div class="form_box">
                                         <input type="text" required>
+                                        <div class="line"></div>
                                         <span>Email</span>
                                     </div>
                                     <div class="form_box">
                                         <input type="text" required>
+                                        <div class="line"></div>
                                         <span>Phone No.</span>
                                     </div>
                                     <div class="form_box">
                                         <input type="date" required>
+                                        <div class="line"></div>
+                                        <span>Date of Birth</span>
                                     </div>
                                 </div>
+                                <div class="profile_btn">
+                                    <button>Save</button>
+                                </div>
                             </form>
-                            <div class="profile_btn">
-                                <button>Save</button>
-                            </div>
                         </div>
                     </div>
                     <div class="saved_address_section" style="display: none;">
@@ -252,10 +267,228 @@
                         </div>
                     </div>
                     <div class="order_list_section" style="display: none;">
-                        <div class="section_inner"></div>
+                        <div class="section_inner">
+                            <div class="box_head">
+                                <h4>Order History</h4>
+                            </div>
+                            <div class="order_box_sec">
+                                <div class="order_box">
+                                    <div class="box_top">
+                                        <li>
+                                            <p>Order ID :</p>
+                                            <span>#34561888</span>
+                                        </li>
+                                    </div>
+                                    <div class="box_items">
+                                        <div class="order_restaurant">
+                                            <img src="img/Restaurant_1.svg" alt="">
+                                            <li>
+                                                <h5>Ahare Bengali</h5>
+                                                <p><i class="fa-solid fa-location-dot"></i>Newtown, Saltlate, Sector-5, Kolkata-700091</p>
+                                            </li>
+                                        </div>
+                                        <div class="order_items">
+                                            <div class="items_head">
+                                                <h5>Order Items</h5>
+                                                <p>Amount</p>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <h5>Chicken Biriyani (x2)</h5>
+                                                    <p>440.00 /-</p>
+                                                </li>
+                                                <li>
+                                                    <h5>Chicken Chaap (x1)</h5>
+                                                    <p>170.00 /-</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="order_total">
+                                            <li>
+                                                <h5>Items Total</h5>
+                                                <p>610.00 /-</p>
+                                            </li>
+                                            <li>
+                                                <h5>CGST</h5>
+                                                <p>15.50 /-</p>
+                                            </li>
+                                            <li>
+                                                <h5>SGST</h5>
+                                                <p>15.50 /-</p>
+                                            </li>
+                                            <li class="grand_total">
+                                                <h5>Order Total</h5>
+                                                <p>641.00 /-</p>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="box_bottom">
+                                        <a><i class="fa-solid fa-arrow-rotate-right"></i>Repeat Order</a>
+                                        <a><i class="fa-solid fa-truck"></i>Order Delivered</a>
+                                    </div>
+                                </div>
+                                <div class="order_box">
+                                    <div class="box_top">
+                                        <li>
+                                            <p>Order ID :</p>
+                                            <span>#34561888</span>
+                                        </li>
+                                    </div>
+                                    <div class="box_items">
+                                        <div class="order_restaurant">
+                                            <img src="img/Restaurant_1.svg" alt="">
+                                            <li>
+                                                <h5>Ahare Bengali</h5>
+                                                <p><i class="fa-solid fa-location-dot"></i>Newtown, Saltlate, Sector-5, Kolkata-700091</p>
+                                            </li>
+                                        </div>
+                                        <div class="order_items">
+                                            <div class="items_head">
+                                                <h5>Order Items</h5>
+                                                <p>Amount</p>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <h5>Chicken Biriyani (x2)</h5>
+                                                    <p>440.00 /-</p>
+                                                </li>
+                                                <li>
+                                                    <h5>Chicken Chaap (x1)</h5>
+                                                    <p>170.00 /-</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="order_total">
+                                            <li>
+                                                <h5>Items Total</h5>
+                                                <p>610.00 /-</p>
+                                            </li>
+                                            <li>
+                                                <h5>CGST</h5>
+                                                <p>15.50 /-</p>
+                                            </li>
+                                            <li>
+                                                <h5>SGST</h5>
+                                                <p>15.50 /-</p>
+                                            </li>
+                                            <li class="grand_total">
+                                                <h5>Order Total</h5>
+                                                <p>641.00 /-</p>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="box_bottom">
+                                        <a><i class="fa-solid fa-arrow-rotate-right"></i>Repeat Order</a>
+                                        <a><i class="fa-solid fa-truck"></i>Order Delivered</a>
+                                    </div>
+                                </div>
+                                <div class="order_box">
+                                    <div class="box_top">
+                                        <li>
+                                            <p>Order ID :</p>
+                                            <span>#34561888</span>
+                                        </li>
+                                    </div>
+                                    <div class="box_items">
+                                        <div class="order_restaurant">
+                                            <img src="img/Restaurant_1.svg" alt="">
+                                            <li>
+                                                <h5>Ahare Bengali</h5>
+                                                <p><i class="fa-solid fa-location-dot"></i>Newtown, Saltlate, Sector-5, Kolkata-700091</p>
+                                            </li>
+                                        </div>
+                                        <div class="order_items">
+                                            <div class="items_head">
+                                                <h5>Order Items</h5>
+                                                <p>Amount</p>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <h5>Chicken Biriyani (x2)</h5>
+                                                    <p>440.00 /-</p>
+                                                </li>
+                                                <li>
+                                                    <h5>Chicken Chaap (x1)</h5>
+                                                    <p>170.00 /-</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="order_total">
+                                            <li>
+                                                <h5>Items Total</h5>
+                                                <p>610.00 /-</p>
+                                            </li>
+                                            <li>
+                                                <h5>CGST</h5>
+                                                <p>15.50 /-</p>
+                                            </li>
+                                            <li>
+                                                <h5>SGST</h5>
+                                                <p>15.50 /-</p>
+                                            </li>
+                                            <li class="grand_total">
+                                                <h5>Order Total</h5>
+                                                <p>641.00 /-</p>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="box_bottom">
+                                        <a><i class="fa-solid fa-arrow-rotate-right"></i>Repeat Order</a>
+                                        <a><i class="fa-solid fa-truck"></i>Order Delivered</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="wallet_section" style="display: none;">
-                        <div class="section_inner"></div>
+                        <div class="section_inner">
+                            <div class="box_head">
+                                <h4>My Wallet</h4>
+                            </div>
+                            <div class="wallet_top_part">
+                                <div class="left_side">
+                                    <i class="fa-solid fa-wallet icon"></i>
+                                    <li>
+                                        <h5>Balance</h5>
+                                        <p>250.00 /-</p>
+                                    </li>
+                                </div>
+                                <div class="right_side">
+                                    <button>Add Balance</button>
+                                </div>
+                            </div>
+                            <div class="transaction_head">
+                                <h4>Transaction History ( <i class="fa-solid fa-arrow-up-long incoming"></i> <i class="fa-solid fa-arrow-up-long outcoming"></i> )</h4>
+                            </div>
+                            <div class="wallet_table_part">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Amount</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>500.00</td>
+                                            <td>23/02/2025</td>
+                                            <td><i class="fa-solid fa-arrow-up-long incoming"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>200.00</td>
+                                            <td>22/02/2025</td>
+                                            <td><i class="fa-solid fa-arrow-up-long incoming"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>220.00</td>
+                                            <td>22/02/2025</td>
+                                            <td><i class="fa-solid fa-arrow-up-long outcoming"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                     <div class="settings_section" style="display: none;">
                         <div class="section_inner"></div>

@@ -101,6 +101,55 @@
 .profile_update_section .section_inner form {
     position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile_update_section .section_inner form .profile_image_sec {
+    position: relative;
+    width: 100%;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+.profile_update_section .section_inner form .profile_image_sec .image_sec_inner {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--dark-color-1);
+    border-radius: 50%;
+    padding: 10px;
+}
+.profile_update_section .section_inner form .profile_image_sec .image_sec_inner .image_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--light-border);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile_update_section .section_inner form .profile_image_sec .image_sec_inner .image_box img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile_update_section .section_inner form .profile_image_sec .image_sec_inner .upload_btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.profile_update_section .section_inner form .profile_image_sec .image_sec_inner .upload_btn a {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: var(--green-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    color: var(--light-color);
 }
 .profile_update_section .section_inner form .form_section {
     position: relative;
@@ -119,19 +168,29 @@
 .profile_update_section .section_inner form .form_section .form_box input {
     position: relative;
     width: 100%;
-    border: 2px solid var(--light-border);
-    border-radius: 8px;
     padding: 20px 24px;
     font-size: 17px;
     line-height: 1;
     color: var(--dark-color-1);
+    border: none;
     outline: none;
+    opacity: 0;
     transition: all 0.4s;
 }
 .profile_update_section .section_inner form .form_section .form_box input:focus,
 .profile_update_section .section_inner form .form_section .form_box input:valid {
-    border: 2px solid #555;
+    opacity: 1;
     transition: all 0.4s;
+}
+.profile_update_section .section_inner form .form_section .form_box .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--light-border);
+    border-radius: 8px;
+    pointer-events: none;
 }
 .profile_update_section .section_inner form .form_section .form_box span{
     position: absolute;
@@ -149,7 +208,7 @@
 .profile_update_section .section_inner form .form_section .form_box input:valid ~ span {
     top: 0px;
     left: 15px;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0px 5px;
     background: #fff;
     color: var(--theme-color);
@@ -161,12 +220,14 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding: 0 20px;
 }
 .profile_update_section .section_inner .profile_btn button {
     position: relative;
-    padding: 15px 60px;
+    width: 200px;
+    height: 60px;
     background: var(--theme-color);
     border-radius: 6px;
     border: none;
@@ -175,7 +236,13 @@
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
+.profile_update_section .section_inner .profile_btn button:hover {
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
 /* =================== saved address section =================== */
 
 .saved_address_section {
@@ -295,11 +362,248 @@
 .order_list_section {
     position: relative;
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
 }
 .order_list_section .section_inner {
     position: relative;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+}
+.order_list_section .section_inner .box_head {
+    position: relative;
     width: 100%;
+}
+.order_list_section .section_inner .box_head h4 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.order_list_section .section_inner .order_box_sec .order_box {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    border: 1px solid var(--light-border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_top {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+    border-bottom: 1px solid var(--light-border);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_top li {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_top li p {
+    position: relative;
+    font-size: 16px;
+    color: var(--dark-color-1);
+    opacity: 0.5;
+    font-weight: 500;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_top li span {
+    position: relative;
+    margin-left: 10px;
+    font-size: 16px;
+    color: var(--dark-color-1);
+    font-weight: 500;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items {
+    position: relative;
+    width: 100%;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant {
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, var(--light-border), var(--light-color));
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant img {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant li {
+    position: relative;
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant li h5 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant li p {
+    position: relative;
+    margin-top: 5px;
+    font-size: 17px;
+    color: var(--dark-color-1);
+    opacity: 0.5;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant li p i {
+    position: relative;
+    margin-right: 8px;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items .items_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-border);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items .items_head h5 {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items .items_head p {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items ul {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items ul li {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items ul li h5 {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items ul li p {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total {
+    position: relative;
+    width: 300px;
+    border-top: 1px solid var(--light-border);
+    display: flex;
+    flex-direction: column;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--light-border);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li:last-child {
+    border-bottom: none;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li h5 {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li p {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li.grand_total h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li.grand_total p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_bottom {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: var(--theme-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_bottom a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--light-color);
+    cursor: pointer;
+    font-size: 16px;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_bottom a:first-child {
+    padding-right: 30px;
+    border-right: 1px solid var(--light-color);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_bottom a:last-child {
+    padding-left: 30px;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_bottom a i {
+    margin-right: 8px;
 }
 
 /* =================== wallet section =================== */
@@ -307,11 +611,196 @@
 .wallet_section {
     position: relative;
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
 }
 .wallet_section .section_inner {
     position: relative;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+}
+.wallet_section .section_inner .box_head {
+    position: relative;
     width: 100%;
+}
+.wallet_section .section_inner .box_head h4 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+
+.wallet_section .section_inner .wallet_top_part {
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    padding: 20px 35px;
+    border-radius: 10px;
+    border: 1px solid var(--light-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wallet_section .section_inner .wallet_top_part .left_side {
+    position: relative;
+    display: flex;
+}
+.wallet_section .section_inner .wallet_top_part .left_side i {
+    position: relative;
+    font-size: 70px;
+    color: var(--theme-color);
+}
+.wallet_section .section_inner .wallet_top_part .left_side li {
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.wallet_section .section_inner .wallet_top_part .left_side li h5 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.wallet_section .section_inner .wallet_top_part .left_side li p {
+    position: relative;
+    font-size: 28px;
+    color: var(--dark-color-1);
+    opacity: 0.5;
+}
+.wallet_section .section_inner .wallet_top_part .right_side {
+    position: relative;
+}
+.wallet_section .section_inner .wallet_top_part .right_side button {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: var(--green-color);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--light-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.wallet_section .section_inner .wallet_top_part .right_side button:hover {
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+.wallet_section .section_inner .transaction_head {
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+}
+.wallet_section .section_inner .transaction_head h4 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark-color-1);
+}
+.wallet_section .section_inner .transaction_head h4 i {
+    position: relative;
+    font-size: 22px;
+}
+.wallet_section .section_inner .transaction_head h4 i.incoming {
+    transform: rotate(-135deg);
+    color: var(--green-color);
+}
+.wallet_section .section_inner .transaction_head h4 i.outcoming {
+    transform: rotate(45deg);
+    color: var(--yellow-color);
+}
+.wallet_section .section_inner .wallet_table_part {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+}
+.wallet_section .section_inner .wallet_table_part table {
+    position: relative;
+    width: 100%;
+    border: 1px solid var(--light-border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.wallet_section .section_inner .wallet_table_part table thead {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid var(--light-border);
+}
+.wallet_section .section_inner .wallet_table_part table thead tr {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.wallet_section .section_inner .wallet_table_part table thead th {
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+    padding: 0 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+    display: flex;
+    align-items: center;
+}
+.wallet_section .section_inner .wallet_table_part table thead th:nth-child(2) {
+    justify-content: center;
+}
+.wallet_section .section_inner .wallet_table_part table thead th:nth-child(3) {
+    justify-content: flex-end;
+}
+.wallet_section .section_inner .wallet_table_part table tbody {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow: hidden;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-bottom: 1px solid var(--light-border);
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr:last-child {
+    border-bottom: none;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td {
+    position: relative;
+    width: 33.33%;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--dark-color-1);
+    opacity: 0.7;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(2) {
+    justify-content: center;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) {
+    justify-content: flex-end;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) i {
+    position: relative;
+    font-size: 21px;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) i.incoming {
+    transform: rotate(-135deg);
+    color: var(--green-color);
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) i.outcoming {
+    transform: rotate(45deg);
+    color: var(--yellow-color);
 }
 
 /* =================== settings section =================== */
