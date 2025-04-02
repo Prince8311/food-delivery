@@ -754,12 +754,13 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px 25px;
+    padding: 15px 25px;
 }
 
 .modal_wrapper .modal_box .modal_inner .modal_head h3 {
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 600;
     color: var(--dark-color-1);
 }
 
@@ -778,20 +779,22 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .modal_wrapper .modal_box .modal_inner .location button {
     position: relative;
     border: none;
-    padding: 15px 30px;
+    padding: 0 30px;
+    height: 50px;
     background: var(--theme-color);
     color: var(--light-color);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     
     cursor: pointer;
 }
@@ -805,7 +808,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 17px;
     color: #7a7a7a;
     text-decoration: none;
     margin: 0 15px;
@@ -815,22 +818,40 @@
 .modal_wrapper .modal_box .modal_inner .location input {
     position: relative;
     width: 350px;
+    height: 50px;
     outline: none;
-    border-radius: 12px;
+    border-radius: 8px;
     border: none;
-    padding: 15px;
+    padding: 5px 20px;
     background: var(--light-border);
-    font-size: 17px;
+    font-size: 16px;
     color: var(--dark-color-1);
 }
 
-.modal_wrapper .modal_box .modal_inner .location iframe {
+.modal_wrapper .modal_box .modal_inner .location .map_sec {
     position: relative;
     width: 100%;
     height: 350px;
     display: flex;
     border-radius: 12px;
     margin-top: 25px;
+    overflow: hidden;
+}
+
+.modal_wrapper .modal_box .modal_inner .location .map_sec iframe {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+.modal_wrapper .modal_box .modal_inner .location .map_sec i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    color: var(--red-color);
+    font-size: 30px;
+    transform: translate(-50%, -50%);
 }
 
 /* =========== Responsive Start ============= */

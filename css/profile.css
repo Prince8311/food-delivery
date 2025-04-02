@@ -40,11 +40,15 @@
     margin-top: 20px;
     cursor: pointer;
     color: rgb(110, 110, 110);
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 }
 .profile_page .profile_left_bar .left_inner li:hover {
     color: var(--dark-color-1);
-    transition: all 0.5s;
+    transition: all 0.5s ease;
+}
+.profile_page .profile_left_bar .left_inner li.active {
+    color: var(--theme-color);
+    transition: all 0.5s ease;
 }
 .profile_page .profile_left_bar .left_inner li:first-child {
     margin-top: 0;
@@ -65,6 +69,18 @@
     position: relative;
     font-size: 22px;
     width: 40px;
+}
+.profile_page .profile_left_bar .left_inner li i.arrow {
+    position: relative;
+    margin-left: auto;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateX(-50px);
+}
+.profile_page .profile_left_bar .left_inner li.active i.arrow {
+    opacity: 1;
+    transition: all 0.5s ease;
+    transform: translateX(0);
 }
 .profile_page .profile_left_bar .left_inner li p {
     position: relative;
@@ -90,6 +106,9 @@
 .profile_update_section {
     position: relative;
     width: 100%;
+    display: none;
+}
+.profile_update_section.active {
     display: block;
 }
 .profile_update_section .section_inner {
@@ -248,6 +267,9 @@
 .saved_address_section {
     position: relative;
     width: 100%;
+    display: none;
+}
+.saved_address_section.active {
     display: block;
 }
 .saved_address_section .section_inner {
@@ -256,12 +278,49 @@
     display: flex;
     flex-direction: column;
 }
+.saved_address_section .section_inner .sec_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.saved_address_section .section_inner .sec_head h4 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.saved_address_section .section_inner .sec_head h4 i {
+    margin-right: 15px;
+}
+.saved_address_section .section_inner .sec_head button {
+    position: relative;
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    background: var(--theme-color);
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.saved_address_section .section_inner .sec_head button:hover {
+   border-radius: 30px;
+   transition: all 0.5s ease;
+}
 .saved_address_section .section_inner .address_box_section {
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px dashed var(--light-border);
+    border: 1px solid var(--light-border);
+    border-radius: 12px;
+    margin-top: 50px;
 }
 .saved_address_section .section_inner .address_box_section .address_box {
     position: relative;
@@ -339,32 +398,17 @@
     margin-top: 50px;
     justify-content: flex-end;
 }
-.saved_address_section .section_inner .address_btn button {
-    position: relative;
-    padding: 15px 35px;
-    border: none;
-    outline: none;
-    background: var(--theme-color);
-    color: var(--light-color);
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.saved_address_section .section_inner .address_btn button i {
-    margin-right: 8px;
-}
-
 /* =================== order list section =================== */
 
 .order_list_section {
     position: relative;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     overflow-y: auto;
+}
+.order_list_section.active {
+    display: flex;
 }
 .order_list_section .section_inner {
     position: relative;
@@ -611,9 +655,12 @@
 .wallet_section {
     position: relative;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     overflow-y: auto;
+}
+.wallet_section.active {
+    display: flex;
 }
 .wallet_section .section_inner {
     position: relative;
@@ -808,11 +855,119 @@
 .settings_section {
     position: relative;
     width: 100%;
-    display: block;
+    display: none;
+    justify-content: center;
+    overflow-y: auto;
+}
+.settings_section.active {
+    display: flex;
 }
 .settings_section .section_inner {
     position: relative;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+}
+.settings_section .section_inner .box_head {
+    position: relative;
     width: 100%;
+    display: flex;
+}
+.settings_section .section_inner .box_head h4 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.settings_section .section_inner .settings_items_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 1px solid var(--light-border);
+    border-radius: 12px;
+}
+.settings_section .section_inner .settings_items_sec .settings_item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--light-border);
+}
+.settings_section .section_inner .settings_items_sec .settings_item:last-child {
+    border-bottom: none;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_left {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_left p {
+    position: relative;
+    font-size: 20px;
+    color: var(--dark-color-1);
+    font-weight: 500;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_left span {
+    position: relative;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #7a7a7a;
+    opacity: 0.6;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right {
+    position: relative;
+    display: flex;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label {
+    position: relative;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label input[type="checkbox"] {
+    display: none;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label span {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    background: var(--grey-background-5);
+    display: flex;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label span::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    background: var(--light-background);
+    border-radius: 50%;
+    transition: all 0.6s ease;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label input[type="checkbox"]:checked ~ span {
+    background: var(--green-color-2);
+    transition: all 0.6s ease;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label input[type="checkbox"]:checked ~ span::after {
+    transform: translateX(40px);
+    transition: all 0.6s ease;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right i {
+    position: relative;
+    font-size: 22px;
+    cursor: pointer;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right i.angle {
+    color: var(--dark-color-1);
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right i.delete {
+    color: #E5322D;
 }
 
 /* =================== notifications section =================== */
@@ -820,9 +975,104 @@
 .notifications_section {
     position: relative;
     width: 100%;
+    display: none;
+}
+.notifications_section.active {
     display: block;
 }
 .notifications_section .section_inner {
     position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.notifications_section .section_inner .sec_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.notifications_section .section_inner .sec_head h4 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.notifications_section .section_inner .notification_box_section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 1px solid var(--light-border);
+    border-radius: 12px;
+}
+.notifications_section .section_inner .notification_box_section .notification_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--light-border);
+}
+.notifications_section .section_inner .notification_box_section .notification_box:last-child {
+    border-bottom: none;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .notification_part {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .notification_part .img_part {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 12px;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .notification_part .img_part img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .notification_part li {
+    position: relative;
+    width: calc(100% - 90px);
+    display: flex;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .notification_part li p {
+    position: relative;
+    font-size: 16px;
+    color: var(--dark-color-1);
+    font-weight: 500;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .btn_sec {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: flex-end;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .btn_sec p {
+    position: relative;
+    font-size: 14px;
+    color: #7a7a7a;
+    font-weight: 500;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .btn_sec a {
+    position: relative;
+    margin-left: 30px;
+    width: 150px;
+    height: 45px;
+    background: rgba(252, 137, 6, 0.08);
+    border-radius: 30px;
+    color: var(--theme-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
