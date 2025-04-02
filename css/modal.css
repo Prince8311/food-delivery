@@ -833,18 +833,25 @@
     margin-top: 25px;
 }
 
+/* =========== Responsive Start ============= */
 
+@media (max-width: 876px) {
+    .modal_wrapper .modal_box .modal_inner .location .btn_sec {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .modal_wrapper .modal_box .modal_inner .location button {
+        width: 100%;
+    }
+    .modal_wrapper .modal_box .modal_inner .location a {
+        margin: 15px 0;
+    }
+    .modal_wrapper .modal_box .modal_inner .location input {
+        width: 100%;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
+/* =========== Responsive end ============= */
 
 
 
@@ -1195,14 +1202,6 @@
     height: auto;
 }
 
-/* =============== Responsive start ============== */
-
-
-
-
-
-/* =============== Responsive end ============== */
-
 
 
 
@@ -1472,3 +1471,6 @@
     font-size: 14px;
     color: var(--dark-color-1);
 }
+
+
+

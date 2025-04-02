@@ -512,6 +512,20 @@
             width: 50%;
         }
     } 
+   @media (max-width: 1050px) {
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .content_left {
+            width: 100%;
+            padding-right: 0;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .content_right {
+            width: 100%;
+            margin-top: 20px;
+        }
+    } 
    @media (max-width: 991px) {
         .restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif {
             padding-right: 0;
@@ -543,6 +557,26 @@
             margin-left: 0;
         }
     } 
+   @media (max-width: 678px) {
+        .restaurant_products_section .sec_content .restaurant_banner {
+            height: 420px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content {
+           padding: 25px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .head_part h4 {
+            font-size: 40px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details {
+            margin-top: 25px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details p {
+            font-size: 18px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details p span {
+            font-size: 17px;
+        }
+    } 
    @media (max-width: 575px) {
         .restaurant_products_section {
            padding: 0 25px;
@@ -551,6 +585,30 @@
    @media (max-width: 450px) {
         .restaurant_products_section {
            padding: 0 15px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner {
+            height: 300px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .head_part h4 {
+            font-size: 31px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .rating h4 {
+            font-size: 14px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .restaurant_details .rating h4 {
+            font-size: 14px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details {
+            margin-top: 20px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details p {
+            font-size: 14px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .offer_details p span {
+            font-size: 15px;
+        }
+        .restaurant_products_section .sec_content .restaurant_banner .banner_content .content_right {
+            display: none;
         }
         .restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_brif {
             width: calc(100% - 110px);
