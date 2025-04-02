@@ -1,0 +1,158 @@
+.profile_page {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: calc(100vh - 187px);
+    padding: 0 100px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.profile_page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #FFF, var(--light-border), #FFF);
+}
+
+
+.profile_page .profile_left_bar {
+    position: relative;
+    width: 350px;
+    height: 100%;
+    border-right: 1px solid var(--light-border);
+    padding-right: 35px;
+}
+.profile_page .profile_left_bar .left_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile_page .profile_left_bar .left_inner li {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: rgb(110, 110, 110);
+    transition: all 0.5s;
+}
+.profile_page .profile_left_bar .left_inner li:hover {
+    color: var(--dark-color-1);
+    transition: all 0.5s;
+}
+.profile_page .profile_left_bar .left_inner li:first-child {
+    margin-top: 0;
+}
+.profile_page .profile_left_bar .left_inner li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, var(--light-border), #FFF);
+}
+.profile_page .profile_left_bar .left_inner li:last-child:before {
+    display: none;
+}
+.profile_page .profile_left_bar .left_inner li i.icon {
+    position: relative;
+    font-size: 22px;
+    width: 40px;
+}
+.profile_page .profile_left_bar .left_inner li p {
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.profile_page .profile_page_items {
+    position: relative;
+    width: calc(100% - 350px);
+    height: 100%;
+    padding-left: 50px;
+    overflow-y: auto;
+}
+.profile_page .profile_page_items .items_inner {
+    position: relative;
+    width: 100%;
+}
+
+
+/* =================== profile update section =================== */
+
+.profile_update_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.profile_update_section .section_inner {
+    position: relative;
+    width: 100%;
+}
+
+/* =================== saved address section =================== */
+
+.saved_address_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.saved_address_section .section_inner {
+    position: relative;
+    width: 100%;
+}
+
+/* =================== order list section =================== */
+
+.order_list_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.order_list_section .section_inner {
+    position: relative;
+    width: 100%;
+}
+
+/* =================== wallet section =================== */
+
+.wallet_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.wallet_section .section_inner {
+    position: relative;
+    width: 100%;
+}
+
+/* =================== settings section =================== */
+
+.settings_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.settings_section .section_inner {
+    position: relative;
+    width: 100%;
+}
+
+/* =================== notifications section =================== */
+
+.notifications_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.notifications_section .section_inner {
+    position: relative;
+    width: 100%;
+}
