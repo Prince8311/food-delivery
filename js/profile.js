@@ -15,3 +15,20 @@ profileMenuBtns.forEach(profileMenuBtn => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const imageBox = document.querySelector(".image_box");
+    const popupWrapper = document.querySelector(".image_popup_wrapper");
+    const popupClose = document.querySelector(".popup_close");
+
+
+
+    
+    imageBox.addEventListener("click", function () {
+        popupWrapper.classList.add("active");
+    });
+
+    popupClose.addEventListener("click", function () {
+        popupWrapper.classList.remove("active");
+    });
+});

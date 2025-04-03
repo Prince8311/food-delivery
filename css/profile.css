@@ -101,6 +101,27 @@
 }
 
 
+/* ======= responsive start ========= */
+@media (max-width: 1499px) {
+    .profile_page {
+        padding: 0 50px;
+    }
+    .order_list_section .section_inner {
+        width: 100%;
+    }
+}
+@media (max-width: 1150px) {
+    .profile_page .profile_left_bar {
+        display: none;
+    }
+    .profile_page .profile_page_items {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+/* ======= responsive end ========= */
+
+
 /* =================== profile update section =================== */
 
 .profile_update_section {
@@ -262,6 +283,51 @@
     transition: all 0.5s ease;
 }
 
+
+/* ======= responsive start ========= */
+@media (max-width: 876px) {
+    .profile_update_section .section_inner form .form_section {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+}
+@media (max-width: 575px) {
+    .profile_page {
+        padding: 0 35px;
+    }
+    .profile_update_section .section_inner form .profile_image_sec {
+        margin-bottom: 25px;
+    }
+    .profile_update_section .section_inner form .profile_image_sec .image_sec_inner {
+        width: 140px;
+        height: 140px;
+    }
+    .profile_update_section .section_inner .profile_btn {
+        padding: 0;
+        justify-content: center;
+    }
+}
+@media (max-width: 450px) {
+    .profile_page {
+        padding: 0 25px;
+    }
+    .profile_update_section .section_inner form .profile_image_sec .image_sec_inner {
+        width: 125px;
+        height: 125px;
+    }
+    .profile_update_section .section_inner form .form_section .form_box input {
+        padding: 16px 20px;
+        font-size: 15px;
+    }
+    .profile_update_section .section_inner .profile_btn button {
+        height: 54px;
+        font-size: 18px;
+    }
+}
+/* ======= responsive end ========= */
+
+
+
 /* =================== saved address section =================== */
 
 .saved_address_section {
@@ -398,6 +464,60 @@
     margin-top: 50px;
     justify-content: flex-end;
 }
+
+
+/* ======= responsive start ========= */
+@media (max-width: 575px) {
+    .saved_address_section .section_inner .sec_head h4 {
+        font-size: 22px;
+    }
+    .saved_address_section .section_inner .sec_head {
+        flex-direction: column;
+    }
+    .saved_address_section .section_inner .sec_head button {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+   
+    .saved_address_section .section_inner .sec_head button {
+        padding: 10px 35px;
+    }
+    .saved_address_section .section_inner .address_box_section {
+        margin-top: 20px;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .address_part a {
+        width: 35px;
+        height: 35px;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .address_part a i {
+        font-size: 16px;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .address_part li {
+        width: calc(100% - 35px);
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .address_part li p {
+        font-size: 13px;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .btn_sec {
+       flex-direction: column;
+       align-items: center;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .btn_sec a {
+        width: 100%;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .btn_sec a:nth-child(2) {
+       margin-top: 15px;
+       margin-left: 0;
+    }
+}
+
+/* ======= responsive end ========= */
+
+
 /* =================== order list section =================== */
 
 .order_list_section {
@@ -650,6 +770,23 @@
     margin-right: 8px;
 }
 
+/* ======= responsive start ========= */
+@media (max-width: 575px) {
+    .order_list_section .section_inner .box_head h4 {
+        font-size: 22px;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant {
+        flex-direction: column;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant li {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+/* ======= responsive end ========= */
+
+
 /* =================== wallet section =================== */
 
 .wallet_section {
@@ -849,6 +986,36 @@
     transform: rotate(45deg);
     color: var(--yellow-color);
 }
+
+/* ======= responsive start ========= */
+@media (max-width: 678px) {
+    .wallet_section .section_inner .wallet_top_part .left_side i {
+        font-size: 60px;
+    }
+    .wallet_section .section_inner .wallet_top_part .left_side li p {
+        font-size: 25px;
+    }
+}
+@media (max-width: 575px) {
+    .wallet_section .section_inner .box_head h4 {
+        font-size: 22px;
+    }
+    .wallet_section .section_inner .wallet_top_part {
+        flex-direction: column;
+    }
+    .wallet_section .section_inner .wallet_top_part .left_side {
+        width: 100%;
+    }
+    .wallet_section .section_inner .wallet_top_part .right_side {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .wallet_section .section_inner .wallet_top_part .right_side button {
+        width: 100%;
+    }
+}
+
+/* ======= responsive end ========= */
 
 /* =================== settings section =================== */
 
@@ -1080,20 +1247,32 @@
 
 
 
+
 .image_popup_wrapper {
-    position: relative;
+    position: fixed;
+    top: 188px;
+    left: 0;
     width: 100%;
     height: 100vh;
-    display: flex;
     padding: 50px;
     background: var(--modal-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.image_popup_wrapper.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .image_popup_wrapper .popup_box {
     position: relative;
     width: 100%;
     height: 100%;
-    display: 100%;
+    display: flex;
 }
 
 .image_popup_wrapper .popup_box img {
@@ -1107,8 +1286,9 @@
 .image_popup_wrapper .popup_close {
     position: absolute;
     top: -30px;
-    right: -30px;
+    right: 0px;
     z-index: 10;
+    cursor: pointer;
 }
 
 .image_popup_wrapper .popup_close a {
@@ -1122,5 +1302,4 @@
     justify-content: center;
     color: var(--light-color);
     font-size: 26px;
-    cursor: pointer;
 }
