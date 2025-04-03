@@ -31,4 +31,25 @@ document.addEventListener("DOMContentLoaded", function () {
     popupClose.addEventListener("click", function () {
         popupWrapper.classList.remove("active");
     });
+
+
+    const profileMenu = document.querySelector(".profile_left_bar .left_inner");
+    const leftArrow = document.getElementById('leftArrow');
+    const rightArrow = document.getElementById('rightArrow');
+
+    leftArrow.addEventListener("click", () => {
+        profileMenu.scrollBy({ left: -100, behavior: "smooth" });
+    });
+
+    rightArrow.addEventListener("click", () => {
+        profileMenu.scrollBy({ left: 100, behavior: "smooth" });
+    });
+
+    function toggleArrows() {
+        leftArrow.style.display = profileMenu.scrollLeft > 0 ? "block" : "none";
+        rightArrow.style.display = profileMenu.scrollLeft + profileMenu.clientWidth < profileMenu.scrollWidth ? "block" : "none";
+    }
+
+    profileMenu.addEventListener("scroll", toggleArrows);
+    toggleArrows();
 });
