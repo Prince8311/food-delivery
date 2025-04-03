@@ -104,7 +104,7 @@
 /* ======= responsive start ========= */
 @media (max-width: 1499px) {
     .profile_page {
-        padding: 0 50px;
+        padding: 35px 50px;
     }
     .order_list_section .section_inner {
         width: 100%;
