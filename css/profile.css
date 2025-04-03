@@ -853,6 +853,38 @@
     }
 }
 
+@media (max-width: 450px) {
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant::before {
+       display: none;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_total {
+        width: 100%;
+    }
+    /* .order_list_section .section_inner .order_box_sec .order_box .box_items .order_items .items_head h5 {
+        width: 75%;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_items ul li h5 {
+        width: 75%;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li h5 {
+        width: 75%;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li.grand_total h5 {
+        width: 74%;
+    } */
+    .order_list_section .section_inner .order_box_sec .order_box .box_bottom {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_bottom a:first-child {
+        padding-right: 0;
+        border-right: none;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_bottom a:last-child {
+        padding-left: 0;
+    }
+}
+
 /* ======= responsive end ========= */
 
 
