@@ -799,11 +799,11 @@
 
 .sideber_popup_section {
     position: fixed;
-    top: 187px;
+    top: 0;
     left: 0;
     width: 400px;
-    height: calc(100vh - 187px);
-    z-index: 499;
+    height: 100vh;
+    z-index: 999;
     transition: all 0.8s;
 }
 .sideber_popup_section .popup_inner {
@@ -813,7 +813,6 @@
     display: flex;
     flex-direction: column;
     border: 1px solid #cbc8c8;
-    border-radius: 0 12px 0 0;
     padding: 25px;
     background: #fff;
 }
@@ -868,17 +867,10 @@
     font-weight: 500;
     border-radius: 6px;   
     cursor: pointer;
-    transition: all 0.5s;
-}
-.sideber_popup_section .popup_inner .menu_sec li a:hover {
-    color: var(--light-color);
-    background: var(--theme-color);
-    transition: all 0.5s;
 }
 .sideber_popup_section .popup_inner .account_sec {
     position: relative;
     width: 100%;
-    /* margin-top: 25px; */
     display: flex;
     flex-direction: column;
 }
@@ -905,13 +897,7 @@
     font-weight: 500;
     border-radius: 6px;   
     cursor: pointer;
-    transition: all 0.5s;
 }
 .sideber_popup_section .popup_inner .account_sec li a i {
     margin-right: 20px;
-}
-.sideber_popup_section .popup_inner .account_sec li a:hover {
-    color: var(--light-color);
-    background: var(--theme-color);
-    transition: all 0.5s;
 }
