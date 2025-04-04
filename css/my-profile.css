@@ -1,0 +1,1155 @@
+.profile_page {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 0 100px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.profile_page .profile_page_items {
+    position: relative;
+    width: 100%;
+}
+.profile_page .profile_page_items .items_inner {
+    position: relative;
+    width: 100%;
+}
+
+
+@media (max-width: 1499px) {
+    .profile_page {
+        padding: 35px 50px;
+    }
+}
+@media (max-width: 575px) {
+    .profile_page {
+        padding: 0 35px;
+    }
+}
+@media (max-width: 450px) {
+    .profile_page {
+        padding: 0 25px;
+    }
+}
+
+
+/* =================== profile update section =================== */
+
+.profile_update_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.profile_update_section .section_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile_update_section .section_inner form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile_update_section .section_inner form .profile_image_sec {
+    position: relative;
+    width: 100%;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+.profile_update_section .section_inner form .profile_image_sec .image_sec_inner {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--dark-color-1);
+    border-radius: 50%;
+    padding: 10px;
+}
+.profile_update_section .section_inner form .profile_image_sec .image_sec_inner .image_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--light-border);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile_update_section .section_inner form .profile_image_sec .image_sec_inner .image_box img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile_update_section .section_inner form .profile_image_sec .image_sec_inner .upload_btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.profile_update_section .section_inner form .profile_image_sec .image_sec_inner .upload_btn a {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: var(--green-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    color: var(--light-color);
+}
+.profile_update_section .section_inner form .form_section {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+.profile_update_section .section_inner form .form_section .form_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile_update_section .section_inner form .form_section .form_box input {
+    position: relative;
+    width: 100%;
+    padding: 20px 24px;
+    font-size: 17px;
+    line-height: 1;
+    color: var(--dark-color-1);
+    border: none;
+    outline: none;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.profile_update_section .section_inner form .form_section .form_box input:focus,
+.profile_update_section .section_inner form .form_section .form_box input:valid {
+    opacity: 1;
+    transition: all 0.4s;
+}
+.profile_update_section .section_inner form .form_section .form_box .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--light-border);
+    border-radius: 8px;
+    pointer-events: none;
+}
+.profile_update_section .section_inner form .form_section .form_box span{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    font-size: 17px;
+    line-height: 1;
+    color: #afafaf;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+}
+
+.profile_update_section .section_inner form .form_section .form_box input:focus ~ span,
+.profile_update_section .section_inner form .form_section .form_box input:valid ~ span {
+    top: 0px;
+    left: 15px;
+    font-size: 14px;
+    padding: 0px 5px;
+    background: #fff;
+    color: var(--theme-color);
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.profile_update_section .section_inner .profile_btn {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+.profile_update_section .section_inner .profile_btn button {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background: var(--theme-color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: var(--light-color);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.profile_update_section .section_inner .profile_btn button:hover {
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+
+/* ======= responsive start ========= */
+@media (max-width: 876px) {
+    .profile_update_section .section_inner form .form_section {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+}
+@media (max-width: 575px) {
+    .profile_update_section .section_inner form .profile_image_sec {
+        margin-bottom: 25px;
+    }
+    .profile_update_section .section_inner form .profile_image_sec .image_sec_inner {
+        width: 140px;
+        height: 140px;
+    }
+    .profile_update_section .section_inner .profile_btn {
+        padding: 0;
+        justify-content: center;
+    }
+}
+@media (max-width: 450px) {
+    .profile_update_section .section_inner form .profile_image_sec .image_sec_inner {
+        width: 125px;
+        height: 125px;
+    }
+    .profile_update_section .section_inner form .form_section .form_box input {
+        padding: 16px 20px;
+        font-size: 15px;
+    }
+    .profile_update_section .section_inner .profile_btn button {
+        width: 100%;
+        height: 54px;
+        font-size: 18px;
+    }
+}
+/* ======= responsive end ========= */
+
+
+/* =================== saved address section =================== */
+
+.saved_address_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.saved_address_section .section_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.saved_address_section .section_inner .sec_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.saved_address_section .section_inner .sec_head h4 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.saved_address_section .section_inner .sec_head h4 i {
+    margin-right: 15px;
+}
+.saved_address_section .section_inner .sec_head button {
+    position: relative;
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    background: var(--theme-color);
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.saved_address_section .section_inner .sec_head button:hover {
+   border-radius: 30px;
+   transition: all 0.5s ease;
+}
+.saved_address_section .section_inner .address_box_section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--light-border);
+    border-radius: 12px;
+    margin-top: 50px;
+}
+.saved_address_section .section_inner .address_box_section .address_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--light-border);
+}
+.saved_address_section .section_inner .address_box_section .address_box:last-child {
+    border-bottom: none;
+}
+.saved_address_section .section_inner .address_box_section .address_box .address_part {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.saved_address_section .section_inner .address_box_section .address_box .address_part a {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    background: rgba(252, 137, 6, 0.08);
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.saved_address_section .section_inner .address_box_section .address_box .address_part a i {
+    position: relative;
+    color: var(--theme-color);
+    font-size: 20px;
+}
+.saved_address_section .section_inner .address_box_section .address_box .address_part li {
+    position: relative;
+    width: calc(100% - 45px);
+    display: flex;
+    padding-left: 30px;
+}
+.saved_address_section .section_inner .address_box_section .address_box .address_part li p {
+    position: relative;
+    font-size: 16px;
+    color: var(--dark-color-1);
+    font-weight: 500;
+}
+.saved_address_section .section_inner .address_box_section .address_box .btn_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+.saved_address_section .section_inner .address_box_section .address_box .btn_sec a {
+    position: relative;
+    width: 150px;
+    height: 45px;
+    background: #d0cfcf;
+    border-radius: 6px;
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.saved_address_section .section_inner .address_box_section .address_box .btn_sec a:nth-child(2) {
+    background: rgba(2, 134, 67, 1);
+    margin-left: 15px;
+}
+
+.saved_address_section .section_inner .address_btn {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+
+/* ======= responsive start ========= */
+@media (max-width: 575px) {
+    .saved_address_section .section_inner .sec_head h4 {
+        font-size: 22px;
+    }
+    .saved_address_section .section_inner .sec_head {
+        flex-direction: column;
+    }
+    .saved_address_section .section_inner .sec_head button {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+   
+    .saved_address_section .section_inner .sec_head button {
+        padding: 10px 35px;
+    }
+    .saved_address_section .section_inner .address_box_section {
+        margin-top: 20px;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .address_part a {
+        width: 35px;
+        height: 35px;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .address_part a i {
+        font-size: 16px;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .address_part li {
+        width: calc(100% - 35px);
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .address_part li p {
+        font-size: 13px;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .btn_sec {
+       flex-direction: column;
+       align-items: center;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .btn_sec a {
+        width: 100%;
+    }
+    .saved_address_section .section_inner .address_box_section .address_box .btn_sec a:nth-child(2) {
+       margin-top: 15px;
+       margin-left: 0;
+    }
+}
+
+/* ======= responsive end ========= */
+
+
+/* =================== order list section =================== */
+
+.order_list_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.order_list_section .section_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.order_list_section .section_inner .box_head {
+    position: relative;
+    width: 100%;
+}
+.order_list_section .section_inner .box_head h4 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.order_list_section .section_inner .order_box_sec .order_box {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    border: 1px solid var(--light-border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_top {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+    border-bottom: 1px solid var(--light-border);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_top li {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_top li p {
+    position: relative;
+    font-size: 16px;
+    color: var(--dark-color-1);
+    opacity: 0.5;
+    font-weight: 500;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_top li span {
+    position: relative;
+    margin-left: 10px;
+    font-size: 16px;
+    color: var(--dark-color-1);
+    font-weight: 500;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items {
+    position: relative;
+    width: 100%;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant {
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, var(--light-border), var(--light-color));
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant img {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant li {
+    position: relative;
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant li h5 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant li p {
+    position: relative;
+    margin-top: 5px;
+    font-size: 17px;
+    color: var(--dark-color-1);
+    opacity: 0.5;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant li p i {
+    position: relative;
+    margin-right: 8px;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items .items_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-border);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items .items_head h5 {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items .items_head p {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items ul {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items ul li {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items ul li h5 {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_items ul li p {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total {
+    position: relative;
+    width: 300px;
+    border-top: 1px solid var(--light-border);
+    display: flex;
+    flex-direction: column;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--light-border);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li:last-child {
+    border-bottom: none;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li h5 {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li p {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-color-1);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li.grand_total h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_items .order_total li.grand_total p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_bottom {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: var(--theme-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_bottom a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--light-color);
+    cursor: pointer;
+    font-size: 16px;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_bottom a:first-child {
+    padding-right: 30px;
+    border-right: 1px solid var(--light-color);
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_bottom a:last-child {
+    padding-left: 30px;
+}
+.order_list_section .section_inner .order_box_sec .order_box .box_bottom a i {
+    margin-right: 8px;
+}
+
+/* ======= responsive start ========= */
+
+
+@media (max-width: 1499px) {
+    .order_list_section .section_inner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .order_list_section .section_inner .box_head h4 {
+        font-size: 22px;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant {
+        flex-direction: column;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant li {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_restaurant::before {
+       display: none;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_items .order_total {
+        width: 100%;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_bottom {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_bottom a:first-child {
+        padding-right: 0;
+        border-right: none;
+    }
+    .order_list_section .section_inner .order_box_sec .order_box .box_bottom a:last-child {
+        padding-left: 0;
+    }
+}
+
+/* ======= responsive end ========= */
+
+
+/* =================== wallet section =================== */
+
+.wallet_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.wallet_section .section_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wallet_section .section_inner .box_head {
+    position: relative;
+    width: 100%;
+}
+.wallet_section .section_inner .box_head h4 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+
+.wallet_section .section_inner .wallet_top_part {
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    padding: 20px 35px;
+    border-radius: 10px;
+    border: 1px solid var(--light-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wallet_section .section_inner .wallet_top_part .left_side {
+    position: relative;
+    display: flex;
+}
+.wallet_section .section_inner .wallet_top_part .left_side i {
+    position: relative;
+    font-size: 70px;
+    color: var(--theme-color);
+}
+.wallet_section .section_inner .wallet_top_part .left_side li {
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.wallet_section .section_inner .wallet_top_part .left_side li h5 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.wallet_section .section_inner .wallet_top_part .left_side li p {
+    position: relative;
+    font-size: 28px;
+    color: var(--dark-color-1);
+    opacity: 0.5;
+}
+.wallet_section .section_inner .wallet_top_part .right_side {
+    position: relative;
+}
+.wallet_section .section_inner .wallet_top_part .right_side button {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: var(--green-color);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--light-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.wallet_section .section_inner .wallet_top_part .right_side button:hover {
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+.wallet_section .section_inner .transaction_head {
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+}
+.wallet_section .section_inner .transaction_head h4 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark-color-1);
+}
+.wallet_section .section_inner .transaction_head h4 i {
+    position: relative;
+    font-size: 22px;
+}
+.wallet_section .section_inner .transaction_head h4 i.incoming {
+    transform: rotate(-135deg);
+    color: var(--green-color);
+}
+.wallet_section .section_inner .transaction_head h4 i.outcoming {
+    transform: rotate(45deg);
+    color: var(--yellow-color);
+}
+.wallet_section .section_inner .wallet_table_part {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+}
+.wallet_section .section_inner .wallet_table_part table {
+    position: relative;
+    width: 100%;
+    border: 1px solid var(--light-border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.wallet_section .section_inner .wallet_table_part table thead {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid var(--light-border);
+}
+.wallet_section .section_inner .wallet_table_part table thead tr {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.wallet_section .section_inner .wallet_table_part table thead th {
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+    padding: 0 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+    display: flex;
+    align-items: center;
+}
+.wallet_section .section_inner .wallet_table_part table thead th:nth-child(2) {
+    justify-content: center;
+}
+.wallet_section .section_inner .wallet_table_part table thead th:nth-child(3) {
+    justify-content: flex-end;
+}
+.wallet_section .section_inner .wallet_table_part table tbody {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow: hidden;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-bottom: 1px solid var(--light-border);
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr:last-child {
+    border-bottom: none;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td {
+    position: relative;
+    width: 33.33%;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--dark-color-1);
+    opacity: 0.7;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(2) {
+    justify-content: center;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) {
+    justify-content: flex-end;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) i {
+    position: relative;
+    font-size: 21px;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) i.incoming {
+    transform: rotate(-135deg);
+    color: var(--green-color);
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) i.outcoming {
+    transform: rotate(45deg);
+    color: var(--yellow-color);
+}
+
+/* ======= responsive start ========= */
+@media (max-width: 678px) {
+    .wallet_section .section_inner .wallet_top_part .left_side i {
+        font-size: 60px;
+    }
+    .wallet_section .section_inner .wallet_top_part .left_side li p {
+        font-size: 25px;
+    }
+}
+@media (max-width: 575px) {
+    .wallet_section .section_inner .box_head h4 {
+        font-size: 22px;
+    }
+    .wallet_section .section_inner .wallet_top_part {
+        flex-direction: column;
+    }
+    .wallet_section .section_inner .wallet_top_part .left_side {
+        width: 100%;
+    }
+    .wallet_section .section_inner .wallet_top_part .right_side {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .wallet_section .section_inner .wallet_top_part .right_side button {
+        width: 100%;
+    }
+}
+
+/* ======= responsive end ========= */
+
+/* =================== settings section =================== */
+
+.settings_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.settings_section .section_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.settings_section .section_inner .box_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.settings_section .section_inner .box_head h4 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.settings_section .section_inner .settings_items_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 1px solid var(--light-border);
+    border-radius: 12px;
+}
+.settings_section .section_inner .settings_items_sec .settings_item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--light-border);
+}
+.settings_section .section_inner .settings_items_sec .settings_item:last-child {
+    border-bottom: none;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_left {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_left p {
+    position: relative;
+    font-size: 20px;
+    color: var(--dark-color-1);
+    font-weight: 500;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_left span {
+    position: relative;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #7a7a7a;
+    opacity: 0.6;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right {
+    position: relative;
+    display: flex;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label {
+    position: relative;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label input[type="checkbox"] {
+    display: none;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label span {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    background: var(--grey-background-5);
+    display: flex;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label span::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    background: var(--light-background);
+    border-radius: 50%;
+    transition: all 0.6s ease;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label input[type="checkbox"]:checked ~ span {
+    background: var(--green-color-2);
+    transition: all 0.6s ease;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right label input[type="checkbox"]:checked ~ span::after {
+    transform: translateX(40px);
+    transition: all 0.6s ease;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right i {
+    position: relative;
+    font-size: 22px;
+    cursor: pointer;
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right i.angle {
+    color: var(--dark-color-1);
+}
+.settings_section .section_inner .settings_items_sec .settings_item .item_right i.delete {
+    color: #E5322D;
+}
+
+
+/* =================== notifications section =================== */
+
+.notifications_section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.notifications_section .section_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.notifications_section .section_inner .sec_head {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.notifications_section .section_inner .sec_head h4 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.notifications_section .section_inner .notification_box_section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 1px solid var(--light-border);
+    border-radius: 12px;
+}
+.notifications_section .section_inner .notification_box_section .notification_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--light-border);
+}
+.notifications_section .section_inner .notification_box_section .notification_box:last-child {
+    border-bottom: none;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .notification_part {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .notification_part .img_part {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 12px;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .notification_part .img_part img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .notification_part li {
+    position: relative;
+    width: calc(100% - 90px);
+    display: flex;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .notification_part li p {
+    position: relative;
+    font-size: 16px;
+    color: var(--dark-color-1);
+    font-weight: 500;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .btn_sec {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: flex-end;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .btn_sec p {
+    position: relative;
+    font-size: 14px;
+    color: #7a7a7a;
+    font-weight: 500;
+}
+.notifications_section .section_inner .notification_box_section .notification_box .btn_sec a {
+    position: relative;
+    margin-left: 30px;
+    width: 150px;
+    height: 45px;
+    background: rgba(252, 137, 6, 0.08);
+    border-radius: 30px;
+    color: var(--theme-color);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
