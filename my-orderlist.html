@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery | My Account</title>
+    <title>Food Delivery | My Orderlist</title>
 
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav-footer.css">
-    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/my-profile.css">
 
     <!-- font awesome -->
     <script src="js/fontawesome.js"></script>
-     
 </head>
 <body>
-    
     <div class="page_wrapper">
 
         <!-- navbar -->
@@ -150,132 +148,9 @@
         </div>
 
         <div class="profile_page">
-            <div class="profile_left_bar">
-                <button class="profile_bar_arrow_left" id="leftArrow"><i class="fa-solid fa-angles-left"></i></button>
-                <div class="left_inner">
-                    <li class="profile_menu_btn active" id="profile_update">
-                        <i class="fa-solid fa-circle-user icon"></i>
-                        <p>My Profile</p>
-                        <i class="fa-solid fa-arrow-right-long arrow"></i>
-                    </li>
-                    <li class="profile_menu_btn" id="saved_address">
-                        <i class="fa-solid fa-map-location icon"></i>
-                        <p>Saved Addresses</p>
-                        <i class="fa-solid fa-arrow-right-long arrow"></i>
-                    </li>
-                    <li class="profile_menu_btn" id="order_list">
-                        <i class="fa-solid fa-list-check icon"></i>
-                        <p>Order List</p>
-                        <i class="fa-solid fa-arrow-right-long arrow"></i>
-                    </li>
-                    <li class="profile_menu_btn" id="wallet">
-                        <i class="fa-solid fa-wallet icon"></i>
-                        <p>My Wallet</p>
-                        <i class="fa-solid fa-arrow-right-long arrow"></i>
-                    </li>
-                    <li class="profile_menu_btn" id="settings">
-                        <i class="fa-solid fa-gears icon"></i>
-                        <p>Settings</p>
-                        <i class="fa-solid fa-arrow-right-long arrow"></i>
-                    </li>
-                    <li class="profile_menu_btn" id="notifications">
-                        <i class="fa-solid fa-bell icon"></i>
-                        <p>Notifications</p>
-                        <i class="fa-solid fa-arrow-right-long arrow"></i>
-                    </li>
-                </div>
-                <button class="profile_bar_arrow_right" id="rightArrow"><i class="fa-solid fa-angles-right"></i></button>
-            </div>
             <div class="profile_page_items">
                 <div class="items_inner">
-                    <div class="profile_update_section profile_section active">
-                        <div class="section_inner">
-                            <form action="">
-                                <div class="profile_image_sec">
-                                    <div class="image_sec_inner">
-                                        <div class="image_box">
-                                            <img src="img/profile-image.png" alt="">
-                                        </div>
-                                        <div class="upload_btn">
-                                            <a><i class="fa-solid fa-pen-to-square"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form_section">
-                                    <div class="form_box">
-                                        <input type="text" required>
-                                        <div class="line"></div>
-                                        <span>Full Name</span>
-                                    </div>
-                                    <div class="form_box">
-                                        <input type="text" required>
-                                        <div class="line"></div>
-                                        <span>Email</span>
-                                    </div>
-                                    <div class="form_box">
-                                        <input type="text" required>
-                                        <div class="line"></div>
-                                        <span>Phone No.</span>
-                                    </div>
-                                    <div class="form_box">
-                                        <input type="date" required>
-                                        <div class="line"></div>
-                                        <span>Date of Birth</span>
-                                    </div>
-                                </div>
-                                <div class="profile_btn">
-                                    <button>Save</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="saved_address_section profile_section">
-                        <div class="section_inner">
-                            <div class="sec_head">
-                                <h4><i class="fa-solid fa-map-location-dot"></i>Saved address</h4>
-                                <button>Add address</button>
-                            </div>
-                            <div class="address_box_section">
-                                <div class="address_box">
-                                    <div class="address_part">
-                                        <a><i class="fa-solid fa-location-dot"></i></a>
-                                        <li>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatum sed mollitia accusantium qui asperiores doloribus nihil pariatur tenetur ex nostrum aliquam voluptas aut repellendus, debitis maiores. Quis, quod repudiandae?</p>
-                                        </li>
-                                    </div>
-                                    <div class="btn_sec">
-                                        <a>Delete</a>
-                                        <a>Edit</a>
-                                    </div>
-                                </div>
-                                <div class="address_box">
-                                    <div class="address_part">
-                                        <a><i class="fa-solid fa-location-dot"></i></a>
-                                        <li>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatum sed mollitia accusantium qui asperiores doloribus nihil pariatur tenetur ex nostrum aliquam voluptas aut repellendus, debitis maiores. Quis, quod repudiandae?</p>
-                                        </li>
-                                    </div>
-                                    <div class="btn_sec">
-                                        <a>Delete</a>
-                                        <a>Edit</a>
-                                    </div>
-                                </div>
-                                <div class="address_box">
-                                    <div class="address_part">
-                                        <a><i class="fa-solid fa-location-dot"></i></a>
-                                        <li>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatum sed mollitia accusantium qui asperiores doloribus nihil pariatur tenetur ex nostrum aliquam voluptas aut repellendus, debitis maiores. Quis, quod repudiandae?</p>
-                                        </li>
-                                    </div>
-                                    <div class="btn_sec">
-                                        <a>Delete</a>
-                                        <a>Edit</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="order_list_section profile_section">
+                    <div class="order_list_section">
                         <div class="section_inner">
                             <div class="box_head">
                                 <h4>Order History</h4>
@@ -449,178 +324,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="wallet_section profile_section">
-                        <div class="section_inner">
-                            <div class="box_head">
-                                <h4>My Wallet</h4>
-                            </div>
-                            <div class="wallet_top_part">
-                                <div class="left_side">
-                                    <i class="fa-solid fa-wallet icon"></i>
-                                    <li>
-                                        <h5>Balance</h5>
-                                        <p>250.00 /-</p>
-                                    </li>
-                                </div>
-                                <div class="right_side">
-                                    <button>Add Balance</button>
-                                </div>
-                            </div>
-                            <div class="transaction_head">
-                                <h4>Transaction History ( <i class="fa-solid fa-arrow-up-long incoming"></i> <i class="fa-solid fa-arrow-up-long outcoming"></i> )</h4>
-                            </div>
-                            <div class="wallet_table_part">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Amount</th>
-                                            <th>Date</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>500.00</td>
-                                            <td>23/02/2025</td>
-                                            <td><i class="fa-solid fa-arrow-up-long incoming"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>200.00</td>
-                                            <td>22/02/2025</td>
-                                            <td><i class="fa-solid fa-arrow-up-long incoming"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>220.00</td>
-                                            <td>22/02/2025</td>
-                                            <td><i class="fa-solid fa-arrow-up-long outcoming"></i></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="settings_section profile_section">
-                        <div class="section_inner">
-                            <div class="box_head">
-                                <h4>Settings</h4>
-                            </div>
-                            <div class="settings_items_sec">
-                                <div class="settings_item">
-                                    <div class="item_left">
-                                        <p>Notifications</p>
-                                    </div>
-                                    <div class="item_right">
-                                        <label>
-                                            <input type="checkbox" name="" id="">
-                                            <span></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="settings_item">
-                                    <div class="item_left">
-                                        <p>Privacy & Policy</p>
-                                        <span>Please go through our privacy & policy rules for further help.</span>
-                                    </div>
-                                    <div class="item_right"><i class="fa-solid fa-angle-right angle"></i></div>
-                                </div>
-                                <div class="settings_item">
-                                    <div class="item_left">
-                                        <p>Delete account</p>
-                                        <span>Only if the account is unused for 90 days. </span>
-                                    </div>
-                                    <div class="item_right"><i class="fa-solid fa-trash delete"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="notifications_section profile_section">
-                        <div class="section_inner">
-                            <div class="sec_head">
-                                <h4>Notifications</h4>
-                            </div>
-                            <div class="notification_box_section">
-                                <div class="notification_box">
-                                    <div class="notification_part">
-                                        <div class="img_part">
-                                            <img src="img/dragon_chiken.png" alt="">
-                                        </div>
-                                        <li>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatum sed mollitia accusantium qui asperiores doloribus nihil pariatur tenetur ex nostrum aliquam voluptas aut repellendus, debitis maiores. Quis, quod repudiandae?</p>
-                                        </li>
-                                    </div>
-                                    <div class="btn_sec">
-                                        <p>few second ago</p>
-                                        <a>Read</a>
-                                    </div>
-                                </div>
-                                <div class="notification_box">
-                                    <div class="notification_part">
-                                        <li>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatum sed mollitia accusantium qui asperiores doloribus nihil pariatur tenetur ex nostrum aliquam voluptas aut repellendus, debitis maiores. Quis, quod repudiandae?</p>
-                                        </li>
-                                    </div>
-                                    <div class="btn_sec">
-                                        <p>few second ago</p>
-                                        <a>Read</a>
-                                    </div>
-                                </div>
-                                <div class="notification_box">
-                                    <div class="notification_part">
-                                        <div class="img_part">
-                                            <img src="img/dragon_chiken.png" alt="">
-                                        </div>
-                                        <li>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatum sed mollitia accusantium qui asperiores doloribus nihil pariatur tenetur ex nostrum aliquam voluptas aut repellendus, debitis maiores. Quis, quod repudiandae?</p>
-                                        </li>
-                                    </div>
-                                    <div class="btn_sec">
-                                        <p>few second ago</p>
-                                        <a>Read</a>
-                                    </div>
-                                </div>
-                                <div class="notification_box">
-                                    <div class="notification_part">
-                                        <li>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatum sed mollitia accusantium qui asperiores doloribus nihil pariatur tenetur ex nostrum aliquam voluptas aut repellendus, debitis maiores. Quis, quod repudiandae?</p>
-                                        </li>
-                                    </div>
-                                    <div class="btn_sec">
-                                        <p>few second ago</p>
-                                        <a>Read</a>
-                                    </div>
-                                </div>
-                                <div class="notification_box">
-                                    <div class="notification_part">
-                                        <div class="img_part">
-                                            <img src="img/dragon_chiken.png" alt="">
-                                        </div>
-                                        <li>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatum sed mollitia accusantium qui asperiores doloribus nihil pariatur tenetur ex nostrum aliquam voluptas aut repellendus, debitis maiores. Quis, quod repudiandae?</p>
-                                        </li>
-                                    </div>
-                                    <div class="btn_sec">
-                                        <p>few second ago</p>
-                                        <a>Read</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-
-    <div class="image_popup_wrapper">
-        <div class="popup_close"><a><i class="fa-solid fa-xmark"></i></a></div>
-        <div class="popup_box">
-            <img src="img/dragon_chiken.png" alt="">
-        </div>
-    </div>
-
-    <script src="js/nav.js"></script>
-    <script src="js/profile.js"></script>
-
 </body>
 </html>
