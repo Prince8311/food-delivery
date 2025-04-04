@@ -15,28 +15,73 @@
 <body>
 
     <div class="modal_wrapper">
-        <div class="modal_box">
+        <div class="modal_box location_modal_box">
             <div class="modal_close">
                 <a><i class="fa-solid fa-xmark"></i></a>
             </div>
             <div class="modal_inner">
                 <div class="modal_head">
-                    <h3>Change Location</h3>
+                    <h3>Add Address</h3>
                 </div>
-                <div class="location">
-                    <div class="btn_sec">
-                        <button>Detect my location</button>
-                        <a href="">OR</a>
-                        <input type="text" placeholder="Search delivary location">
-                    </div>
+                <div class="location_sec">
                     <div class="map_sec">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43992.103045041775!2d77.54124438353375!3d12.946922860447774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1741613026206!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <i class="fa-solid fa-location-dot"></i>
+                        <div id="dvMap" style="width:100%; height: 460px;"></div>
+                    </div>
+                    <div class="address_fillup_sec">
+                        <div class="detect_search_sec">
+                            <button><i class="fa-solid fa-location-crosshairs"></i>Use Current Location</button>
+                            <div class="input_sec">
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <input type="text" id="searchInput" placeholder="Search Here...">
+                            </div>
+                        </div>
+                        <div class="form_sec">
+                            <form>
+                                <div class="form_box halfWidth">
+                                    <input type="text" placeholder="e.g: 48A/L">
+                                    <span>House No./Name</span>
+                                </div>
+                                <div class="form_box halfWidth">
+                                    <input type="text" placeholder="e.g: Ground Floor">
+                                    <span>Floor</span>
+                                </div>
+                                <div class="form_box fullWidth">
+                                    <input type="text" placeholder="e.g: Newtown Road">
+                                    <span>Area / Street Name</span>
+                                </div>
+                                <div class="form_box fullWidth">
+                                    <input type="text" placeholder="e.g: Near Newtown Bustand">
+                                    <span>Landmark (Optional)</span>
+                                </div>
+                                <div class="choise_sec">
+                                    <label>
+                                        <input type="radio" name="place-choice" id="">
+                                        <span><i class="fa-solid fa-house"></i>Home</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="place-choice" id="">
+                                        <span><i class="fa-solid fa-briefcase"></i>Office</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="place-choice" id="">
+                                        <span><i class="fa-solid fa-user-tie"></i>Guest</span>
+                                    </label>
+                                </div>
+                                <div class="form_btn">
+                                    <button>Save Address</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"  crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDKX4TjlGMne-DIIucVFT6FRmTiMXKkcqs" defer></script>
+    <script src="js/map-search.js"></script>
     
 </body>
 </html>

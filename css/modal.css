@@ -749,12 +749,16 @@
 
 /* ============== Location modal ============= */
 
+.modal_wrapper .location_modal_box {
+    width: 1000px;
+}
+
 .modal_wrapper .modal_box .modal_inner .modal_head {
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 15px 25px;
+    padding: 20px 35px;
 }
 
 .modal_wrapper .modal_box .modal_inner .modal_head h3 {
@@ -764,95 +768,187 @@
     color: var(--dark-color-1);
 }
 
-.modal_wrapper .modal_box .modal_inner .location {
+.modal_wrapper .modal_box .modal_inner .location_sec {
     position: relative;
+    margin-top: 10px;
     width: 100%;
     display: flex;
-    padding: 10px 25px;
-    margin-bottom: 30px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding: 0px 35px;
+    padding-bottom: 35px;
 }
-.modal_wrapper .modal_box .modal_inner .location .btn_sec {
+.modal_wrapper .modal_box .modal_inner .location_sec .map_sec {
     position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.modal_wrapper .modal_box .modal_inner .location button {
-    position: relative;
-    border: none;
-    padding: 0 30px;
-    height: 50px;
-    background: var(--theme-color);
-    color: var(--light-color);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 500;
-    
-    cursor: pointer;
-}
-
-.modal_wrapper .modal_box .modal_inner .location a {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border: 1px solid var(--light-border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 17px;
-    color: #7a7a7a;
-    text-decoration: none;
-    margin: 0 15px;
-    background: var(--light-color);
-}
-
-.modal_wrapper .modal_box .modal_inner .location input {
-    position: relative;
-    width: 350px;
-    height: 50px;
-    outline: none;
-    border-radius: 8px;
-    border: none;
-    padding: 5px 20px;
-    background: var(--light-border);
-    font-size: 16px;
-    color: var(--dark-color-1);
-}
-
-.modal_wrapper .modal_box .modal_inner .location .map_sec {
-    position: relative;
-    width: 100%;
-    height: 350px;
+    width: 50%;
+    height: 460px;
     display: flex;
     border-radius: 12px;
-    margin-top: 25px;
     overflow: hidden;
 }
 
-.modal_wrapper .modal_box .modal_inner .location .map_sec iframe {
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec {
+    position: relative;
+    width: 50%;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .detect_search_sec button {
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background: var(--theme-color);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--light-color);
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .detect_search_sec button i {
+    position: relative;
+    font-size: 18px;
+    margin-right: 8px;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .detect_search_sec .input_sec {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--light-border);
+    border-radius: 6px;
+    padding: 6px 0;
     display: flex;
 }
-.modal_wrapper .modal_box .modal_inner .location .map_sec i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    cursor: pointer;
-    color: var(--red-color);
-    font-size: 30px;
-    transform: translate(-50%, -50%);
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .detect_search_sec .input_sec a {
+    position: relative;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--light-border);
+    font-size: 16px;
+    color: var(--grey-background-5);
 }
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .detect_search_sec .input_sec input {
+    position: relative;
+    width: calc(100% - 50px);
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 15px;
+    color: var(--dark-color-1);
+}
+
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec {
+    position: relative;
+    margin-top: 35px;
+    width: 100%;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .form_box {
+    position: relative;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .form_box.halfWidth {
+    width: 47.5%;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .form_box.fullWidth {
+    width: 100%;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .form_box input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5px 20px;
+    border: 1px solid var(--light-border);
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    color: var(--dark-color-1);
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .form_box input::placeholder {
+    color: var(--dark-color-1);
+    opacity: 0.3;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .form_box span {
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    line-height: 1;
+    color: var(--green-color);
+    background: var(--light-background);
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .choise_sec {
+    position: relative;
+    margin-top: 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .choise_sec label {
+    position: relative;
+    margin-right: 15px;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .choise_sec label:last-child {
+    margin-right: 0;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .choise_sec label input[type="radio"] {
+    display: none;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .choise_sec label span {
+    position: relative;
+    border: 1px solid var(--dark-color-1);
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    color: var(--dark-color-1);
+    opacity: 0.3;
+    font-size: 13px;
+    font-weight: 500;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .choise_sec label span i {
+    position: relative;
+    margin-right: 6px;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .choise_sec label input[type="radio"]:checked ~ span {
+    opacity: 1;
+    background: var(--dark-color-1);
+    color: var(--light-color);
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_btn {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_btn button {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background: var(--theme-color);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--light-color);
+}
+
 
 /* =========== Responsive Start ============= */
 
