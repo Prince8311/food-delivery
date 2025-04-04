@@ -794,3 +794,124 @@
 
 
 /* ============== responsive end ================ */
+
+
+
+.sideber_popup_section {
+    position: fixed;
+    top: 187px;
+    left: 0;
+    width: 400px;
+    height: calc(100vh - 187px);
+    z-index: 499;
+    transition: all 0.8s;
+}
+.sideber_popup_section .popup_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cbc8c8;
+    border-radius: 0 12px 0 0;
+    padding: 25px;
+    background: #fff;
+}
+.sideber_popup_section .popup_inner .head_sec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--light-border);
+}
+.sideber_popup_section .popup_inner .head_sec img {
+    position: relative;
+    width: 60px;
+    display: flex;
+    border-radius: 50%;
+}
+.sideber_popup_section .popup_inner .head_sec h5 {
+    position: relative;
+    width: calc(100% - 60px);
+    display: flex;
+    padding-left: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--dark-color-1);
+}
+.sideber_popup_section .popup_inner .menu_sec {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.sideber_popup_section .popup_inner .menu_sec li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.sideber_popup_section .popup_inner .menu_sec li:last-child {
+    margin-bottom: 0;
+}
+.sideber_popup_section .popup_inner .menu_sec li a {
+    position: relative;
+    width: 100%;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: var(--dark-color-1);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 6px;   
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.sideber_popup_section .popup_inner .menu_sec li a:hover {
+    color: var(--light-color);
+    background: var(--theme-color);
+    transition: all 0.5s;
+}
+.sideber_popup_section .popup_inner .account_sec {
+    position: relative;
+    width: 100%;
+    /* margin-top: 25px; */
+    display: flex;
+    flex-direction: column;
+}
+.sideber_popup_section .popup_inner .account_sec li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.sideber_popup_section .popup_inner .account_sec li:last-child {
+    margin-bottom: 0;
+}
+.sideber_popup_section .popup_inner .account_sec li a {
+    position: relative;
+    width: 100%;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: var(--dark-color-1);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 6px;   
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.sideber_popup_section .popup_inner .account_sec li a i {
+    margin-right: 20px;
+}
+.sideber_popup_section .popup_inner .account_sec li a:hover {
+    color: var(--light-color);
+    background: var(--theme-color);
+    transition: all 0.5s;
+}
