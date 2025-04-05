@@ -11,3 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.querySelector(".res_nav_toggle_btn");
+    const sideberPopup = document.querySelector(".sideber_popup_section");
+
+    toggleBtn.addEventListener("click", ()=> {
+        sideberPopup.classList.toggle("active");
+    });
+});

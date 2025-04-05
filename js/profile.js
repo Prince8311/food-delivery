@@ -53,3 +53,4 @@ document.addEventListener("DOMContentLoaded", function () {
     profileMenu.addEventListener("scroll", toggleArrows);
     toggleArrows();
 });
+

@@ -804,7 +804,11 @@
     width: 350px;
     height: 100vh;
     z-index: 999;
+    display: none;
     transition: all 0.8s;
+}
+.sideber_popup_section.active {
+    display: block;
 }
 .sideber_popup_section .popup_inner {
     position: relative;
