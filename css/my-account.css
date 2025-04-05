@@ -1012,7 +1012,6 @@
 .wallet_section .section_inner .wallet_table_part table tbody tr {
     position: relative;
     width: 100%;
-    height: 50px;
     display: flex;
     border-bottom: 1px solid var(--light-border);
 }
@@ -1043,7 +1042,7 @@
 }
 .wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(2) {
     text-align: center;
-    padding: 0 10px;
+    padding: 10px;
 }
 .wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) {
     justify-content: flex-end;
@@ -1313,18 +1312,18 @@
 
 .image_popup_wrapper {
     position: fixed;
-    top: 188px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     padding: 50px;
-    background: var(--modal-background);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
 }
 .image_popup_wrapper.active {
     opacity: 1;
@@ -1333,9 +1332,10 @@
 
 .image_popup_wrapper .popup_box {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 650px;
+    height: 400px;
     display: flex;
+    flex-direction: column;
 }
 
 .image_popup_wrapper .popup_box img {
@@ -1347,17 +1347,17 @@
 }
 
 .image_popup_wrapper .popup_close {
-    position: absolute;
-    top: -30px;
-    right: 0px;
-    z-index: 10;
-    cursor: pointer;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .image_popup_wrapper .popup_close a {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     background: var(--theme-color);
     border-radius: 50%;
     display: flex;
