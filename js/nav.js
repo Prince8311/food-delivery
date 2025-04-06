@@ -21,3 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
         sideberPopup.classList.toggle("active");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const anroidPopup = document.querySelector(".anroid_popup_wrapper");
+    const popupClose = document.querySelector(".modal_close");
+    console.log("hello");
+    popupClose.addEventListener("click", () => {
+        anroidPopup.classList.remove("active");
+    });
+});
+
