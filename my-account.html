@@ -463,6 +463,28 @@
                                 <div class="right_side">
                                     <button>Add Balance</button>
                                 </div>
+                                <div class="bottom_side">
+                                    <label>
+                                        <input type="radio" name="Amount-choice">
+                                        <span>100</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="Amount-choice">
+                                        <span>200</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="Amount-choice">
+                                        <span>500</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="Amount-choice">
+                                        <span>700</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="Amount-choice">
+                                        <span>1000</span>
+                                    </label>
+                                </div>
                             </div>
                             <div class="transaction_head">
                                 <h4>Transaction History ( <i class="fa-solid fa-arrow-up-long incoming"></i> <i class="fa-solid fa-arrow-up-long outcoming"></i> )</h4>
@@ -472,25 +494,25 @@
                                     <thead>
                                         <tr>
                                             <th>Amount</th>
+                                            <th>Message</th>
                                             <th>Date</th>
-                                            <th>Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>500.00</td>
+                                            <td>500.00<i class="fa-solid fa-arrow-up-long incoming"></i></td>
+                                            <td>Lorem ipsum dolor sit amet consectetur.</td>
                                             <td>23/02/2025</td>
-                                            <td><i class="fa-solid fa-arrow-up-long incoming"></i></td>
                                         </tr>
                                         <tr>
-                                            <td>200.00</td>
+                                            <td>200.00<i class="fa-solid fa-arrow-up-long incoming"></i></td>
+                                            <td>Lorem ipsum dolor sit amet consectetur.</td>
                                             <td>22/02/2025</td>
-                                            <td><i class="fa-solid fa-arrow-up-long incoming"></i></td>
                                         </tr>
                                         <tr>
-                                            <td>220.00</td>
+                                            <td>220.00<i class="fa-solid fa-arrow-up-long outcoming"></i></td>
+                                            <td>Lorem ipsum dolor sit amet consectetur.</td>
                                             <td>22/02/2025</td>
-                                            <td><i class="fa-solid fa-arrow-up-long outcoming"></i></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -611,12 +633,45 @@
     </div>
 
     <div class="image_popup_wrapper">
-        <div class="popup_close"><a><i class="fa-solid fa-xmark"></i></a></div>
         <div class="popup_box">
+            <div class="popup_close"><a><i class="fa-solid fa-xmark"></i></a></div>
             <img src="img/dragon_chiken.png" alt="">
         </div>
     </div>
 
+    <div class="sideber_popup_section">
+        <div class="popup_inner">
+            <div class="head_sec">
+                <img src="img/profile-image.png" alt="">
+                <h5>Joydeep Barik</h5>
+            </div>
+            <div class="menu_sec">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">Restaurants</a></li>
+                <li><a href="">Track Order</a></li>
+            </div>
+            <div class="account_sec">
+                <li>
+                    <a href="./my-profile.html"> <i class="fa-solid fa-circle-user icon"></i>My Profile</a>
+                </li>
+                <li>
+                    <a href="./address.html"><i class="fa-solid fa-map-location icon"></i>Saved Addresses</a>
+                </li>
+                <li>
+                    <a href="./my-orderlist.html"><i class="fa-solid fa-list-check icon"></i>Order List</a>
+                </li>
+                <li>
+                    <a href="./my-wallet.html"><i class="fa-solid fa-wallet icon"></i>My Wallet</a>
+                </li>
+                <li>
+                    <a href="./settings.html"><i class="fa-solid fa-gears icon"></i>Settings</a>
+                </li>
+                <li>
+                    <a href="./notifications.html"><i class="fa-solid fa-bell icon"></i>Notifications</a>
+                </li>
+            </div>
+        </div>
+    </div>
     <script src="js/nav.js"></script>
     <script src="js/profile.js"></script>
 

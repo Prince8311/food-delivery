@@ -854,6 +854,7 @@
     border-radius: 10px;
     border: 1px solid var(--light-border);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -904,6 +905,36 @@
 .wallet_section .section_inner .wallet_top_part .right_side button:hover {
     border-radius: 30px;
     transition: all 0.5s ease;
+}
+.wallet_section .section_inner .wallet_top_part .bottom_side {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.wallet_section .section_inner .wallet_top_part .bottom_side label {
+    position: relative;
+    margin-right: 10px;
+}
+.wallet_section .section_inner .wallet_top_part .bottom_side label:last-child {
+    margin-right: 0;
+}
+.wallet_section .section_inner .wallet_top_part .bottom_side label input[type="radio"] {
+    display: none;
+}
+.wallet_section .section_inner .wallet_top_part .bottom_side label span {
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid var(--light-border);
+    color: var(--theme-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.wallet_section .section_inner .wallet_top_part .bottom_side label input[type="radio"]:checked ~ span {
+    background: var(--theme-color);
+    color: var(--light-color);
 }
 .wallet_section .section_inner .transaction_head {
     position: relative;
@@ -981,7 +1012,6 @@
 .wallet_section .section_inner .wallet_table_part table tbody tr {
     position: relative;
     width: 100%;
-    height: 50px;
     display: flex;
     border-bottom: 1px solid var(--light-border);
 }
@@ -998,24 +1028,26 @@
     color: var(--dark-color-1);
     opacity: 0.7;
 }
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(1) i {
+    margin-left: 8px;
+    font-size: 21px;
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(1) i.incoming {
+    transform: rotate(-135deg);
+    color: var(--green-color);
+}
+.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(1) i.outcoming {
+    transform: rotate(45deg);
+    color: var(--yellow-color);
+}
 .wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(2) {
-    justify-content: center;
+    text-align: center;
+    padding: 10px;
 }
 .wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) {
     justify-content: flex-end;
 }
-.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) i {
-    position: relative;
-    font-size: 21px;
-}
-.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) i.incoming {
-    transform: rotate(-135deg);
-    color: var(--green-color);
-}
-.wallet_section .section_inner .wallet_table_part table tbody tr td:nth-child(3) i.outcoming {
-    transform: rotate(45deg);
-    color: var(--yellow-color);
-}
+
 
 /* ======= responsive start ========= */
 @media (max-width: 678px) {
@@ -1280,18 +1312,18 @@
 
 .image_popup_wrapper {
     position: fixed;
-    top: 188px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     padding: 50px;
-    background: var(--modal-background);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
 }
 .image_popup_wrapper.active {
     opacity: 1;
@@ -1300,9 +1332,10 @@
 
 .image_popup_wrapper .popup_box {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 650px;
+    height: 400px;
     display: flex;
+    flex-direction: column;
 }
 
 .image_popup_wrapper .popup_box img {
@@ -1314,17 +1347,17 @@
 }
 
 .image_popup_wrapper .popup_close {
-    position: absolute;
-    top: -30px;
-    right: 0px;
-    z-index: 10;
-    cursor: pointer;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .image_popup_wrapper .popup_close a {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     background: var(--theme-color);
     border-radius: 50%;
     display: flex;
