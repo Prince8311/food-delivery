@@ -499,19 +499,19 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr class="transaction_row">
                                             <td>500.00<i class="fa-solid fa-arrow-up-long incoming"></i></td>
-                                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                                            <td><p>Lorem ipsum dolor sit amet consectetur.</p></td>
                                             <td>23/02/2025</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="transaction_row">
                                             <td>200.00<i class="fa-solid fa-arrow-up-long incoming"></i></td>
-                                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                                            <td><p>Lorem ipsum dolor sit amet consectetur.</p></td>
                                             <td>22/02/2025</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="transaction_row">
                                             <td>220.00<i class="fa-solid fa-arrow-up-long outcoming"></i></td>
-                                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                                            <td><p>Lorem ipsum dolor sit amet consectetur.</p></td>
                                             <td>22/02/2025</td>
                                         </tr>
                                     </tbody>
@@ -641,10 +641,32 @@
 
     <div class="transaction_popup_wrapper">
         <div class="popup_inner">
-            <div class="popup_close"><a><i class="fa-solid fa-xmark"></i></a></div>
+            <div class="popup_close"><a id="transaction-popup-close"><i class="fa-solid fa-xmark"></i></a></div>
             <div class="inner_box">
                 <div class="box_head">
                     <h3>Transaction Details</h3>
+                </div>
+                <div class="popup_content">
+                    <li>
+                        <p>Transaction ID :</p>
+                        <span>TSD123414GB34</span>
+                    </li>
+                    <li>
+                        <p>Amount :</p>
+                        <span>500.00 /-</span>
+                    </li>
+                    <li>
+                        <p>Transaction Type :</p>
+                        <span>Debit</span>
+                    </li>
+                    <li>
+                        <p>Date :</p>
+                        <span>23/03/2025</span>
+                    </li>
+                    <li>
+                        <p>Message :</p>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias corporis deserunt velit odio tempora. Quasi minus sint culpa atque!</span>
+                    </li>
                 </div>
             </div>
         </div>

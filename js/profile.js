@@ -16,41 +16,18 @@ profileMenuBtns.forEach(profileMenuBtn => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const imageBox = document.querySelector(".image_box");
-    const popupWrapper = document.querySelector(".image_popup_wrapper");
-    const popupClose = document.querySelector(".popup_close");
 
 
+var transactionRows = document.querySelectorAll(".transaction_row");
+const transactionPopup = document.querySelector(".transaction_popup_wrapper");
+const transactionPopupClose = document.getElementById('transaction-popup-close');
 
-    
-    imageBox.addEventListener("click", function () {
-        popupWrapper.classList.add("active");
+transactionRows.forEach(transactionRow => {
+    transactionRow.addEventListener("click", () => {
+        transactionPopup.classList.toggle("active");
     });
-
-    popupClose.addEventListener("click", function () {
-        popupWrapper.classList.remove("active");
-    });
-
-
-    const profileMenu = document.querySelector(".profile_left_bar .left_inner");
-    const leftArrow = document.getElementById('leftArrow');
-    const rightArrow = document.getElementById('rightArrow');
-
-    leftArrow.addEventListener("click", () => {
-        profileMenu.scrollBy({ left: -100, behavior: "smooth" });
-    });
-
-    rightArrow.addEventListener("click", () => {
-        profileMenu.scrollBy({ left: 100, behavior: "smooth" });
-    });
-
-    function toggleArrows() {
-        leftArrow.style.display = profileMenu.scrollLeft > 0 ? "block" : "none";
-        rightArrow.style.display = profileMenu.scrollLeft + profileMenu.clientWidth < profileMenu.scrollWidth ? "block" : "none";
-    }
-
-    profileMenu.addEventListener("scroll", toggleArrows);
-    toggleArrows();
+});
+transactionPopupClose.addEventListener("click", () => {
+    transactionPopup.classList.remove("active");
 });
 
