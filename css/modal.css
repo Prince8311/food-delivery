@@ -952,19 +952,62 @@
 
 /* =========== Responsive Start ============= */
 
-@media (max-width: 876px) {
-    .modal_wrapper .modal_box .modal_inner .location .btn_sec {
+@media (max-width: 1099px) {
+    .modal_wrapper .location_modal_box {
+        width: 600px;
+    }
+    .modal_wrapper .modal_box .modal_inner .location_sec {
         flex-direction: column;
-        justify-content: center;
     }
-    .modal_wrapper .modal_box .modal_inner .location button {
+    .modal_wrapper .modal_box .modal_inner .location_sec .map_sec {
         width: 100%;
     }
-    .modal_wrapper .modal_box .modal_inner .location a {
-        margin: 15px 0;
-    }
-    .modal_wrapper .modal_box .modal_inner .location input {
+    .modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec {
         width: 100%;
+        padding-left: 0;
+        padding-top: 35px;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal_wrapper .modal_box .modal_inner .modal_head {
+        padding: 20px 25px;
+    }
+    .modal_wrapper .modal_box .modal_inner .location_sec {
+        margin-top: 0;
+        padding: 0 25px;
+        padding-bottom: 25px;
+    }
+    .modal_wrapper .modal_box .modal_inner .location_sec .map_sec {
+        height: 400px;
+    }
+    .modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec {
+        padding-top: 25px;
+    }
+    .modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .form_box.halfWidth {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .modal_wrapper .modal_box .modal_inner .modal_head {
+        padding: 15px 20px;
+    }
+    .modal_wrapper .modal_box .modal_inner .modal_head h3 {
+        font-size: 18px;
+    }
+    .modal_wrapper .modal_box .modal_inner .location_sec {
+        padding: 0 20px;
+        padding-bottom: 20px;
+    }
+    .modal_wrapper .modal_box .modal_inner .location_sec .map_sec {
+        height: 350px;
+    }
+    .modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .choise_sec label {
+        margin-right: 10px;
+    }
+    .modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form .choise_sec label span {
+        padding: 5px 12px;
     }
 }
 
