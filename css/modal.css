@@ -1638,6 +1638,7 @@
 
 
 /* ============ Anroid popup ============ */
+
 .anroid_popup_wrapper  {
     position: fixed;
     top: 0;
@@ -1653,7 +1654,7 @@
 }
 .anroid_popup_wrapper.active{
     display: none;
-  }
+}
 .anroid_popup_wrapper .modal_close  {
     position: relative;
     width: 100%;
@@ -1704,9 +1705,10 @@
 .anroid_popup_wrapper .popup_box .popup_logo_sec .logo {
     position: absolute;
     top: -25px;
-    left: 198px;
+    left: 50%;
     display: flex;
     padding: 5px;
+    transform: translateX(-50%);
     background: var(--light-background);
     border-radius: 4px
 }
