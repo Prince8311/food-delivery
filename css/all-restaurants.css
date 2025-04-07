@@ -258,6 +258,88 @@
 }
 
 
+@media (max-width: 1499px) {
+    .filter_section {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .filter_section .sec_inner .food_types label {
+        margin-right: 25px;
+    }
+    .filter_section .sec_inner .ratings_selections {
+        padding: 0 25px;
+    }
+    .filter_section .sec_inner .category_selection {
+        margin-left: 25px;
+    }
+}
+@media (max-width: 876px) {
+    .filter_section .sec_inner .ratings_selections .selection_inner {
+        width: 205px;
+    }
+    .filter_section .sec_inner .ratings_selections .dropdown .dropdown_inner {
+        padding: 20px 15px;
+    }
+    .filter_section .sec_inner .category_selection .selection_inner {
+        width: 230px;
+    }
+    .filter_section .sec_inner .food_types label {
+        margin-right: 15px;
+    }
+    
+    .filter_section .sec_inner .ratings_selections {
+        padding: 0 15px;
+    }
+    .filter_section .sec_inner .category_selection {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter_section .sec_inner {
+        border-top: none;
+        border-bottom: none;
+        padding: 0;
+    }
+    .filter_section .sec_inner {
+        flex-direction: column;
+    }
+    .filter_section .sec_inner .ratings_selections {
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+        border-left: none;
+        border-right: none;
+    }
+    .filter_section .sec_inner .ratings_selections .selection_inner {
+        position: relative;
+        width: 100%;
+    }
+    .filter_section .sec_inner .category_selection {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .filter_section .sec_inner .category_selection .selection_inner {
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .filter_section {
+        padding: 0 35px;
+    }
+}
+
+@media (max-width: 450px) {
+    .filter_section {
+        padding: 0 25px;
+    }
+}
+
 /* ========== banner ========== */
 
 .banner {
@@ -623,7 +705,7 @@
 }
 .restaurant_section .sec_content .box_head .search_sec input {
     position: relative;
-    width: 350px;
+    width: calc(100% - 45px);
     height: 100%;
     padding-left: 20px;
     border: none;
@@ -903,7 +985,7 @@
 
 .restaurant_section .sec_content .restaurant_box_sec .restaurant_box .box_inner .box_content .content_items .avalability_status p {
     position: relative;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     text-align: right;
 }
