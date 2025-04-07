@@ -24,3 +24,5 @@ document.addEventListener("DOMContentLoaded", function () {
     popupClose.addEventListener("click", () => {
         anroidPopup.classList.add("active");
     });
+
+

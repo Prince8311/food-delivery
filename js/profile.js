@@ -18,6 +18,21 @@ profileMenuBtns.forEach(profileMenuBtn => {
 
 
 
+
+const imageBox = document.querySelector(".image_box");
+const imagePopup = document.querySelector(".image_popup_wrapper");
+const closeModal = document.querySelector(".popup_close");
+
+imageBox.addEventListener("click", () => {
+    imagePopup.classList.add("active");
+});
+
+closeModal.addEventListener("click", () => {
+    imagePopup.classList.remove("active");
+});
+
+
+
 var transactionRows = document.querySelectorAll(".transaction_row");
 const transactionPopup = document.querySelector(".transaction_popup_wrapper");
 const transactionPopupClose = document.getElementById('transaction-popup-close');
@@ -30,4 +45,5 @@ transactionRows.forEach(transactionRow => {
 transactionPopupClose.addEventListener("click", () => {
     transactionPopup.classList.remove("active");
 });
+
 
