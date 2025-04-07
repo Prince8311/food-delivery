@@ -840,6 +840,24 @@
     font-size: 15px;
     color: var(--dark-color-1);
 }
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .complete_address_btn {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .complete_address_btn button {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--theme-color);
+    cursor: pointer;
+    background: transparent;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--theme-color);
+}
 
 .modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec {
     position: relative;
