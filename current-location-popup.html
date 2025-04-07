@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/current-location-popup.css">
+
+     <!-- font awesome -->
+     <script src="js/fontawesome.js"></script>
+</head>
+<body>
+
+    <div class="modal_wrapper">
+        <div class="modal_box">
+            <div class="modal_close">
+                <a><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="modal_inner">
+                <div class="modal_head">
+                    <h3>Add Address</h3>
+                </div>
+                <div class="location_sec">
+                    <div class="map_sec">
+                        <div id="dvMap" style="width:100%; height: 100%;"></div>
+                    </div>
+                    <div class="address_fillup_sec">
+                        <div class="detect_search_sec">
+                            <button><i class="fa-solid fa-location-crosshairs"></i>Use Current Location</button>
+                            <span>OR</span>
+                            <div class="input_sec">
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <input type="text" id="searchInput" placeholder="Search Here...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"  crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDKX4TjlGMne-DIIucVFT6FRmTiMXKkcqs" defer></script>
+    <script src="js/map-search.js"></script>
+    
+</body>
+</html>
