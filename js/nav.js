@@ -26,3 +26,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+    const footer = document.querySelector(".footer");
+        const toggleIcon = document.querySelector(".show a i"); 
+        
+        // footer.style.display = "none";
+
+        toggleIcon.addEventListener("click", function () {
+            if (footer.style.display === "none") {
+                footer.style.display = "block";
+                toggleIcon.classList.remove("fa-plus");
+                toggleIcon.classList.add("fa-minus");
+            } else {
+                footer.style.display = "none";
+                toggleIcon.classList.remove("fa-minus"); 
+                toggleIcon.classList.add("fa-plus"); 
+            }
+        });

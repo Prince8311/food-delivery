@@ -1331,6 +1331,7 @@
     align-items: center;
     opacity: 0;
     visibility: hidden;
+    background: var(--modal-background);
     transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 999;
     transform: translateY(-100px);
@@ -1350,6 +1351,7 @@
     display: flex;
     background: var(--dark-color);
     border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
 }
 
 .image_popup_wrapper .popup_box img {
@@ -1380,6 +1382,43 @@
     cursor: pointer;
 }
 
+.image_popup_wrapper .popup_close a::before,
+.image_popup_wrapper .popup_close a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--theme-color);
+    opacity: 0.7;
+}
+.image_popup_wrapper .popup_close a::before {
+    animation: pulse 2s ease-in-out infinite;
+}
+.image_popup_wrapper .popup_close a::after {
+    animation: pulse 2s 1s ease-in-out infinite;
+}
+@keyframes pulse {
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+.image_popup_wrapper .popup_close a i {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--theme-color);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /*  ======= transaction popup =========== */
 
@@ -1391,6 +1430,7 @@
     height: 100vh;
     overflow-y: auto;
     padding: 80px 100px;
+    background: var(--modal-background);
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -1414,7 +1454,7 @@
     flex-direction: column;
     border-radius: 12px;
     background-color: var( --light-color);
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.575);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
     transform: translateY(-100px);
     transition: all 0.8s;
 }
@@ -1440,6 +1480,41 @@
     color: var(--light-color);
     font-size: 26px;
     cursor: pointer;
+}
+.transaction_popup_wrapper .popup_inner .popup_close a::before,
+.transaction_popup_wrapper .popup_inner .popup_close a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--theme-color);
+    opacity: 0.7;
+}
+.transaction_popup_wrapper .popup_inner .popup_close a::before {
+    animation: pulse 2s ease-in-out infinite;
+}
+.transaction_popup_wrapper .popup_inner .popup_close a::after {
+    animation: pulse 2s 1s ease-in-out infinite;
+}
+@keyframes pulse {
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+.transaction_popup_wrapper .popup_inner .popup_close a i {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--theme-color);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .transaction_popup_wrapper .popup_inner .inner_box {
     position: relative;

@@ -16,6 +16,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .filter_section .sec_inner .food_types label {
     position: relative;
@@ -264,15 +265,15 @@
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1299px) {
     .filter_section .sec_inner .food_types label {
-        margin-right: 25px;
+        margin-right: 20px;
     }
     .filter_section .sec_inner .ratings_selections {
-        padding: 0 25px;
+        padding: 0 20px;
     }
     .filter_section .sec_inner .category_selection {
-        margin-left: 25px;
+        margin-left: 20px;
     }
 }
 @media (max-width: 876px) {
@@ -714,28 +715,6 @@
     color: var(--dark-color-1);
 }
 
-.restaurant_section .sec_content .box_head button {
-    position: relative;
-    height: 60px;
-    padding: 15px 55px;
-    background: var(--theme-color);
-    border: none;
-    border-radius: 12px;
-    color: var(--light-color);
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    margin-left: 25px;
-}
-
-.restaurant_section .sec_content .box_head button i {
-    position: relative;
-    font-size: 18px;
-    margin-right: 8px;
-}
-
 .restaurant_section .sec_content .restaurant_box_sec {
     position: relative;
     width: 100%;
@@ -1016,12 +995,12 @@
 
 @media (max-width: 991px) {
     .restaurant_section .sec_content .box_head {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: baseline;
     }
     .restaurant_section .sec_content .box_head .search_sec {
         width: 100%;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .restaurant_section .sec_content .box_head button {
         width: 100%;
