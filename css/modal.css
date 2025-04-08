@@ -863,6 +863,15 @@
     position: relative;
     margin-top: 35px;
     width: 100%;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec.active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.6s;
 }
 .modal_wrapper .modal_box .modal_inner .location_sec .address_fillup_sec .form_sec form {
     position: relative;
