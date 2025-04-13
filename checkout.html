@@ -23,9 +23,9 @@
                 <h2>Checkout</h2>
             </div>
             <div class="page_body">
-                <div class="left_section">
+                <div class="left_section" id="checkout_left_sec">
                     <div class="left_inner">
-                        <div class="address_sec">
+                        <form id="checkout_address_form" class="address_sec">
                             <div class="sec_box">
                                 <div class="icon">
                                     <i class="fa-solid fa-user"></i>
@@ -54,9 +54,12 @@
                                 </div>
                                 <div class="send_details">
                                     <div class="input_box choose_location_box">
-                                        <input type="text">
+                                        <input name="location" type="text">
                                         <span>location*</span>
-                                        <a id="location_popup_open">Choose location</a>
+                                        <a id="location_popup_open">
+                                            <p>Choose location</p>
+                                            <i class="fa-solid fa-location-crosshairs"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +69,7 @@
                                 </div>
                                 <div class="send_details">
                                     <div class="input_box">
-                                        <input type="text">
+                                        <input type="text" name="house_no">
                                         <span>House No./Name*</span>
                                     </div>
                                 </div>
@@ -77,7 +80,7 @@
                                 </div>
                                 <div class="send_details">
                                     <div class="input_box">
-                                        <input type="text">
+                                        <input type="text" name="floor">
                                         <span>Floor*</span>
                                     </div>
                                 </div>
@@ -88,7 +91,7 @@
                                 </div>
                                 <div class="send_details">
                                     <div class="input_box">
-                                        <input type="text">
+                                        <input type="text" name="area">
                                         <span>Area*</span>
                                     </div>
                                 </div>
@@ -99,7 +102,7 @@
                                 </div>
                                 <div class="send_details">
                                     <div class="input_box">
-                                        <input type="text">
+                                        <input type="text" name="landmark">
                                         <span>Landmark*</span>
                                     </div>
                                 </div>
@@ -110,7 +113,7 @@
                                 </div>
                                 <div class="send_details">
                                     <div class="input_box">
-                                        <input type="text">
+                                        <input type="text" name="pincode">
                                         <span>Pin Code*</span>
                                     </div>
                                 </div>
@@ -121,7 +124,7 @@
                                 </div>
                                 <div class="send_details">
                                     <div class="input_box">
-                                        <input type="text">
+                                        <input type="text" name="city">
                                         <span>City*</span>
                                     </div>
                                 </div>
@@ -132,12 +135,12 @@
                                 </div>
                                 <div class="send_details">
                                     <div class="input_box">
-                                        <input type="text">
+                                        <input type="text" name="state">
                                         <span>State*</span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                         <div class="previous_order_sec">
                             <div class="sec_content">
                                 <div class="sec_head">
@@ -206,101 +209,103 @@
                             </div>
                         </div>
                         <div class="btn_sec">
-                            <button>Next Step<img src="img/check-out-btn.svg" alt=""></button>
+                            <button id="checkout_next_step_btn">Next Step<img src="img/check-out-btn.svg" alt=""></button>
                         </div>
                     </div>
                 </div>
-                <div class="right_section">
-                    <div class="added_product_sec">
-                        <div class="sec_inner">
-                            <h5>Order Items : </h5>
-                            <div class="order_items">
-                                <ul>
-                                    <li>
-                                        <h5>Chicken Biriyani (x2)</h5>
-                                        <p>440.00 /-</p>
-                                    </li>
-                                    <li>
-                                        <h5>Chicken Chaap (x1)</h5>
-                                        <p>170.00 /-</p>
-                                    </li>
-                                </ul>
+                <div class="right_section" id="checkout_right_sec">
+                    <div class="right_inner">
+                        <div class="added_product_sec">
+                            <div class="sec_inner">
+                                <h5>Order Items : </h5>
+                                <div class="order_items">
+                                    <ul>
+                                        <li>
+                                            <h5>Chicken Biriyani (x2)</h5>
+                                            <p>440.00 /-</p>
+                                        </li>
+                                        <li>
+                                            <h5>Chicken Chaap (x1)</h5>
+                                            <p>170.00 /-</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="all_offer_sec">
-                        <div class="sec_inner">
-                            <h5><span><i class="fa-solid fa-percent"></i></span>Coupons and offers</h5>
-                            <div class="offers_type">
-                                <label for="offer">
-                                    <input type="checkbox" id="offer">
-                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
-                                    <p>15% off for creadit card</p>
-                                </label>
+                        <div class="all_offer_sec">
+                            <div class="sec_inner">
+                                <h5><span><i class="fa-solid fa-percent"></i></span>Coupons and offers</h5>
+                                <div class="offers_type">
+                                    <label for="offer">
+                                        <input type="checkbox" id="offer">
+                                        <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                        <p>15% off for creadit card</p>
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="payment_sec">
-                        <div class="sec_inner">
-                            <h5>Payment Options</h5>
-                            <div class="payment_type">
-                                <label for="cash">
-                                    <input type="checkbox" id="cash">
-                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
-                                    <p>Cash on Delivary</p>
-                                </label>
-                                <label for="card">
-                                    <input type="checkbox" id="card">
-                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
-                                    <p>Devit/Credit card</p>
-                                </label>
-                                <label for="upi">
-                                    <input type="checkbox" id="upi">
-                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
-                                    <p>UPI apps</p>
-                                </label>
+                        <div class="payment_sec">
+                            <div class="sec_inner">
+                                <h5>Payment Options</h5>
+                                <div class="payment_type">
+                                    <label for="cash">
+                                        <input type="checkbox" id="cash">
+                                        <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                        <p>Cash on Delivary</p>
+                                    </label>
+                                    <label for="card">
+                                        <input type="checkbox" id="card">
+                                        <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                        <p>Devit/Credit card</p>
+                                    </label>
+                                    <label for="upi">
+                                        <input type="checkbox" id="upi">
+                                        <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                        <p>UPI apps</p>
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="summary_sec">
-                        <div class="sec_inner">
-                            <h5>Payment summary</h5>
-                            <div class="box_sec">
-                                <div class="box">
+                        <div class="summary_sec">
+                            <div class="sec_inner">
+                                <h5>Payment summary</h5>
+                                <div class="box_sec">
+                                    <div class="box">
+                                        <div class="name">
+                                            <p>Items Total : </p>
+                                        </div>
+                                        <div class="price">
+                                            <span>610.00 /-</span>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="name">
+                                            <p>CGST : </p>
+                                        </div>
+                                        <div class="price">
+                                            <span>15.50 /-</span>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="name">
+                                            <p>SGST : </p>
+                                        </div>
+                                        <div class="price">
+                                            <span>15.50 /-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total_sec">
                                     <div class="name">
-                                        <p>Items Total : </p>
+                                        <p>Order Total : </p>
                                     </div>
                                     <div class="price">
-                                        <span>610.00 /-</span>
+                                        <span> 641.00 /- </span>
                                     </div>
                                 </div>
-                                <div class="box">
-                                    <div class="name">
-                                        <p>CGST : </p>
-                                    </div>
-                                    <div class="price">
-                                        <span>15.50 /-</span>
-                                    </div>
+                                <div class="btn_box">
+                                    <a>Submit Order</a>
                                 </div>
-                                <div class="box">
-                                    <div class="name">
-                                        <p>SGST : </p>
-                                    </div>
-                                    <div class="price">
-                                        <span>15.50 /-</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="total_sec">
-                                <div class="name">
-                                    <p>Order Total : </p>
-                                </div>
-                                <div class="price">
-                                    <span> 641.00 /- </span>
-                                </div>
-                            </div>
-                            <div class="btn_box">
-                                <a>Submit Order</a>
                             </div>
                         </div>
                     </div>
@@ -337,19 +342,19 @@
                         <div class="form_sec" id="complete-address-form">
                             <form>
                                 <div class="form_box halfWidth">
-                                    <input type="text" placeholder="e.g: 48A/L">
+                                    <input type="text" name="house_no" placeholder="e.g: 48A/L">
                                     <span>House No./Name</span>
                                 </div>
                                 <div class="form_box halfWidth">
-                                    <input type="text" placeholder="e.g: Ground Floor">
+                                    <input type="text" name="floor" placeholder="e.g: Ground Floor">
                                     <span>Floor</span>
                                 </div>
                                 <div class="form_box fullWidth">
-                                    <input type="text" placeholder="e.g: Newtown Road">
+                                    <input type="text" name="area" placeholder="e.g: Newtown Road">
                                     <span>Area / Street Name</span>
                                 </div>
                                 <div class="form_box fullWidth">
-                                    <input type="text" placeholder="e.g: Near Newtown Bustand">
+                                    <input type="text" name="landmark" placeholder="e.g: Near Newtown Bustand">
                                     <span>Landmark (Optional)</span>
                                 </div>
                                 <div class="choise_sec">
@@ -367,7 +372,7 @@
                                     </label>
                                 </div>
                                 <div class="form_btn">
-                                    <button>Save Address</button>
+                                    <button type="submit">Save Address</button>
                                 </div>
                             </form>
                         </div>
@@ -380,7 +385,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"  crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDKX4TjlGMne-DIIucVFT6FRmTiMXKkcqs" defer></script>
-    <script src="js/map-search.js"></script>
+    <script src="js/checkout-map-search.js"></script>
     <script src="js/location.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -401,18 +406,15 @@
             locationModal.classList.remove("active");
         });
     </script>
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const btn = document.querySelector(".btn_sec button");
-            const leftSection = document.querySelector(".left_section");
-            const rightSection = document.querySelector(".right_section");
-    
-            btn.addEventListener("click", function () {
-                leftSection.classList.add("hidden");
-                rightSection.classList.remove("hidden");
+    <script>
+        const btn = document.getElementById('checkout_next_step_btn');
+        const leftSection = document.getElementById('checkout_left_sec');
+        const rightSection = document.getElementById('checkout_right_sec');
 
-            });
+        btn.addEventListener("click", function () {
+            leftSection.style.display = "none";
+            rightSection.style.display = "block";
         });
-    </script> -->
+    </script>
 </body>
 </html>
