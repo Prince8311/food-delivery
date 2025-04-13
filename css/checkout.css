@@ -848,5 +848,20 @@
     .checkout_page{
         padding: 10px 25px;
     }
-   
+    .checkout_page .left_section .left_inner .previous_order_sec .sec_content .slide_sec {
+        margin-top: 10px;
+    }
+    .checkout_page .left_section .left_inner .previous_order_sec .sec_content .slide_sec .swiper .swiper-slide {
+        width: 100%;
+    }
+    .checkout_page .left_section .left_inner .previous_order_sec .sec_content .slide_sec .swiper .swiper-slide .product_box .box_inner {
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        padding-left: 25px;
+    }
+    .checkout_page .left_section .left_inner .previous_order_sec .sec_content .slide_sec .swiper .swiper-slide .product_box .box_inner .add_btn {
+        width: 40px;
+        height: 50px;
+    }
 }
