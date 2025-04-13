@@ -427,13 +427,15 @@
 .restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_img {
     position: relative;
     width: 160px;
-  height: 130px;
+    height: 130px;
     display: flex;
 }
 
 .restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .product_img img {
     position: relative;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 12px;
 }
 .restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .add_btn {
