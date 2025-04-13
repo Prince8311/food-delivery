@@ -27,6 +27,7 @@ window.onload = function () {
                     input.value = results[0].formatted_address;
                     infowindow.setContent(results[0].formatted_address);
                     infowindow.open(map, marker);
+                    console.log(results[0]);
                 } else {
                     console.warn('No address found');
                 }
@@ -92,5 +93,25 @@ window.onload = function () {
             lat: newPosition.lat(),
             lng: newPosition.lng()
         });
+    });
+
+    document.getElementById('detect_current_location').addEventListener("click", () => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var userLocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                map.setCenter(userLocation);
+                map.setZoom(20); 
+                marker.setPosition(userLocation);
+                marker.setVisible(true);
+                updateAddressFromLatLng(userLocation);
+            }, function () {
+                console.warn('Geolocation failed or denied. Using default location.');
+            });
+        } else {
+            console.warn('Browser does not support Geolocation');
+        }
     });
 }

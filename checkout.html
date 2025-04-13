@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- font awesome -->
@@ -52,9 +53,32 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                 </div>
                                 <div class="send_details">
+                                    <div class="input_box choose_location_box">
+                                        <input type="text">
+                                        <span>location*</span>
+                                        <a id="location_popup_open">Choose location</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec_box">
+                                <div class="icon">
+                                    <i class="fa-solid fa-house-user"></i>
+                                </div>
+                                <div class="send_details">
                                     <div class="input_box">
                                         <input type="text">
-                                        <span>Set location*</span>
+                                        <span>House No./Name*</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec_box">
+                                <div class="icon">
+                                    <i class="fa-solid fa-stairs"></i>
+                                </div>
+                                <div class="send_details">
+                                    <div class="input_box">
+                                        <input type="text">
+                                        <span>Floor*</span>
                                     </div>
                                 </div>
                             </div>
@@ -181,9 +205,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="btn_sec">
+                            <button>Next Step<img src="img/check-out-btn.svg" alt=""></button>
+                        </div>
                     </div>
                 </div>
-                <div class="right_section">
+                <div class="right_section hidden">
                     <div class="added_product_sec">
                         <div class="sec_inner">
                             <h5>Order Items : </h5>
@@ -283,11 +310,108 @@
 
     </div>
 
+    <div class="modal_wrapper" id="location_popup">
+        <div class="modal_box location_modal_box">
+            <div class="modal_close">
+                <a id="location_modal_close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="modal_inner">
+                <div class="modal_head">
+                    <h3>Add Address</h3>
+                </div>
+                <div class="location_sec">
+                    <div class="map_sec">
+                        <div id="dvMap" style="width:100%; height: 100%;"></div>
+                    </div>
+                    <div class="address_fillup_sec">
+                        <div class="detect_search_sec">
+                            <button id="detect_current_location"><i class="fa-solid fa-location-crosshairs"></i>Use Current Location</button>
+                            <div class="input_sec">
+                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <input type="text" id="searchInput" placeholder="Search Here...">
+                            </div>
+                        </div>
+                        <div class="complete_address_btn" id="complete-address-btn">
+                            <button>Complete your address</button>
+                        </div>
+                        <div class="form_sec" id="complete-address-form">
+                            <form>
+                                <div class="form_box halfWidth">
+                                    <input type="text" placeholder="e.g: 48A/L">
+                                    <span>House No./Name</span>
+                                </div>
+                                <div class="form_box halfWidth">
+                                    <input type="text" placeholder="e.g: Ground Floor">
+                                    <span>Floor</span>
+                                </div>
+                                <div class="form_box fullWidth">
+                                    <input type="text" placeholder="e.g: Newtown Road">
+                                    <span>Area / Street Name</span>
+                                </div>
+                                <div class="form_box fullWidth">
+                                    <input type="text" placeholder="e.g: Near Newtown Bustand">
+                                    <span>Landmark (Optional)</span>
+                                </div>
+                                <div class="choise_sec">
+                                    <label>
+                                        <input type="radio" name="place-choice" id="">
+                                        <span><i class="fa-solid fa-house"></i>Home</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="place-choice" id="">
+                                        <span><i class="fa-solid fa-briefcase"></i>Office</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="place-choice" id="">
+                                        <span><i class="fa-solid fa-user-tie"></i>Guest</span>
+                                    </label>
+                                </div>
+                                <div class="form_btn">
+                                    <button>Save Address</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"  crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDKX4TjlGMne-DIIucVFT6FRmTiMXKkcqs" defer></script>
+    <script src="js/map-search.js"></script>
+    <script src="js/location.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 'auto',
             spaceBetween: 25,
+        });
+    </script>
+    <script>
+        const locationModalOpenBtn = document.getElementById('location_popup_open');
+        const locationModalCloseBtn = document.getElementById('location_modal_close');
+        const locationModal = document.getElementById('location_popup');
+
+        locationModalOpenBtn.addEventListener("click", () => {
+            locationModal.classList.add("active");
+        });
+
+        locationModalCloseBtn.addEventListener("click", () => {
+            locationModal.classList.remove("active");
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn = document.querySelector(".btn_sec button");
+            const leftSection = document.querySelector(".left_section");
+            const rightSection = document.querySelector(".right_section");
+    
+            btn.addEventListener("click", function () {
+                leftSection.classList.add("hidden");
+                rightSection.classList.remove("hidden");
+
+            });
         });
     </script>
 </body>

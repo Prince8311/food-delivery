@@ -603,12 +603,22 @@
     flex-wrap: wrap;
     align-items: center;
 }
-.popular_categories_sec .sec_content .sec_items .category_box {
+
+.popular_categories_sec .sec_content .sec_items .swiper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide {
     position: relative;
     width: 16.66%;
     padding: 0 10px;
 }
-.popular_categories_sec .sec_content .sec_items .category_box .box_inner {
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .category_box {
+    position: relative;
+    width: 100%;
+}
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .category_box .box_inner {
     position: relative;
     width: 100%;
     border: 1px solid var(--light-border);
@@ -618,24 +628,24 @@
     display: flex;
     flex-direction: column;
 }
-.popular_categories_sec .sec_content .sec_items .category_box .box_inner .box_img {
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .category_box .box_inner .box_img {
     position: relative;
     width: 100%;
     display: flex;
 }
-.popular_categories_sec .sec_content .sec_items .category_box .box_inner .box_img img {
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .category_box .box_inner .box_img img {
     position: relative;
     width: 100%;
     height: auto;
 }
-.popular_categories_sec .sec_content .sec_items .category_box .box_inner .box_brief {
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .category_box .box_inner .box_brief {
     position: relative;
     width: 100%;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
 }
-.popular_categories_sec .sec_content .sec_items .category_box .box_inner .box_brief h4 {
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .category_box .box_inner .box_brief h4 {
     position: relative;
     font-size: 18px;
     font-weight: 700;
@@ -645,7 +655,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.popular_categories_sec .sec_content .sec_items .category_box .box_inner .box_brief p {
+.popular_categories_sec .sec_content .sec_items .swiper .swiper-slide .category_box .box_inner .box_brief p {
     position: relative;
     font-size: 13px;
     color: var(--theme-color);
@@ -667,9 +677,8 @@
     .popular_categories_sec .sec_content .sec_items {
         margin-top: 10px;
     }
-    .popular_categories_sec .sec_content .sec_items .category_box {
+    .popular_categories_sec .sec_content .sec_items .swiper .swiper-slide {
         width: 25%;
-        margin-top: 20px;
     }
 }
 
@@ -677,7 +686,7 @@
     .popular_categories_sec .sec_content .sec_head h3 {
         font-size: 24px;
     }
-    .popular_categories_sec .sec_content .sec_items .category_box {
+    .popular_categories_sec .sec_content .sec_items .swiper .swiper-slide {
         width: 33.33%;
     }
 }
@@ -689,7 +698,7 @@
     .popular_categories_sec .sec_content .sec_head h3 {
         font-size: 20px;
     }
-    .popular_categories_sec .sec_content .sec_items .category_box {
+    .popular_categories_sec .sec_content .sec_items .swiper .swiper-slide {
         width: 50%;
     }
 }
@@ -701,8 +710,6 @@
 }
 
 /* =============== Responsive end ============== */
-
-
 
 
 /* ========== popular restaurants section ========== */

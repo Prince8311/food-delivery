@@ -436,7 +436,24 @@
     width: 100%;
     border-radius: 12px;
 }
-
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .add_btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 73px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 24px;
+    background: rgba(255, 255, 255, 0.864);
+    cursor: pointer;
+}
+.restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner .add_btn a img {
+    position: relative;
+    width: 30px;
+    height: auto;
+}
 .restaurant_products_section .sec_content .product_list_sec .product_box_sec .product_box .box_inner button {
     position: absolute;
     bottom: 26px;

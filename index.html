@@ -274,57 +274,84 @@
                     <h3>Order.uk Popular Categories 🤩</h3>
                 </div>
                 <div class="sec_items">
-                    <div class="category_box">
-                        <div class="box_inner">
-                            <div class="box_img"><img src="img/Burgers.svg" alt=""></div>
-                            <div class="box_brief">
-                                <h4>Burgers & Fast food</h4>
-                                <p>21 Restaurants</p>
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category_box">
+                                    <div class="box_inner">
+                                        <div class="box_img"><img src="img/Burgers.svg" alt=""></div>
+                                        <div class="box_brief">
+                                            <h4>Burgers & Fast food</h4>
+                                            <p>21 Restaurants</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="category_box">
-                        <div class="box_inner">
-                            <div class="box_img"><img src="img/Salads.svg" alt=""></div>
-                            <div class="box_brief">
-                                <h4>Salads</h4>
-                                <p>32 Restaurants</p>
+                            <div class="swiper-slide">
+                                <div class="category_box">
+                                    <div class="box_inner">
+                                        <div class="box_img"><img src="img/Salads.svg" alt=""></div>
+                                        <div class="box_brief">
+                                            <h4>Salads</h4>
+                                            <p>32 Restaurants</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="category_box">
-                        <div class="box_inner">
-                            <div class="box_img"><img src="img/Pasta.svg" alt=""></div>
-                            <div class="box_brief">
-                                <h4>Pasta & Casuals</h4>
-                                <p>4 Restaurants</p>
+                            <div class="swiper-slide">
+                                <div class="category_box">
+                                    <div class="box_inner">
+                                        <div class="box_img"><img src="img/Pasta.svg" alt=""></div>
+                                        <div class="box_brief">
+                                            <h4>Pasta & Casuals</h4>
+                                            <p>4 Restaurants</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="category_box">
-                        <div class="box_inner">
-                            <div class="box_img"><img src="img/Pizza.svg" alt=""></div>
-                            <div class="box_brief">
-                                <h4>Pizza</h4>
-                                <p>4 Restaurants</p>
+                            <div class="swiper-slide">
+                                <div class="category_box">
+                                    <div class="box_inner">
+                                        <div class="box_img"><img src="img/Pizza.svg" alt=""></div>
+                                        <div class="box_brief">
+                                            <h4>Pizza</h4>
+                                            <p>4 Restaurants</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="category_box">
-                        <div class="box_inner">
-                            <div class="box_img"><img src="img/Breakfast.svg" alt=""></div>
-                            <div class="box_brief">
-                                <h4>Breakfast</h4>
-                                <p>4 Restaurants</p>
+                            <div class="swiper-slide">
+                                <div class="category_box">
+                                    <div class="box_inner">
+                                        <div class="box_img"><img src="img/Soups.svg" alt=""></div>
+                                        <div class="box_brief">
+                                            <h4>Soups</h4>
+                                            <p>4 Restaurants</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="category_box">
-                        <div class="box_inner">
-                            <div class="box_img"><img src="img/Soups.svg" alt=""></div>
-                            <div class="box_brief">
-                                <h4>Soups</h4>
-                                <p>4 Restaurants</p>
+                            <div class="swiper-slide">
+                                <div class="category_box">
+                                    <div class="box_inner">
+                                        <div class="box_img"><img src="img/Burgers.svg" alt=""></div>
+                                        <div class="box_brief">
+                                            <h4>Burgers & Fast food</h4>
+                                            <p>21 Restaurants</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_box">
+                                    <div class="box_inner">
+                                        <div class="box_img"><img src="img/Pizza.svg" alt=""></div>
+                                        <div class="box_brief">
+                                            <h4>Pizza</h4>
+                                            <p>4 Restaurants</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -606,6 +633,7 @@
 
     </div>
 
+    <!-- sideber popup -->
     <div class="sideber_popup_section">
         <div class="popup_inner">
             <div class="head_sec">
@@ -677,6 +705,12 @@
     </script>
     <script>
         var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 'auto',
         spaceBetween: 0,
         });
