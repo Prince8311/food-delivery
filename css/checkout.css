@@ -777,8 +777,15 @@
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
     color: var(--light-color);
     background: var(--veg-color);
+    border: none;
+}
+.checkout_page .right_section .summary_sec .sec_inner .btn_box a:last-child {
+    background: var(--theme-color);
+    margin-top: 20px;
+    display: none;
 }
 
 
@@ -820,6 +827,9 @@
     .checkout_page .right_section {
         display: none;
         margin-top: 0;
+    }
+    .checkout_page .right_section .summary_sec .sec_inner .btn_box a:last-child {
+        display: flex ;
     }
 }
 
