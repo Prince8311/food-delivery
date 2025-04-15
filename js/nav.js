@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     const footer = document.querySelector(".footer");
-        const toggleIcon = document.querySelector(".show a i"); 
+    const toggleIcon = document.querySelector(".show a i"); 
         
         // footer.style.display = "none";
 
