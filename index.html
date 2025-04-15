@@ -715,6 +715,14 @@
         spaceBetween: 0,
         });
     </script>
+
+    <script>
+        const anroidPopup = document.querySelector(".anroid_popup_wrapper");
+        const popupClose = document.getElementById('app-download-modal-close-btn');
+        popupClose.addEventListener("click", () => {
+            anroidPopup.classList.add("active");
+        });
+    </script>
     
 </body>
 </html>
