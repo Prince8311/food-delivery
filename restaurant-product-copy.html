@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery | Product</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <!-- <link rel="stylesheet" href="css/restaurants-products.css"> -->
+    <link rel="stylesheet" href="css/restaurant-product-copy.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- font awesome -->
+    <script src="js/fontawesome.js"></script>
+</head>
+<body>
+    <div class="page_wrapper">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="nav_top">
+                <div class="top_inner">
+                    <div class="offer_sec">
+                        <img src="img/star.png" alt="">
+                        <p> Get 5% Off your first order, <a href="#">Promo: ORDER5</a></p>
+                    </div>
+                    <div class="top_item_sec">
+                        <div class="location_sec">
+                            <img src="img/Location.svg" alt="">
+                            <p>Regent Street, A4, A4201, London</p>
+                            <a href="#">Change Location</a>
+                        </div>
+                        <div class="cart_sec">
+                            <div class="cart_btn"><img src="img/Shopping-Basket.svg" alt=""></div>
+                            <div class="cart_item_count"><p>23 Items</p></div>
+                            <div class="cart_price"><p>GBP 79.89</p></div>
+                            <div class="forward_btn"><img src="img/Forward-Button.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_bottom">
+                <div class="bottom_inner">
+                    <div class="logo_sec">
+                        <div class="logo">
+                            <img src="img/LOGO.svg" alt="">
+                        </div>
+                        <div class="res_location_sec">
+                            <img src="img/Location.svg" alt="">
+                            <p>Regent Street, A4, A4201, London</p>
+                        </div>
+                    </div>
+                    <div class="res_cart_btn">
+                        <a><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div class="res_nav_toggle_btn">
+                        <a><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                    <div class="nav_items menu_dropdown_btn">
+                        <li class="nav_item"><a href="#" class="item_link active">Home</a></li>
+                        <li class="nav_item">
+                            <a href="#" class="item_link">Browse Menu</a>
+                            <div class="menu_dropdown">
+                                <ul class="menu_dropdown_inner">
+                                    <li class="item_menu">
+                                        <a href="#" class="menu_link">Category 1<i class="fa-solid fa-angles-right"></i></a>
+                                        <div class="sub_menu_dropdown">
+                                            <ul class="sub_menu_dropdown_inner">
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 1</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 2</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 3</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 4</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 5</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 6</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 7</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 8</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 9</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 10</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#" class="menu_link">Category 2<i class="fa-solid fa-angles-right"></i></a>
+                                        <div class="sub_menu_dropdown">
+                                            <ul class="sub_menu_dropdown_inner">
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 1</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 2</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 3</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 4</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 5</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 6</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 7</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 8</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 9</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 10</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#" class="menu_link">Category 3<i class="fa-solid fa-angles-right"></i></a>
+                                        <div class="sub_menu_dropdown">
+                                            <ul class="sub_menu_dropdown_inner">
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 1</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 2</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 3</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 4</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 5</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 6</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 7</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 8</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 9</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 10</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#" class="menu_link">Category 4<i class="fa-solid fa-angles-right"></i></a>
+                                        <div class="sub_menu_dropdown">
+                                            <ul class="sub_menu_dropdown_inner">
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 1</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 2</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 3</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 4</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 5</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 6</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 7</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 8</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 9</a></li>
+                                                <li class="sub_item"><a href="#" class="sub_item_link">Sub Menu 10</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav_item"><a href="#" class="item_link">Special Offers</a></li>
+                        <li class="nav_item"><a href="#" class="item_link">Restaurants</a></li>
+                        <li class="nav_item"><a href="#" class="item_link">Track Order</a></li>
+                    </div>
+                    <div class="auth_btn">
+                        <a>
+                            <img src="img/Avatar.svg" alt="">
+                            <span>Login/Signup</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant_products_section">
+            <div class="left_section">
+                <div class="filter_inner">
+                    <div class="filter_head">
+                        <h3>Filter</h3>
+                    </div>
+                    <div class="filter_content">
+                        <div class="filter_box">
+                            <div class="box_items foodType">
+                                <label for="veg">
+                                    <input type="checkbox" id="veg">
+                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                    <p>Veg</p>
+                                </label>
+                                <label for="non-veg">
+                                    <input type="checkbox" id="non-veg">
+                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                    <p>Non Veg</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter_box">
+                            <div class="box_head">
+                                <h5>Ratings :</h5>
+                            </div>
+                            <div class="box_items">
+                                <label for="star-5">
+                                    <input type="radio" name="star" id="star-5">
+                                    <span class="radio_box"></span>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </label>
+                                <label for="star-4">
+                                    <input type="radio" name="star" id="star-4">
+                                    <span class="radio_box"></span>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </label>
+                                <label for="star-3">
+                                    <input type="radio" name="star" id="star-3">
+                                    <span class="radio_box"></span>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </label>
+                                <label for="star-2">
+                                    <input type="radio" name="star" id="star-2">
+                                    <span class="radio_box"></span>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </label>
+                                <label for="star-1">
+                                    <input type="radio" name="star" id="star-1">
+                                    <span class="radio_box"></span>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter_box">
+                            <div class="box_head">
+                                <h5>Price Range :</h5>
+                            </div>
+                            <div class="box_items">
+                                <div class="range_slider_sec">
+                                    <div class="range_slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range_input">
+                                        <input type="range" name="range-min" min="0" max="6000" value="0">
+                                        <input type="range" name="range-max" min="0" max="6000" value="6000">
+                                    </div>
+                                </div>
+                                <div class="range_fields">
+                                    <div class="field_box">
+                                        <span>Minimum :</span>
+                                        <input type="number" class="input-min" value="0">
+                                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                                    </div>
+                                    <div class="field_box">
+                                        <span>Maximum :</span>
+                                        <input type="number" class="input-max" value="6000">
+                                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter_box">
+                            <div class="box_head">
+                                <h5>Categories :</h5>
+                            </div>
+                            <div class="box_items categories">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                    <p>North Indian</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                    <p>Thali</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                    <p>Pizza</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                    <p>Burger</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                    <p>Fried Rice</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                    <p>Biriyani</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                    <p>Chicken</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                                    <p>Noodles</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_section">
+                <div class="sec_inner">
+                    <div class="restaurant_banner">
+                        <div class="banner_background">
+                            <div class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img"><img src="img/res1.jpg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img"><img src="img/res2.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner_content">
+                            <div class="content_left">
+                                <div class="head_part">
+                                    <p>Restaurants</p>
+                                    <h4>Ahare Bengali</h4>
+                                </div>
+                                <div class="restaurant_details">
+                                    <div class="rating">
+                                        <h4>4.5</h4>
+                                        <a>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </a>
+                                        <span>(1001)</span>
+                                    </div>
+                                    <div class="location_sec">
+                                        <a><i class="fa-solid fa-location-dot"></i>Kolkata Sectoe-v, 700091</a>
+                                    </div>
+                                    <div class="avalability_status">
+                                        <p class="open">Open</p>
+                                    </div>
+                                </div>
+                                <div class="offer_details">
+                                    <p><i class="fa-solid fa-tags"></i>Upto 80% off use thid code <span>@UK325</span></p>
+                                </div>
+                            </div>
+                            <div class="content_right">
+                                <div thumbsSlider="" class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="img"><img src="img/res1.jpg" alt=""></div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img"><img src="img/res2.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="pagination">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_list_sec">
+                        <div class="list_head_sec">
+                            <div class="search_sec">
+                                <img src="img/Search More.svg" alt="">
+                                <input type="text" placeholder="Search by restaurant or dish name...">
+                            </div>
+                            <button class="filter_btn"><i class="fa-solid fa-arrow-down-wide-short"></i>Filtter by</button>
+                        </div>
+                        <div class="product_box_sec">
+                            <div class="product_box veg">
+                                <div class="box_inner">
+                                    <div class="product_brif">
+                                        <h4>Dragon Chiken</h4>
+                                        <p>Price : 180/- (Full)</p>
+                                        <h6>4.5<i class="fa-solid fa-star"></i><span>(1001)</span></h6>
+                                        <a>Ahare Bengali</a>
+                                    </div>
+                                    <div class="product_img">
+                                        <img src="img/dragon_chiken.png" alt="">
+                                    </div>
+                                    <div class="add_btn">
+                                        <a><img src="img/Plus.svg" alt="image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_box veg">
+                                <div class="box_inner">
+                                    <div class="product_brif">
+                                        <h4>Dragon Chiken</h4>
+                                        <p>Price : 180/- (Full)</p>
+                                        <h6>4.5<i class="fa-solid fa-star"></i><span>(1001)</span></h6>
+                                        <a>Ahare Bengali</a>
+                                    </div>
+                                    <div class="product_img">
+                                        <img src="img/dragon_chiken.png" alt="">
+                                    </div>
+                                    <div class="add_btn">
+                                        <a><img src="img/Plus.svg" alt="image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_box veg">
+                                <div class="box_inner">
+                                    <div class="product_brif">
+                                        <h4>Dragon Chiken</h4>
+                                        <p>Price : 180/- (Full)</p>
+                                        <h6>4.5<i class="fa-solid fa-star"></i><span>(1001)</span></h6>
+                                        <a>Ahare Bengali</a>
+                                    </div>
+                                    <div class="product_img">
+                                        <img src="img/dragon_chiken.png" alt="">
+                                    </div>
+                                    <div class="add_btn">
+                                        <a><img src="img/Plus.svg" alt="image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_box non_veg">
+                                <div class="box_inner">
+                                    <div class="product_brif">
+                                        <h4>Dragon Chiken</h4>
+                                        <p>Price : 180/- (Full)</p>
+                                        <h6>4.5<i class="fa-solid fa-star"></i><span>(1001)</span></h6>
+                                        <a>Ahare Bengali</a>
+                                    </div>
+                                    <div class="product_img">
+                                        <img src="img/dragon_chiken.png" alt="">
+                                    </div>
+                                    <div class="add_btn">
+                                        <a><img src="img/Plus.svg" alt="image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_box non_veg">
+                                <div class="box_inner">
+                                    <div class="product_brif">
+                                        <h4>Dragon Chiken</h4>
+                                        <p>Price : 180/- (Full)</p>
+                                        <h6>4.5<i class="fa-solid fa-star"></i><span>(1001)</span></h6>
+                                        <a>Ahare Bengali</a>
+                                    </div>
+                                    <div class="product_img">
+                                        <img src="img/dragon_chiken.png" alt="">
+                                    </div>
+                                    <div class="add_btn">
+                                        <a><img src="img/Plus.svg" alt="image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_box non_veg">
+                                <div class="box_inner">
+                                    <div class="product_brif">
+                                        <h4>Dragon Chiken</h4>
+                                        <p>Price : 180/- (Full)</p>
+                                        <h6>4.5<i class="fa-solid fa-star"></i><span>(1001)</span></h6>
+                                        <a>Ahare Bengali</a>
+                                    </div>
+                                    <div class="product_img">
+                                        <img src="img/dragon_chiken.png" alt="">
+                                    </div>
+                                    <div class="add_btn">
+                                        <a><img src="img/Plus.svg" alt="image"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer_top">
+                <div class="top_inner">
+                    <div class="left_part">
+                        <div class="footer_logo">
+                            <img src="img/LOGO-White.svg" alt="">
+                        </div>
+                        <div class="btn_sec">
+                            <a href="#"><img src="img/App-Store.svg" alt=""></a>
+                            <a href="#"><img src="img/Google-Play-Store.svg" alt=""></a>
+                        </div>
+                        <p>Company # 490039-445, Registered with House of companies.</p>
+                    </div>
+                    <div class="right_part">
+                        <div class="subscribe_sec">
+                            <h4>Get Exclusive Deals in your Inbox</h4>
+                            <div class="input_sec">
+                                <input type="text" placeholder="youremail@gmail.com">
+                                <button>Subscribe</button>
+                            </div>
+                            <p>we won't spam, read our <a href="#">email policy</a></p>
+                            <div class="social_media">
+                                <a href="#"><img src="img/Facebook.svg" alt=""></a>
+                                <a href="#"><img src="img/Instagram.svg" alt=""></a>
+                                <a href="#"><img src="img/TikTok.svg" alt=""></a>
+                                <a href="#"><img src="img/Snapchat.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="links_sec">
+                            <div class="link_box">
+                                <h5>Legal Pages</h5>
+                                <ul>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Terms and conditions</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Privacy</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Cookies</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Modern Slavery Statement</a>
+                                </ul>
+                            </div>
+                            <div class="link_box">
+                                <h5>Important Links</h5>
+                                <ul>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Get help</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Add your restaurant</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Sign up to deliver</a>
+                                    <a href="#"><i class="fa-solid fa-angle-right"></i>Create a business account</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="bottom_inner">
+                    <p>Order.uk Copyright 2024, All Rights Reserved.</p>
+                    <ul>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Pricing</a>
+                        <span>Do not sell or share my personal information</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page_filter">
+        <div class="filter_inner">
+            <div class="filter_head">
+                <h3>Filter</h3>
+                <a><i class="fa-solid fa-arrow-left-long"></i></a>
+            </div>
+            <div class="filter_content">
+                <div class="filter_box">
+                    <div class="box_items foodType">
+                        <label for="veg">
+                            <input type="checkbox" id="veg">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Veg</p>
+                        </label>
+                        <label for="non-veg">
+                            <input type="checkbox" id="non-veg">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Non Veg</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter_box">
+                    <div class="box_head">
+                        <h5>Ratings :</h5>
+                    </div>
+                    <div class="box_items">
+                        <label for="star-5">
+                            <input type="radio" name="star" id="star-5">
+                            <span class="radio_box"></span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </label>
+                        <label for="star-4">
+                            <input type="radio" name="star" id="star-4">
+                            <span class="radio_box"></span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </label>
+                        <label for="star-3">
+                            <input type="radio" name="star" id="star-3">
+                            <span class="radio_box"></span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </label>
+                        <label for="star-2">
+                            <input type="radio" name="star" id="star-2">
+                            <span class="radio_box"></span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </label>
+                        <label for="star-1">
+                            <input type="radio" name="star" id="star-1">
+                            <span class="radio_box"></span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter_box">
+                    <div class="box_head">
+                        <h5>Price Range :</h5>
+                    </div>
+                    <div class="box_items">
+                        <div class="range_slider_sec">
+                            <div class="range_slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range_input">
+                                <input type="range" name="range-min" min="0" max="6000" value="0">
+                                <input type="range" name="range-max" min="0" max="6000" value="6000">
+                            </div>
+                        </div>
+                        <div class="range_fields">
+                            <div class="field_box">
+                                <span>Minimum :</span>
+                                <input type="number" class="input-min" value="0">
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                            </div>
+                            <div class="field_box">
+                                <span>Maximum :</span>
+                                <input type="number" class="input-max" value="6000">
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_box">
+                    <div class="box_head">
+                        <h5>Categories :</h5>
+                    </div>
+                    <div class="box_items categories">
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>North Indian</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Thali</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Pizza</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Burger</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Fried Rice</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Biriyani</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Chicken</p>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span class="check_box"><img src="img/check-icon.png" alt=""></span>
+                            <p>Noodles</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/nav.js"></script>
+    <script src="js/filter.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            slidesPerView: 'auto',
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+</body>
+</html>
